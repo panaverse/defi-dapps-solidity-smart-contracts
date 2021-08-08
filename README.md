@@ -1,2 +1,2 @@
-# dapps-solidity-smart-contracts
-Solidity Smart Contracts: Build DApps for Ethereum Blockchain: Solidity, Smart Contracts, Truffle, Ganache, Ethereum Blockchain Programming, Cryptocurrency, DApp, and IPFS 
+# Solidity Smart Contracts: Build DApps for Ethereum Blockchain:
+Solidity, Smart Contracts, Truffle, Ganache, Ethereum Blockchain Programming, Cryptocurrency, DApp, and IPFS 
