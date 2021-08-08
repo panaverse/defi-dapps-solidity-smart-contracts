@@ -1,3 +1,5 @@
+const HDWalletProvider = require('@truffle/hdwallet-provider');
+const privateKeys = ['0x036b8ff2c61ed19e819fd131bd8d91f79a5f3cc52c363892649399152958b03f']; 
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -19,6 +21,7 @@
  */
 
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
+// const infuraKey = "fj4jll3k.....";
 //
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
@@ -71,6 +74,38 @@ module.exports = {
     // network_id: 2111,   // This network is yours, in the cloud.
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
+   eth: {
+      provider: () => new HDWalletProvider(
+        privateKeys, 
+        'ETH_NODE_URL'
+      ),
+      network_id: 1,
+      skipDryRun: true
+    },
+    ethTestnet: {
+      provider: () => new HDWalletProvider(
+        privateKeys, 
+        'ETH_NODE_URL'
+      ),
+      network_id: 5,
+      skipDryRun: true
+    },
+    bsc: {
+      provider: () => new HDWalletProvider(
+        privateKeys, 
+        'https://bsc-dataseed.binance.org/'
+      ),
+      network_id: 56,
+      skipDryRun: true
+    },
+    bscTestnet: {
+      provider: () => new HDWalletProvider(
+        privateKeys, 
+        'https://data-seed-prebsc-1-s1.binance.org:8545/'
+      ),
+      network_id: 97,
+      skipDryRun: true
+    }
   },
 
   // Set default mocha options here, use special reporters etc.
@@ -81,7 +116,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.8.6"   // Fetch exact version from solc-bin (default: truffle's version)
+      version: "0.8.6",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {
@@ -93,24 +128,13 @@ module.exports = {
     }
   },
 
-  // Truffle DB is currently disabled by default; to enable it, change enabled:
-  // false to enabled: true. The default storage location can also be
-  // overridden by specifying the adapter settings, as shown in the commented code below.
+  // Truffle DB is currently disabled by default; to enable it, change enabled: false to enabled: true
   //
-  // NOTE: It is not possible to migrate your contracts to truffle DB and you should
-  // make a backup of your artifacts to a safe location before enabling this feature.
-  //
-  // After you backed up your artifacts you can utilize db by running migrate as follows: 
+  // Note: if you migrated your contracts prior to enabling this field in your Truffle project and want
+  // those previously migrated contracts available in the .db directory, you will need to run the following:
   // $ truffle migrate --reset --compile-all
-  //
-  // db: {
-    // enabled: false,
-    // host: "127.0.0.1",
-    // adapter: {
-    //   name: "sqlite",
-    //   settings: {
-    //     directory: ".db"
-    //   }
-    // }
-  // }
+
+  db: {
+    enabled: false
+  }
 };
