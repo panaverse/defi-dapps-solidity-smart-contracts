@@ -26,21 +26,3 @@ truffle compile
 Write simpleStorage.js in the test directory, and run:
 
 truffle test
-
-
-
-Follow this and build SimpleStorage Contract
-
-https://docs.soliditylang.org/en/v0.8.6/#getting-started
-
-Learn Truffle Suite:
-
-https://www.youtube.com/watch?v=AgoSF8mih1M
-
-https://www.trufflesuite.com/
-
-Use truffle to deploy the Simple Storage Contract
-
-
-
-[Install Metamask Crome Extension](https://metamask.io/download.html)
