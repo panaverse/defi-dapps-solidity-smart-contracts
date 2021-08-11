@@ -26,6 +26,9 @@ Note: If you get an error of Permission Denied on any command use sudo on Mac or
 
 truffle version
 
+Install VS Code and this [extension](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity)
+
+
 mkdir step00_simple_storage
 
 cd step00_simple_storage
