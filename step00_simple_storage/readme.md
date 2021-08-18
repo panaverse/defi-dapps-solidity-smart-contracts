@@ -70,7 +70,7 @@ Use one of the accounts created when you ran "truffle develop"
 
 [Overwrite your truffle-config.js with the following file](https://raw.githubusercontent.com/jklepatch/eattheblocks/master/screencast/360-truffle-tutorial-beginner/truffle-config.js)
 
-Update the solc version to the latest version available e.g. 0.8.6
+Update the solc version to the latest version available e.g. 0.8.7
 
 Update the private key in the truffle-config.js file for the account you are using when you ran "truffle develop"
 
@@ -103,6 +103,20 @@ On the new command prompt run deploy locally:
 migrate --reset
 
 Now you can interact with the contract
+
+
+
+## Remix Hello World
+
+[Please follow this Tutorial](https://betterprogramming.pub/learn-solidity-introduction-327b1f9eb30e)
+
+use this command to install:
+
+sudo npm install -g @remix-project/remixd
+
+remixd -s contracts  — remix-ide https://remix.ethereum.org
+
+Follow the Remix HelloWorld Tutorial and Write and deploy HelloWorld.sol
 
 
 

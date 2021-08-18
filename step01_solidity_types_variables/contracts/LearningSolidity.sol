@@ -22,16 +22,19 @@ contract LearningSolidity {
 
    Another con = new Another();
 
+   string greeting;
+   address owner;
+
    constructor() {
       storedData = 10;   
+      greeting = "hello world";
+      owner = msg.sender;
    }
 
   function getResult() public view returns(uint){
     uint a = 3; //Local variable
     uint b = 10;
-
     uint result = a + b + storedData + con.data();
- 
     return result;
   }
 
@@ -41,6 +44,20 @@ contract LearningSolidity {
       //tx.origin (address payable)
       //tx.gasprice (uint)
       return block.number;//global variable
+  }
+
+  function transferFund(address payable receiver, uint amount) payable external {
+      address newAddress = receiver;
+      receiver.transfer(amount); // OK
+      newAddress.transfer(amount); // shows an error
+
+  }
+
+  function sayHello() external view returns(string memory) {
+       if(msg.sender == owner)
+            return "hello Daddy";
+        else
+            return greeting;
   }
 
 
