@@ -1,8 +1,7 @@
 # Solidity Data Location
 
-[Read Tutorial](https://betterprogramming.pub/learn-solidity-variables-part-2-f3b842f5bfb8)
+[Read Tutorial](https://betterprogramming.pub/learn-solidity-functions-ddd8ea24c00d)
 
-Note: The only place where you can omit the data location is with state variables since they will always be stored in the account’s storage.
 
 
 ## Run on Remix
