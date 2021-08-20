@@ -22,7 +22,7 @@ create index.ts and EthereumAccount.ts
 
 [Signup with Infura and create an Ethereum Project and get the url and put it in EthereumAccount.ts](https://infura.io/)
 
-tsc index.ts
+tsc
 
 node index
 
