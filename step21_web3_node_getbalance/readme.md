@@ -22,13 +22,7 @@ create index.ts and EthereumAccount.ts
 
 [Signup with Infura and create an Ethereum Project and get the url and put it in EthereumAccount.ts](https://infura.io/)
 
-tsc
-
-node index
-
-There is an Error, and we have [reported it](https://github.com/ChainSafe/web3.js/issues/4257)
-
-For now I am manually removing ["default"] from the EthereumAccount.js file before running it.
+npm start
 
 
 

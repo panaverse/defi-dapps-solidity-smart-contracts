@@ -1,6 +1,4 @@
 import Web3 from 'web3';
-//const Web3 = require("web3");//dont want to use this
-
 
 //https://www.typescriptlang.org/docs/handbook/2/classes.html
 export class EthereumAccount {
