@@ -2,6 +2,8 @@
 
 [Watch Intro](https://www.youtube.com/watch?v=t3wM5903ty0)
 
+[Read the #1 of this Tutorial](https://www.dappuniversity.com/articles/web3-js-intro)
+
 [Install Node 14+ LTS](https://nodejs.org/en/)
 
 npm install -g typescript

@@ -10,7 +10,7 @@ export class EthereumAccount {
     // Got an Default Account Address from Etherscan: https://etherscan.io/accounts
     public constructor(address: string = "0xDeE6238780f98c0ca2c2C28453149bEA49a3Abc9") {
         this.address = address;
-        this.web3 = new Web3("https://mainnet.infura.io/v3/copy_your_url_here");
+        this.web3 = new Web3("https://mainnet.infura.io/v3/paste_your_url_here");
     }
 
     public getAddress(): string {
