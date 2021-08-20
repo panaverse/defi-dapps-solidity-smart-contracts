@@ -1,4 +1,4 @@
-import {EthereumAccount} from './EthereumAccount';
+import { EthereumAccount } from './EthereumAccount';
 
 const account : EthereumAccount = new EthereumAccount();
 
