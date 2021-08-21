@@ -10,7 +10,7 @@ npm install -g typescript
 
 npm init
 
-npm install @types/node  --save-dev
+npm install @types/node nodemon ts-node-dev tslint  --save-dev
 
 npm install web3
 
