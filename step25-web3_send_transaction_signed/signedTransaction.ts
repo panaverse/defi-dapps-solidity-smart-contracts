@@ -1,7 +1,7 @@
 import Web3 from 'web3';
 import {Transaction} from 'ethereumjs-tx'
 
-export class SmartContract {
+export class SignedTransaction {
     private web3: Web3
    
     public constructor() {

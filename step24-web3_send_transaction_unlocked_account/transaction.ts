@@ -1,7 +1,7 @@
 import Web3 from 'web3';
 import EthContract from 'web3-eth-contract';
 
-export class SmartContract {
+export class Transaction {
     private web3: Web3
    
     public constructor() {
