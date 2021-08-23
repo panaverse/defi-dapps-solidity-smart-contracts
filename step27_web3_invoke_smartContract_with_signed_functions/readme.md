@@ -1,4 +1,4 @@
-# Read Data From Smart Contract
+# Invoke Smart Contract Functions with Signed Transaction
 
 [Watch Video Tutorial](https://www.youtube.com/watch?v=6HlHwCaAZKQ&list=PLS5SEs8ZftgXlCGXNfzKdq7nGBcIaVOdN&index=5)
 
