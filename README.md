@@ -49,6 +49,19 @@ For complete details about this course visit [Operation Unicorn website](https:/
 [6 Reasons DeFi Will Stay Inefficient (and Profitable)](https://www.coindesk.com/6-reasons-defi-will-stay-inefficient-and-profitable?fbclid=IwAR1g9Sjt6w0WjxQ9O_heJqstSWEBWFnSaOJY0QlJxZaxRzhwJZRmApLhrAU)
 
 
+### Metamask
+
+[How To Build A Blockchain App with Ethereum, Web3.js & Solidity Smart Contracts](https://www.dappuniversity.com/articles/how-to-build-a-blockchain-app)
+
+[How to Build Ethereum Dapp with React.js · Complete Step-By-Step Guide](https://www.dappuniversity.com/articles/ethereum-dapp-react-tutorial)
+
+[Send ETH payments using React.js / MetaMask](https://www.youtube.com/watch?v=QJZUItAsdfg)
+
+[web3-react: Connect Users to MetaMask (or any wallet) From Your Frontend](https://www.youtube.com/watch?v=DCA53Go5ON8)
+
+[MetaMask (or any wallet) From Your Frontend](https://medium.com/coinmonks/web3-react-connect-users-to-metamask-or-any-wallet-from-your-frontend-241fd538ed39)
+
+
 
 ### Tokens
 

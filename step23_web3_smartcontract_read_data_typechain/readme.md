@@ -19,6 +19,15 @@ npm run generate-types
 
 Notice that two files generated in types/web3-v1-contracts directory
 
+Note:
+
+This generates typechain outputs on macos and linux but NOT on windows
+
+
+[Windows Work Around](https://github.com/ethereum-ts/TypeChain/issues/271)
+
+
+
 Also get the address of someone who holds Dai from the Holders tab
 
 Create SmartContract.ts, and index.ts
