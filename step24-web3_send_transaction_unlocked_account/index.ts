@@ -1,11 +1,11 @@
-import { SmartContract } from './SmartContract';
+import { Transaction } from './transaction';
 
-const contract : SmartContract = new SmartContract();
+const transaction : Transaction = new Transaction();
 
 
-contract.getAccountBalance('AddPublicAddress').then(response => console.log(response));
+transaction.getAccountBalance('AddPublicAddress').then(response => console.log(response));
 
 // send 1 ether from account 1 to account 2
-contract.sendTransaction('Account1','Account2',1).then(response => console.log(response))
+transaction.sendTransaction('Account1','Account2',1).then(response => console.log(response))
 
 
