@@ -1,4 +1,4 @@
-# Read Data From Smart Contract
+# Deploy Smart Contract
 
 [Watch Video Tutorial](https://www.youtube.com/watch?v=msT3tpwnyv8&list=PLS5SEs8ZftgXlCGXNfzKdq7nGBcIaVOdN&index=4)
 
