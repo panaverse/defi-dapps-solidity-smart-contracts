@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { TODO_LIST_ADDRESS } from "./config";
 import TODO_LIST_ABI from './abi/todoList.json'
+import { TodoList } from '../types/web3-v1-contracts/todoList'
 import "./App.css";
 import Web3 from "web3";
 import { Button, Form } from "react-bootstrap";
@@ -9,7 +10,7 @@ declare let window: any;
 function App() {
   const [account, setAccount] = useState("");
   const [tasks, setTasks] = useState<any>([]);
-  const [todoListContract, setTodoListContract] = useState<any>();
+  const [todoListContract, setTodoListContract] = useState<TodoList>();
   const [loading, setLoading] = useState(false);
 
   const taskValue = useRef<HTMLInputElement>(null);
@@ -18,7 +19,7 @@ function App() {
 
   const createTask = (content: string) => {
     setLoading(true);
-    todoListContract.methods
+    todoListContract!.methods
       .createTask(content)
       .send({ from: account })
       .once("receipt", (receipt: any) => {
@@ -31,7 +32,7 @@ function App() {
 
   const taskCompleted = (taskId: string) => {
     setLoading(true);
-    todoListContract.methods
+    todoListContract!.methods
       .toggleCompleted(taskId)
       .send({ from: account })
       .once("receipt", (receipt: any) => {
@@ -70,10 +71,7 @@ function App() {
         const web3 = new Web3("http://localhost:8545");
 
         /* initialize our contract with contract address(copy this from ganache) and contract's ABI */
-        const todoList = new web3.eth.Contract(
-          TODO_LIST_ABI as any,
-          TODO_LIST_ADDRESS
-        );
+        const todoList = ((new web3.eth.Contract(TODO_LIST_ABI as any, TODO_LIST_ADDRESS)) as any) as TodoList;
         setTodoListContract(todoList);
 
         /* get user's wallet address from metamask wallet */

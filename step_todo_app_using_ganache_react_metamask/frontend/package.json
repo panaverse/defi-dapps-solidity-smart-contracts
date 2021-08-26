@@ -21,6 +21,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "generate-types": "typechain --target=web3-v1 \"./src/abi/*.json\"",
+    "postinstall": "yarn generate-types",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,5 +44,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@typechain/web3-v1": "^3.0.0",
+    "@types/bn.js": "^5.1.0",
+    "typechain": "^5.1.2"
   }
 }
