@@ -26,6 +26,9 @@ This generates typechain outputs on macos and linux but NOT on windows
 
 [Windows Work Around](https://github.com/ethereum-ts/TypeChain/issues/271)
 
+use  "generate-types": "typechain --target=web3-v1 \"./src/abi/*.json\"" ,
+in pakage.json
+
 
 
 Also get the address of someone who holds Dai from the Holders tab
