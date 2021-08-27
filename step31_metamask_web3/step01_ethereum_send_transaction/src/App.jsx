@@ -39,8 +39,6 @@ function App() {
   const sendEther = async (senderAccount, value) => {
     setLoading(true);
     const convertedValue = unit.toWei(value, 'ether').toString(16);
-    // const buffer = new Buffer.from(convertedValue, 'utf8').toString('hex');
-    console.log("convertedValue ", convertedValue);
 
     try{
       if(typeof window !== undefined){
