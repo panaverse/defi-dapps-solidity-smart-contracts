@@ -16,7 +16,7 @@ const Navbar =({account}: NavbarProps)=>{
           target="_blank"
           rel="noopener noreferrer"
         >
-          Dapp University's Blockchain Marketplace
+          Blockchain Marketplace
         </a>
         <ul className="navbar-nav px-3">
           <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
