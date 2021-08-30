@@ -227,7 +227,7 @@ Connect Metamask to our Ganache personal blockchain instance following the steps
 - now click on save workspace  
 ![save workspace.](./image/g6.png "save workspace")
 
-- theb open metamask in your browser
+- then open metamask in your browser
 - create a new account
 
 - click on ethereum mainet  
@@ -260,11 +260,30 @@ Connect Metamask to our Ganache personal blockchain instance following the steps
 
 ## Client Side application 
 
-install web3.js
+install web3.js 
 
 > npm i web3
 
-add the following code in App.js
+install typechain for generating types of contract
+
+> npm i typechain @typechain/web3-v1
+
+- add the scripts for generating types 
+```json 
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "generate-types": "typechain --target=web3-v1 \"./src/abi/*.json\"" ,
+    "postinstall": "yarn generate-types"
+  }
+  
+  ```
+- generate types by running command *npm generate-types*
+this will create types folder inside src directory
+
+Start coding, add the following code in App.js
 
 ```javascript
 import Web3 from 'web3'
