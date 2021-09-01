@@ -1,11 +1,25 @@
-import { Transaction } from './transaction';
+import { EthereumAccount } from "./EthreumAccount";
 
-const transaction : Transaction = new Transaction();
+// Get any two addresses from Ganache.
+const account1Address = "ACCOUNT_1_ADDRESS";
+const account2Address = "ACCOUNT_2_ADDRESS";
 
+// Wrap in a function so we can use async/await.
+(async () => {
+  // Instantiate two Ethereum account objects with the above addresses.
+  const account1 = new EthereumAccount(account1Address);
+  const account2 = new EthereumAccount(account2Address);
 
-transaction.getAccountBalance('AddPublicAddress').then(response => console.log(response));
+  // Balance of the two accounts before the transaction
+  console.log("Before Transaction:");
+  console.log("Account 1 Balance ==>", await account1.getBalance(), "ETH");
+  console.log("Account 2 Balance ==>", await account2.getBalance(), "ETH");
 
-// send 1 ether from account 1 to account 2
-transaction.sendTransaction('Account1','Account2',1).then(response => console.log(response))
+  console.log("Sending 5 Ethers from Accout 1 to Account 2...");
+  await account1.sendEthers(5, account2.getAddress());
 
-
+  // Status of the two accounts after the transaction
+  console.log("After Transaction:");
+  console.log("Account 1 Balance ==>", await account1.getBalance(), "ETH");
+  console.log("Account 2 Balance ==>", await account2.getBalance(), "ETH");
+})();

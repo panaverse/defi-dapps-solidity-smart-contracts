@@ -5,12 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node-dev --respawn index.ts "
+    "start": "ts-node-dev --respawn index.ts"
   },
   "author": "Waris Hasan",
   "license": "ISC",
   "dependencies": {
-    "ethereumjs-tx": "^2.1.2",
     "web3": "^1.5.2"
   },
   "devDependencies": {
