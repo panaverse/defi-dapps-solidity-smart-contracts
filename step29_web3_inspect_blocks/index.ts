@@ -1,25 +1,28 @@
-import { InspectBlocks } from './inspectBlocks';
+import { EthNetwork } from "./EthNetwork";
 
-const blocks : InspectBlocks = new InspectBlocks();
+(async () => {
+  const network = new EthNetwork();
 
-// get latest block number
-blocks.getBlockNumber().then((res)=>console.log('latest Block Number -------',res))
+  console.log("Latest Block Number:", await network.getLatestBlockNumber());
 
-// you can also write the block number or hash of the block to get info about a block
+  const blockNumber = 13101095;
+  const block = await network.getBlock(blockNumber);
+  // I am only logging the block hash here.
+  // Feel free to log other info about the block
+  console.log(`Block Hash of Block #${blockNumber}:`, block.hash);
 
-// I am only logging the block hash here. Feel free to log other info about the block
-blocks.fetchBlock('latest').then((res)=>console.log('Block hash -------',res.hash))
+  console.log(
+    `Number of Txns in Block #${blockNumber}:`,
+    await network.getBlockTransactionCount(blockNumber)
+  );
 
-// get latest 10 blocks
-blocks.getBlockNumber().then((latest)=>{
-    for (let i=0; i< 10; i++){
-        blocks.fetchBlock(latest-i).then((block)=>console.log(block.number))
-    }
-})
+  console.log(
+    `First Transaction in Block #${blockNumber}:`,
+    (await network.getTransactionFromBlock(0, blockNumber)).hash
+  );
 
-
-// number of transaction in a block
-blocks.getBlockTransactionCount('latest').then((res)=>console.log('Block transaction count -------',res))
-
-// get a particular transaction from a block. In this case we are getting the 3rd transaction from the latest block (transactions' index start from 0)
-blocks.getTransactionFromBlock('latest',2).then((res)=>console.log('Transaction info -------',res))
+  console.log("Number of Transactions in 10 Latest Blocks:");
+  (await network.getLatestXBlocks()).forEach(block => {
+    console.log(`Block Number ${block.number} ==>`, block.transactions.length);
+  });
+})();
