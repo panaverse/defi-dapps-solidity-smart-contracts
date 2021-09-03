@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+.loading{
+  background-color: rgb(64, 64, 153);
+  color: whitesmoke;
+  width: 150px;
+  height: 50px;
+  cursor: crosshair;
+}
+
+.enableEthereumButton{
+  background-color: rgb(64, 64, 153);
+  color: whitesmoke;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
