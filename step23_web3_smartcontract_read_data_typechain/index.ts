@@ -9,7 +9,4 @@ contract.getContractSymbol().then(response => console.log(response));
 contract.getTotalSupply().then(response => console.log(response));
 
 
-contract.getAccountBalance("0x6b175474e89094c44da98b954eedeac495271d0f").then(response => console.log(response));
-
-
-
+contract.getAccountBalance("Enter_Account_Address").then(response => console.log(response));
