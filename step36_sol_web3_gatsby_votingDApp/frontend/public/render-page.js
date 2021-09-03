@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\@reach\\router\\index.js"), require("fs"), require("D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\concat.js"), require("D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\flatten.js"), require("D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\get.js"), require("D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\isObject.js"), require("D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\merge.js"), require("D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\uniqBy.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
+		module.exports = factory(require("C:\\myContent\\panacloud\\repos\\defi-dapps-solidity-smart-contracts\\step36_sol_web3_gatsby_votingDApp\\frontend\\node_modules\\@reach\\router\\index.js"), require("fs"), require("C:\\myContent\\panacloud\\repos\\defi-dapps-solidity-smart-contracts\\step36_sol_web3_gatsby_votingDApp\\frontend\\node_modules\\lodash\\merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\@reach\\router\\index.js", "fs", "D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\concat.js", "D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\flatten.js", "D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\get.js", "D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\isObject.js", "D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\merge.js", "D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\uniqBy.js", "path", "react", "react-dom/server", "react-helmet"], factory);
+		define("lib", ["C:\\myContent\\panacloud\\repos\\defi-dapps-solidity-smart-contracts\\step36_sol_web3_gatsby_votingDApp\\frontend\\node_modules\\@reach\\router\\index.js", "fs", "C:\\myContent\\panacloud\\repos\\defi-dapps-solidity-smart-contracts\\step36_sol_web3_gatsby_votingDApp\\frontend\\node_modules\\lodash\\merge.js", "path", "react", "react-dom/server", "react-helmet"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\@reach\\router\\index.js"), require("fs"), require("D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\concat.js"), require("D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\flatten.js"), require("D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\get.js"), require("D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\isObject.js"), require("D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\merge.js"), require("D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\uniqBy.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
+		exports["lib"] = factory(require("C:\\myContent\\panacloud\\repos\\defi-dapps-solidity-smart-contracts\\step36_sol_web3_gatsby_votingDApp\\frontend\\node_modules\\@reach\\router\\index.js"), require("fs"), require("C:\\myContent\\panacloud\\repos\\defi-dapps-solidity-smart-contracts\\step36_sol_web3_gatsby_votingDApp\\frontend\\node_modules\\lodash\\merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
-		root["lib"] = factory(root["D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\@reach\\router\\index.js"], root["fs"], root["D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\concat.js"], root["D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\flatten.js"], root["D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\get.js"], root["D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\isObject.js"], root["D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\merge.js"], root["D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\uniqBy.js"], root["path"], root["react"], root["react-dom/server"], root["react-helmet"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_fs__, __WEBPACK_EXTERNAL_MODULE_lodash_concat__, __WEBPACK_EXTERNAL_MODULE_lodash_flatten__, __WEBPACK_EXTERNAL_MODULE_lodash_get__, __WEBPACK_EXTERNAL_MODULE_lodash_isObject__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_lodash_uniqBy__, __WEBPACK_EXTERNAL_MODULE_path__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
+		root["lib"] = factory(root["C:\\myContent\\panacloud\\repos\\defi-dapps-solidity-smart-contracts\\step36_sol_web3_gatsby_votingDApp\\frontend\\node_modules\\@reach\\router\\index.js"], root["fs"], root["C:\\myContent\\panacloud\\repos\\defi-dapps-solidity-smart-contracts\\step36_sol_web3_gatsby_votingDApp\\frontend\\node_modules\\lodash\\merge.js"], root["path"], root["react"], root["react-dom/server"], root["react-helmet"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_fs__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_path__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -91,31 +91,10 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./.cache/ssr-develop-static-entry.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./.cache/develop-static-entry.js");
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./.cache/_this_is_virtual_fs_path_/$virtual/ssr-sync-requires":
-/*!*********************************************************************!*\
-  !*** ./.cache/_this_is_virtual_fs_path_/$virtual/ssr-sync-requires ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-const { hot } = __webpack_require__(/*! react-hot-loader/root */ "./node_modules/react-hot-loader/root.js")
-  // prefer default export if available
-  const preferDefault = m => (m && m.default) || m
-  
-
-exports.ssrComponents = {
-  "component---cache-dev-404-page-js": hot(preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js"))),
-  "component---src-pages-index-tsx": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.tsx */ "./src/pages/index.tsx")))
-  }
-
-
-
-/***/ }),
 
 /***/ "./.cache/api-runner-ssr.js":
 /*!**********************************!*\
@@ -492,140 +471,146 @@ HTML.propTypes = {
 
 /***/ }),
 
-/***/ "./.cache/dev-404-page.js":
-/*!********************************!*\
-  !*** ./.cache/dev-404-page.js ***!
-  \********************************/
+/***/ "./.cache/develop-static-entry.js":
+/*!****************************************!*\
+  !*** ./.cache/develop-static-entry.js ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! query-string */ "./node_modules/query-string/index.js");
-/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(query_string__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var lodash_merge__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash/merge */ "lodash/merge");
+/* harmony import */ var lodash_merge__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash_merge__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom/server */ "react-dom/server");
+/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _api_runner_ssr__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./api-runner-ssr */ "./.cache/api-runner-ssr.js");
+/* harmony import */ var _api_runner_ssr__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_api_runner_ssr__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
+ // import testRequireError from "./test-require-error"
+// For some extremely mysterious reason, webpack adds the above module *after*
+// this module so that when this code runs, testRequireError is undefined.
+// So in the meantime, we'll just inline it.
 
+const testRequireError = (moduleName, err) => {
+  const regex = new RegExp(`Error: Cannot find module\\s.${moduleName}`);
+  const firstLine = err.toString().split(`\n`)[0];
+  return regex.test(firstLine);
+};
 
-class Dev404Page extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
-  constructor(props) {
-    super(props);
-    const {
-      data,
-      location
-    } = this.props;
-    const pagePaths = data.allSitePage.nodes.map(node => node.path);
-    const urlState = query_string__WEBPACK_IMPORTED_MODULE_3___default.a.parse(location.search);
-    const initialPagePathSearchTerms = urlState.filter ? urlState.filter : ``;
-    this.state = {
-      showCustom404: false,
-      initPagePaths: pagePaths,
-      pagePathSearchTerms: initialPagePathSearchTerms,
-      pagePaths: this.getFilteredPagePaths(pagePaths, initialPagePathSearchTerms)
-    };
-    this.showCustom404 = this.showCustom404.bind(this);
-    this.handlePagePathSearch = this.handlePagePathSearch.bind(this);
-    this.handleSearchTermChange = this.handleSearchTermChange.bind(this);
+let Html;
+
+try {
+  Html = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module '../src/html'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+} catch (err) {
+  if (testRequireError(`../src/html`, err)) {
+    Html = __webpack_require__(/*! ./default-html */ "./.cache/default-html.js");
+  } else {
+    console.log(`There was an error requiring "src/html.js"\n\n`, err, `\n\n`);
+    process.exit();
   }
-
-  showCustom404() {
-    this.setState({
-      showCustom404: true
-    });
-  }
-
-  handleSearchTermChange(event) {
-    const searchValue = event.target.value;
-    this.setSearchUrl(searchValue);
-    this.setState({
-      pagePathSearchTerms: searchValue
-    });
-  }
-
-  handlePagePathSearch(event) {
-    event.preventDefault();
-    const allPagePaths = [...this.state.initPagePaths];
-    this.setState({
-      pagePaths: this.getFilteredPagePaths(allPagePaths, this.state.pagePathSearchTerms)
-    });
-  }
-
-  getFilteredPagePaths(allPagePaths, pagePathSearchTerms) {
-    const searchTerm = new RegExp(`${pagePathSearchTerms}`);
-    return allPagePaths.filter(pagePath => searchTerm.test(pagePath));
-  }
-
-  setSearchUrl(searchValue) {
-    const {
-      location: {
-        pathname,
-        search
-      }
-    } = this.props;
-    const searchMap = query_string__WEBPACK_IMPORTED_MODULE_3___default.a.parse(search);
-    searchMap.filter = searchValue;
-    const newSearch = query_string__WEBPACK_IMPORTED_MODULE_3___default.a.stringify(searchMap);
-
-    if (search !== `?${newSearch}`) {
-      Object(gatsby__WEBPACK_IMPORTED_MODULE_2__["navigate"])(`${pathname}?${newSearch}`, {
-        replace: true
-      });
-    }
-  }
-
-  render() {
-    const {
-      pathname
-    } = this.props.location;
-    let newFilePath;
-
-    if (pathname === `/`) {
-      newFilePath = `src/pages/index.js`;
-    } else if (pathname.slice(-1) === `/`) {
-      newFilePath = `src/pages${pathname.slice(0, -1)}.js`;
-    } else {
-      newFilePath = `src/pages${pathname}.js`;
-    }
-
-    return this.state.showCustom404 ? this.props.custom404 : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Gatsby.js development 404 page"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, `There's not a page yet at `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, pathname)), this.props.custom404 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-      onClick: this.showCustom404
-    }, "Preview custom 404 page")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, `A custom 404 page wasn't detected - if you would like to add one, create a component in your site directory at `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, "src/pages/404.js"), "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Create a React.js component in your site directory at", ` `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, newFilePath), ` `, "and this page will automatically refresh to show the new page component you created."), this.state.initPagePaths.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "If you were trying to reach another page, perhaps you can find it below."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Pages (", this.state.pagePaths.length != this.state.initPagePaths.length ? `${this.state.pagePaths.length}/${this.state.initPagePaths.length}` : this.state.initPagePaths.length, ")"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-      onSubmit: this.handlePagePathSearch
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Search:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-      type: "text",
-      id: "search",
-      placeholder: "Search pages...",
-      value: this.state.pagePathSearchTerms,
-      onChange: this.handleSearchTermChange
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-      type: "submit",
-      value: "Submit"
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, this.state.pagePaths.map((pagePath, index) => index < 100 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-      key: pagePath
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-      to: pagePath
-    }, pagePath))), this.state.pagePaths.length > 100 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-      style: {
-        fontWeight: `bold`
-      }
-    }, "... and ", this.state.pagePaths.length - 100, " more."))));
-  }
-
 }
 
-Dev404Page.propTypes = {
-  data: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object,
-  custom404: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.element,
-  location: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object
-};
-/* harmony default export */ __webpack_exports__["default"] = (Dev404Page);
-const pagesQuery = "713901024";
+Html = Html && Html.__esModule ? Html.default : Html;
+/* harmony default export */ __webpack_exports__["default"] = ((pagePath, callback) => {
+  let headComponents = [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+    key: "environment",
+    name: "note",
+    content: "environment=development"
+  })];
+  let htmlAttributes = {};
+  let bodyAttributes = {};
+  let preBodyComponents = [];
+  let postBodyComponents = [];
+  let bodyProps = {};
+  let htmlStr;
+
+  const setHeadComponents = components => {
+    headComponents = headComponents.concat(components);
+  };
+
+  const setHtmlAttributes = attributes => {
+    htmlAttributes = lodash_merge__WEBPACK_IMPORTED_MODULE_0___default()(htmlAttributes, attributes);
+  };
+
+  const setBodyAttributes = attributes => {
+    bodyAttributes = lodash_merge__WEBPACK_IMPORTED_MODULE_0___default()(bodyAttributes, attributes);
+  };
+
+  const setPreBodyComponents = components => {
+    preBodyComponents = preBodyComponents.concat(components);
+  };
+
+  const setPostBodyComponents = components => {
+    postBodyComponents = postBodyComponents.concat(components);
+  };
+
+  const setBodyProps = props => {
+    bodyProps = lodash_merge__WEBPACK_IMPORTED_MODULE_0___default()({}, bodyProps, props);
+  };
+
+  const getHeadComponents = () => headComponents;
+
+  const replaceHeadComponents = components => {
+    headComponents = components;
+  };
+
+  const getPreBodyComponents = () => preBodyComponents;
+
+  const replacePreBodyComponents = components => {
+    preBodyComponents = components;
+  };
+
+  const getPostBodyComponents = () => postBodyComponents;
+
+  const replacePostBodyComponents = components => {
+    postBodyComponents = components;
+  };
+
+  _api_runner_ssr__WEBPACK_IMPORTED_MODULE_3___default()(`onRenderBody`, {
+    setHeadComponents,
+    setHtmlAttributes,
+    setBodyAttributes,
+    setPreBodyComponents,
+    setPostBodyComponents,
+    setBodyProps,
+    pathname: pagePath
+  });
+  _api_runner_ssr__WEBPACK_IMPORTED_MODULE_3___default()(`onPreRenderHTML`, {
+    getHeadComponents,
+    replaceHeadComponents,
+    getPreBodyComponents,
+    replacePreBodyComponents,
+    getPostBodyComponents,
+    replacePostBodyComponents,
+    pathname: pagePath
+  });
+  const htmlElement = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Html, { ...bodyProps,
+    body: ``,
+    headComponents: headComponents.concat([/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
+      key: `io`,
+      src: "/socket.io/socket.io.js"
+    })]),
+    htmlAttributes,
+    bodyAttributes,
+    preBodyComponents,
+    postBodyComponents: postBodyComponents.concat([/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
+      key: `polyfill`,
+      src: "/polyfill.js",
+      noModule: true
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
+      key: `commons`,
+      src: "/commons.js"
+    })])
+  });
+  htmlStr = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_2__["renderToStaticMarkup"])(htmlElement);
+  htmlStr = `<!DOCTYPE html>${htmlStr}`;
+  callback(null, htmlStr);
+});
 
 /***/ }),
 
@@ -1597,377 +1582,6 @@ const preferDefault = m => m && m.default || m;
 if (false) {} else if (false) {} else {
   module.exports = () => null;
 }
-
-/***/ }),
-
-/***/ "./.cache/route-announcer-props.js":
-/*!*****************************************!*\
-  !*** ./.cache/route-announcer-props.js ***!
-  \*****************************************/
-/*! exports provided: RouteAnnouncerProps */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RouteAnnouncerProps", function() { return RouteAnnouncerProps; });
-// This is extracted to separate module because it's shared
-// between browser and SSR code
-const RouteAnnouncerProps = {
-  id: `gatsby-announcer`,
-  style: {
-    position: `absolute`,
-    top: 0,
-    width: 1,
-    height: 1,
-    padding: 0,
-    overflow: `hidden`,
-    clip: `rect(0, 0, 0, 0)`,
-    whiteSpace: `nowrap`,
-    border: 0
-  },
-  "aria-live": `assertive`,
-  "aria-atomic": `true`
-};
-
-/***/ }),
-
-/***/ "./.cache/ssr-develop-static-entry.js":
-/*!********************************************!*\
-  !*** ./.cache/ssr-develop-static-entry.js ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var lodash_concat__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash/concat */ "lodash/concat");
-/* harmony import */ var lodash_concat__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash_concat__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lodash_uniqBy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash/uniqBy */ "lodash/uniqBy");
-/* harmony import */ var lodash_uniqBy__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash_uniqBy__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var lodash_flatten__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash/flatten */ "lodash/flatten");
-/* harmony import */ var lodash_flatten__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_flatten__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var lodash_isObject__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash/isObject */ "lodash/isObject");
-/* harmony import */ var lodash_isObject__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_isObject__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var lodash_merge__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash/merge */ "lodash/merge");
-/* harmony import */ var lodash_merge__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(lodash_merge__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var lodash_get__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lodash/get */ "lodash/get");
-/* harmony import */ var lodash_get__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(lodash_get__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! fs */ "fs");
-/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-dom/server */ "react-dom/server");
-/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! path */ "path");
-/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _api_runner_ssr__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./api-runner-ssr */ "./.cache/api-runner-ssr.js");
-/* harmony import */ var _api_runner_ssr__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_api_runner_ssr__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _find_path__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./find-path */ "./.cache/find-path.js");
-/* harmony import */ var $virtual_ssr_sync_requires__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! $virtual/ssr-sync-requires */ "./.cache/_this_is_virtual_fs_path_/$virtual/ssr-sync-requires");
-/* harmony import */ var $virtual_ssr_sync_requires__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n($virtual_ssr_sync_requires__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _route_announcer_props__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./route-announcer-props */ "./.cache/route-announcer-props.js");
-/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @reach/router */ "@reach/router");
-/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_reach_router__WEBPACK_IMPORTED_MODULE_14__);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- // import testRequireError from "./test-require-error"
-// For some extremely mysterious reason, webpack adds the above module *after*
-// this module so that when this code runs, testRequireError is undefined.
-// So in the meantime, we'll just inline it.
-
-const testRequireError = (moduleName, err) => {
-  const regex = new RegExp(`Error: Cannot find module\\s.${moduleName}`);
-  const firstLine = err.toString().split(`\n`)[0];
-  return regex.test(firstLine);
-};
-
-const stats = JSON.parse(fs__WEBPACK_IMPORTED_MODULE_7___default.a.readFileSync(`${process.cwd()}/public/webpack.stats.json`, `utf-8`));
-let Html;
-
-try {
-  Html = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module '../src/html'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-} catch (err) {
-  if (testRequireError(`../src/html`, err)) {
-    Html = __webpack_require__(/*! ./default-html */ "./.cache/default-html.js");
-  } else {
-    console.log(`There was an error requiring "src/html.js"\n\n`, err, `\n\n`);
-    process.exit();
-  }
-}
-
-Html = Html && Html.__esModule ? Html.default : Html;
-/* harmony default export */ __webpack_exports__["default"] = ((pagePath, isClientOnlyPage, callback) => {
-  let bodyHtml = ``;
-  let headComponents = [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("meta", {
-    key: "environment",
-    name: "note",
-    content: "environment=development"
-  })];
-  let htmlAttributes = {};
-  let bodyAttributes = {};
-  let preBodyComponents = [];
-  let postBodyComponents = [];
-  let bodyProps = {};
-
-  const generateBodyHTML = () => {
-    const setHeadComponents = components => {
-      headComponents = headComponents.concat(components);
-    };
-
-    const setHtmlAttributes = attributes => {
-      htmlAttributes = lodash_merge__WEBPACK_IMPORTED_MODULE_4___default()(htmlAttributes, attributes);
-    };
-
-    const setBodyAttributes = attributes => {
-      bodyAttributes = lodash_merge__WEBPACK_IMPORTED_MODULE_4___default()(bodyAttributes, attributes);
-    };
-
-    const setPreBodyComponents = components => {
-      preBodyComponents = preBodyComponents.concat(components);
-    };
-
-    const setPostBodyComponents = components => {
-      postBodyComponents = postBodyComponents.concat(components);
-    };
-
-    const setBodyProps = props => {
-      bodyProps = lodash_merge__WEBPACK_IMPORTED_MODULE_4___default()({}, bodyProps, props);
-    };
-
-    const getHeadComponents = () => headComponents;
-
-    const replaceHeadComponents = components => {
-      headComponents = components;
-    };
-
-    const replaceBodyHTMLString = body => {
-      bodyHtml = body;
-    };
-
-    const getPreBodyComponents = () => preBodyComponents;
-
-    const replacePreBodyComponents = components => {
-      preBodyComponents = components;
-    };
-
-    const getPostBodyComponents = () => postBodyComponents;
-
-    const replacePostBodyComponents = components => {
-      postBodyComponents = components;
-    };
-
-    const getPageDataPath = path => {
-      const fixedPagePath = path === `/` ? `index` : path;
-      return Object(path__WEBPACK_IMPORTED_MODULE_9__["join"])(`page-data`, fixedPagePath, `page-data.json`);
-    };
-
-    const getPageData = pagePath => {
-      const pageDataPath = getPageDataPath(pagePath);
-      const absolutePageDataPath = Object(path__WEBPACK_IMPORTED_MODULE_9__["join"])(process.cwd(), `public`, pageDataPath);
-      const pageDataJson = fs__WEBPACK_IMPORTED_MODULE_7___default.a.readFileSync(absolutePageDataPath, `utf8`);
-
-      try {
-        return JSON.parse(pageDataJson);
-      } catch (err) {
-        return null;
-      }
-    };
-
-    const pageData = getPageData(pagePath);
-    const {
-      componentChunkName,
-      staticQueryHashes = []
-    } = pageData;
-
-    let scriptsAndStyles = lodash_flatten__WEBPACK_IMPORTED_MODULE_2___default()([`commons`].map(chunkKey => {
-      const fetchKey = `assetsByChunkName[${chunkKey}]`;
-
-      let chunks = lodash_get__WEBPACK_IMPORTED_MODULE_5___default()(stats, fetchKey);
-
-      const namedChunkGroups = lodash_get__WEBPACK_IMPORTED_MODULE_5___default()(stats, `namedChunkGroups`);
-
-      if (!chunks) {
-        return null;
-      }
-
-      chunks = chunks.map(chunk => {
-        if (chunk === `/`) {
-          return null;
-        }
-
-        return {
-          rel: `preload`,
-          name: chunk
-        };
-      });
-      namedChunkGroups[chunkKey].assets.forEach(asset => chunks.push({
-        rel: `preload`,
-        name: asset
-      }));
-      const childAssets = namedChunkGroups[chunkKey].childAssets;
-
-      for (const rel in childAssets) {
-        chunks = lodash_concat__WEBPACK_IMPORTED_MODULE_0___default()(chunks, childAssets[rel].map(chunk => {
-          return {
-            rel,
-            name: chunk
-          };
-        }));
-      }
-
-      return chunks;
-    })).filter(s => lodash_isObject__WEBPACK_IMPORTED_MODULE_3___default()(s)).sort((s1, s2) => s1.rel == `preload` ? -1 : 1); // given priority to preload
-
-
-    scriptsAndStyles = lodash_uniqBy__WEBPACK_IMPORTED_MODULE_1___default()(scriptsAndStyles, item => item.name);
-    const styles = scriptsAndStyles.filter(style => style.name && style.name.endsWith(`.css`));
-    styles.slice(0).reverse().forEach(style => {
-      headComponents.unshift( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("link", {
-        "data-identity": `gatsby-dev-css`,
-        key: style.name,
-        rel: "stylesheet",
-        type: "text/css",
-        href: `${""}/${style.name}`
-      }));
-    });
-    const createElement = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
-
-    class RouteHandler extends react__WEBPACK_IMPORTED_MODULE_6___default.a.Component {
-      render() {
-        var _pageData$result, _pageData$result$page;
-
-        const props = { ...this.props,
-          ...pageData.result,
-          params: { ...Object(_find_path__WEBPACK_IMPORTED_MODULE_11__["grabMatchParams"])(this.props.location.pathname),
-            ...(((_pageData$result = pageData.result) === null || _pageData$result === void 0 ? void 0 : (_pageData$result$page = _pageData$result.pageContext) === null || _pageData$result$page === void 0 ? void 0 : _pageData$result$page.__params) || {})
-          },
-          // pathContext was deprecated in v2. Renamed to pageContext
-          pathContext: pageData.result ? pageData.result.pageContext : undefined
-        };
-        let pageElement;
-
-        if ($virtual_ssr_sync_requires__WEBPACK_IMPORTED_MODULE_12___default.a.ssrComponents[componentChunkName] && !isClientOnlyPage) {
-          pageElement = createElement($virtual_ssr_sync_requires__WEBPACK_IMPORTED_MODULE_12___default.a.ssrComponents[componentChunkName], props);
-        } else {
-          // If this is a client-only page or the pageComponent didn't finish
-          // compiling yet, just render an empty component.
-          pageElement = () => null;
-        }
-
-        const wrappedPage = _api_runner_ssr__WEBPACK_IMPORTED_MODULE_10___default()(`wrapPageElement`, {
-          element: pageElement,
-          props
-        }, pageElement, ({
-          result
-        }) => {
-          return {
-            element: result,
-            props
-          };
-        }).pop();
-        return wrappedPage;
-      }
-
-    }
-
-    const routerElement = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_reach_router__WEBPACK_IMPORTED_MODULE_14__["ServerLocation"], {
-      url: `${""}${pagePath}`
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_reach_router__WEBPACK_IMPORTED_MODULE_14__["Router"], {
-      id: "gatsby-focus-wrapper",
-      baseuri: ""
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(RouteHandler, {
-      path: "/*"
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", _route_announcer_props__WEBPACK_IMPORTED_MODULE_13__["RouteAnnouncerProps"]));
-    const bodyComponent = _api_runner_ssr__WEBPACK_IMPORTED_MODULE_10___default()(`wrapRootElement`, {
-      element: routerElement,
-      pathname: pagePath
-    }, routerElement, ({
-      result
-    }) => {
-      return {
-        element: result,
-        pathname: pagePath
-      };
-    }).pop(); // Let the site or plugin render the page component.
-
-    _api_runner_ssr__WEBPACK_IMPORTED_MODULE_10___default()(`replaceRenderer`, {
-      bodyComponent,
-      replaceBodyHTMLString,
-      setHeadComponents,
-      setHtmlAttributes,
-      setBodyAttributes,
-      setPreBodyComponents,
-      setPostBodyComponents,
-      setBodyProps,
-      pathname: pagePath,
-      pathPrefix: ""
-    }); // If no one stepped up, we'll handle it.
-
-    if (!bodyHtml) {
-      try {
-        bodyHtml = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_8__["renderToString"])(bodyComponent);
-      } catch (e) {
-        // ignore @reach/router redirect errors
-        if (!Object(_reach_router__WEBPACK_IMPORTED_MODULE_14__["isRedirect"])(e)) throw e;
-      }
-    }
-
-    _api_runner_ssr__WEBPACK_IMPORTED_MODULE_10___default()(`onRenderBody`, {
-      setHeadComponents,
-      setHtmlAttributes,
-      setBodyAttributes,
-      setPreBodyComponents,
-      setPostBodyComponents,
-      setBodyProps,
-      pathname: pagePath
-    });
-    _api_runner_ssr__WEBPACK_IMPORTED_MODULE_10___default()(`onPreRenderHTML`, {
-      getHeadComponents,
-      replaceHeadComponents,
-      getPreBodyComponents,
-      replacePreBodyComponents,
-      getPostBodyComponents,
-      replacePostBodyComponents,
-      pathname: pagePath
-    });
-    return bodyHtml;
-  };
-
-  const bodyStr = generateBodyHTML();
-  const htmlElement = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Html, { ...bodyProps,
-    body: bodyStr,
-    headComponents: headComponents.concat([/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("script", {
-      key: `io`,
-      src: "/socket.io/socket.io.js"
-    })]),
-    htmlAttributes,
-    bodyAttributes,
-    preBodyComponents,
-    postBodyComponents: postBodyComponents.concat([/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("script", {
-      key: `polyfill`,
-      src: "/polyfill.js",
-      noModule: true
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("script", {
-      key: `commons`,
-      src: "/commons.js"
-    })])
-  });
-  let htmlStr = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_8__["renderToStaticMarkup"])(htmlElement);
-  htmlStr = `<!DOCTYPE html>${htmlStr}`;
-  callback(null, htmlStr);
-});
 
 /***/ }),
 
@@ -2967,857 +2581,6 @@ var isArray = Array.isArray || function (xs) {
     return Object.prototype.toString.call(xs) === '[object Array]';
 };
 
-
-/***/ }),
-
-/***/ "./node_modules/decode-uri-component/index.js":
-/*!****************************************************!*\
-  !*** ./node_modules/decode-uri-component/index.js ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var token = '%[a-f0-9]{2}';
-var singleMatcher = new RegExp(token, 'gi');
-var multiMatcher = new RegExp('(' + token + ')+', 'gi');
-
-function decodeComponents(components, split) {
-	try {
-		// Try to decode the entire string first
-		return decodeURIComponent(components.join(''));
-	} catch (err) {
-		// Do nothing
-	}
-
-	if (components.length === 1) {
-		return components;
-	}
-
-	split = split || 1;
-
-	// Split the array in 2 parts
-	var left = components.slice(0, split);
-	var right = components.slice(split);
-
-	return Array.prototype.concat.call([], decodeComponents(left), decodeComponents(right));
-}
-
-function decode(input) {
-	try {
-		return decodeURIComponent(input);
-	} catch (err) {
-		var tokens = input.match(singleMatcher);
-
-		for (var i = 1; i < tokens.length; i++) {
-			input = decodeComponents(tokens, i).join('');
-
-			tokens = input.match(singleMatcher);
-		}
-
-		return input;
-	}
-}
-
-function customDecodeURIComponent(input) {
-	// Keep track of all the replacements and prefill the map with the `BOM`
-	var replaceMap = {
-		'%FE%FF': '\uFFFD\uFFFD',
-		'%FF%FE': '\uFFFD\uFFFD'
-	};
-
-	var match = multiMatcher.exec(input);
-	while (match) {
-		try {
-			// Decode as big chunks as possible
-			replaceMap[match[0]] = decodeURIComponent(match[0]);
-		} catch (err) {
-			var result = decode(match[0]);
-
-			if (result !== match[0]) {
-				replaceMap[match[0]] = result;
-			}
-		}
-
-		match = multiMatcher.exec(input);
-	}
-
-	// Add `%C2` at the end of the map to make sure it does not replace the combinator before everything else
-	replaceMap['%C2'] = '\uFFFD';
-
-	var entries = Object.keys(replaceMap);
-
-	for (var i = 0; i < entries.length; i++) {
-		// Replace all decoded components
-		var key = entries[i];
-		input = input.replace(new RegExp(key, 'g'), replaceMap[key]);
-	}
-
-	return input;
-}
-
-module.exports = function (encodedURI) {
-	if (typeof encodedURI !== 'string') {
-		throw new TypeError('Expected `encodedURI` to be of type `string`, got `' + typeof encodedURI + '`');
-	}
-
-	try {
-		encodedURI = encodedURI.replace(/\+/g, ' ');
-
-		// Try the built in decoder first
-		return decodeURIComponent(encodedURI);
-	} catch (err) {
-		// Fallback to a more advanced decoder
-		return customDecodeURIComponent(encodedURI);
-	}
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/gatsby-image/index.js":
-/*!********************************************!*\
-  !*** ./node_modules/gatsby-image/index.js ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-exports.__esModule = true;
-exports.default = void 0;
-
-var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js"));
-
-var _inheritsLoose2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inheritsLoose */ "./node_modules/@babel/runtime/helpers/inheritsLoose.js"));
-
-var _objectWithoutPropertiesLoose2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js"));
-
-var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js"));
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
-
-var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
-
-var logDeprecationNotice = function logDeprecationNotice(prop, replacement) {
-  if (false) {}
-
-  console.log("\n    The \"" + prop + "\" prop is now deprecated and will be removed in the next major version\n    of \"gatsby-image\".\n    ");
-
-  if (replacement) {
-    console.log("Please use " + replacement + " instead of \"" + prop + "\".");
-  }
-}; // Handle legacy props during their deprecation phase
-
-
-var convertProps = function convertProps(props) {
-  var convertedProps = (0, _extends2.default)({}, props);
-  var resolutions = convertedProps.resolutions,
-      sizes = convertedProps.sizes,
-      critical = convertedProps.critical;
-
-  if (resolutions) {
-    convertedProps.fixed = resolutions;
-    logDeprecationNotice("resolutions", "the gatsby-image v2 prop \"fixed\"");
-    delete convertedProps.resolutions;
-  }
-
-  if (sizes) {
-    convertedProps.fluid = sizes;
-    logDeprecationNotice("sizes", "the gatsby-image v2 prop \"fluid\"");
-    delete convertedProps.sizes;
-  }
-
-  if (critical) {
-    logDeprecationNotice("critical", "the native \"loading\" attribute");
-    convertedProps.loading = "eager";
-  } // convert fluid & fixed to arrays so we only have to work with arrays
-
-
-  if (convertedProps.fluid) {
-    convertedProps.fluid = groupByMedia([].concat(convertedProps.fluid));
-  }
-
-  if (convertedProps.fixed) {
-    convertedProps.fixed = groupByMedia([].concat(convertedProps.fixed));
-  }
-
-  return convertedProps;
-};
-/**
- * Checks if fluid or fixed are art-direction arrays.
- *
- * @param currentData  {{media?: string}[]}   The props to check for images.
- * @return {boolean}
- */
-
-
-var hasArtDirectionSupport = function hasArtDirectionSupport(currentData) {
-  return !!currentData && Array.isArray(currentData) && currentData.some(function (image) {
-    return typeof image.media !== "undefined";
-  });
-};
-/**
- * Tries to detect if a media query matches the current viewport.
- * @property media   {{media?: string}}  A media query string.
- * @return {boolean}
- */
-
-
-var matchesMedia = function matchesMedia(_ref) {
-  var media = _ref.media;
-  return media ? isBrowser && !!window.matchMedia(media).matches : false;
-};
-/**
- * Find the source of an image to use as a key in the image cache.
- * Use `the first image in either `fixed` or `fluid`
- * @param {{fluid: {src: string, media?: string}[], fixed: {src: string, media?: string}[]}} args
- * @return {string?} Returns image src or undefined it not given.
- */
-
-
-var getImageCacheKey = function getImageCacheKey(_ref2) {
-  var fluid = _ref2.fluid,
-      fixed = _ref2.fixed;
-  var srcData = getCurrentSrcData(fluid || fixed || []);
-  return srcData && srcData.src;
-};
-/**
- * Returns the current src - Preferably with art-direction support.
- * @param currentData  {{media?: string}[], maxWidth?: Number, maxHeight?: Number}   The fluid or fixed image array.
- * @return {{src: string, media?: string, maxWidth?: Number, maxHeight?: Number}}
- */
-
-
-var getCurrentSrcData = function getCurrentSrcData(currentData) {
-  if (isBrowser && hasArtDirectionSupport(currentData)) {
-    // Do we have an image for the current Viewport?
-    var foundMedia = currentData.findIndex(matchesMedia);
-
-    if (foundMedia !== -1) {
-      return currentData[foundMedia];
-    } // No media matches, select first element without a media condition
-
-
-    var noMedia = currentData.findIndex(function (image) {
-      return typeof image.media === "undefined";
-    });
-
-    if (noMedia !== -1) {
-      return currentData[noMedia];
-    }
-  } // Else return the first image.
-
-
-  return currentData[0];
-}; // Cache if we've seen an image before so we don't bother with
-// lazy-loading & fading in on subsequent mounts.
-
-
-var imageCache = Object.create({});
-
-var inImageCache = function inImageCache(props) {
-  var convertedProps = convertProps(props);
-  var cacheKey = getImageCacheKey(convertedProps);
-  return imageCache[cacheKey] || false;
-};
-
-var activateCacheForImage = function activateCacheForImage(props) {
-  var convertedProps = convertProps(props);
-  var cacheKey = getImageCacheKey(convertedProps);
-
-  if (cacheKey) {
-    imageCache[cacheKey] = true;
-  }
-}; // Native lazy-loading support: https://addyosmani.com/blog/lazy-loading/
-
-
-var hasNativeLazyLoadSupport = typeof HTMLImageElement !== "undefined" && "loading" in HTMLImageElement.prototype;
-var isBrowser = typeof window !== "undefined";
-var hasIOSupport = isBrowser && window.IntersectionObserver;
-var io;
-var listeners = new WeakMap();
-
-function getIO() {
-  if (typeof io === "undefined" && typeof window !== "undefined" && window.IntersectionObserver) {
-    io = new window.IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (listeners.has(entry.target)) {
-          var cb = listeners.get(entry.target); // Edge doesn't currently support isIntersecting, so also test for an intersectionRatio > 0
-
-          if (entry.isIntersecting || entry.intersectionRatio > 0) {
-            io.unobserve(entry.target);
-            listeners.delete(entry.target);
-            cb();
-          }
-        }
-      });
-    }, {
-      rootMargin: "200px"
-    });
-  }
-
-  return io;
-}
-
-function generateImageSources(imageVariants) {
-  return imageVariants.map(function (_ref3) {
-    var src = _ref3.src,
-        srcSet = _ref3.srcSet,
-        srcSetWebp = _ref3.srcSetWebp,
-        media = _ref3.media,
-        sizes = _ref3.sizes;
-    return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, {
-      key: src
-    }, srcSetWebp && /*#__PURE__*/_react.default.createElement("source", {
-      type: "image/webp",
-      media: media,
-      srcSet: srcSetWebp,
-      sizes: sizes
-    }), srcSet && /*#__PURE__*/_react.default.createElement("source", {
-      media: media,
-      srcSet: srcSet,
-      sizes: sizes
-    }));
-  });
-} // Return an array ordered by elements having a media prop, does not use
-// native sort, as a stable sort is not guaranteed by all browsers/versions
-
-
-function groupByMedia(imageVariants) {
-  var withMedia = [];
-  var without = [];
-  imageVariants.forEach(function (variant) {
-    return (variant.media ? withMedia : without).push(variant);
-  });
-
-  if (without.length > 1 && "development" !== "production") {
-    console.warn("We've found " + without.length + " sources without a media property. They might be ignored by the browser, see: https://www.gatsbyjs.org/packages/gatsby-image/#art-directing-multiple-images");
-  }
-
-  return [].concat(withMedia, without);
-}
-
-function generateTracedSVGSources(imageVariants) {
-  return imageVariants.map(function (_ref4) {
-    var src = _ref4.src,
-        media = _ref4.media,
-        tracedSVG = _ref4.tracedSVG;
-    return /*#__PURE__*/_react.default.createElement("source", {
-      key: src,
-      media: media,
-      srcSet: tracedSVG
-    });
-  });
-}
-
-function generateBase64Sources(imageVariants) {
-  return imageVariants.map(function (_ref5) {
-    var src = _ref5.src,
-        media = _ref5.media,
-        base64 = _ref5.base64;
-    return /*#__PURE__*/_react.default.createElement("source", {
-      key: src,
-      media: media,
-      srcSet: base64
-    });
-  });
-}
-
-function generateNoscriptSource(_ref6, isWebp) {
-  var srcSet = _ref6.srcSet,
-      srcSetWebp = _ref6.srcSetWebp,
-      media = _ref6.media,
-      sizes = _ref6.sizes;
-  var src = isWebp ? srcSetWebp : srcSet;
-  var mediaAttr = media ? "media=\"" + media + "\" " : "";
-  var typeAttr = isWebp ? "type='image/webp' " : "";
-  var sizesAttr = sizes ? "sizes=\"" + sizes + "\" " : "";
-  return "<source " + typeAttr + mediaAttr + "srcset=\"" + src + "\" " + sizesAttr + "/>";
-}
-
-function generateNoscriptSources(imageVariants) {
-  return imageVariants.map(function (variant) {
-    return (variant.srcSetWebp ? generateNoscriptSource(variant, true) : "") + generateNoscriptSource(variant);
-  }).join("");
-}
-
-var listenToIntersections = function listenToIntersections(el, cb) {
-  var observer = getIO();
-
-  if (observer) {
-    observer.observe(el);
-    listeners.set(el, cb);
-  }
-
-  return function () {
-    observer.unobserve(el);
-    listeners.delete(el);
-  };
-};
-
-var noscriptImg = function noscriptImg(props) {
-  // Check if prop exists before adding each attribute to the string output below to prevent
-  // HTML validation issues caused by empty values like width="" and height=""
-  var src = props.src ? "src=\"" + props.src + "\" " : "src=\"\" "; // required attribute
-
-  var sizes = props.sizes ? "sizes=\"" + props.sizes + "\" " : "";
-  var srcSet = props.srcSet ? "srcset=\"" + props.srcSet + "\" " : "";
-  var title = props.title ? "title=\"" + props.title + "\" " : "";
-  var alt = props.alt ? "alt=\"" + props.alt + "\" " : "alt=\"\" "; // required attribute
-
-  var width = props.width ? "width=\"" + props.width + "\" " : "";
-  var height = props.height ? "height=\"" + props.height + "\" " : "";
-  var crossOrigin = props.crossOrigin ? "crossorigin=\"" + props.crossOrigin + "\" " : "";
-  var loading = props.loading ? "loading=\"" + props.loading + "\" " : "";
-  var draggable = props.draggable ? "draggable=\"" + props.draggable + "\" " : "";
-  var sources = generateNoscriptSources(props.imageVariants);
-  return "<picture>" + sources + "<img " + loading + width + height + sizes + srcSet + src + alt + title + crossOrigin + draggable + "style=\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\"/></picture>";
-}; // Earlier versions of gatsby-image during the 2.x cycle did not wrap
-// the `Img` component in a `picture` element. This maintains compatibility
-// until a breaking change can be introduced in the next major release
-
-
-var Placeholder = /*#__PURE__*/_react.default.forwardRef(function (props, ref) {
-  var src = props.src,
-      imageVariants = props.imageVariants,
-      generateSources = props.generateSources,
-      spreadProps = props.spreadProps,
-      ariaHidden = props.ariaHidden;
-
-  var baseImage = /*#__PURE__*/_react.default.createElement(Img, (0, _extends2.default)({
-    ref: ref,
-    src: src
-  }, spreadProps, {
-    ariaHidden: ariaHidden
-  }));
-
-  return imageVariants.length > 1 ? /*#__PURE__*/_react.default.createElement("picture", null, generateSources(imageVariants), baseImage) : baseImage;
-});
-
-var Img = /*#__PURE__*/_react.default.forwardRef(function (props, ref) {
-  var sizes = props.sizes,
-      srcSet = props.srcSet,
-      src = props.src,
-      style = props.style,
-      onLoad = props.onLoad,
-      onError = props.onError,
-      loading = props.loading,
-      draggable = props.draggable,
-      ariaHidden = props.ariaHidden,
-      otherProps = (0, _objectWithoutPropertiesLoose2.default)(props, ["sizes", "srcSet", "src", "style", "onLoad", "onError", "loading", "draggable", "ariaHidden"]);
-  return /*#__PURE__*/_react.default.createElement("img", (0, _extends2.default)({
-    "aria-hidden": ariaHidden,
-    sizes: sizes,
-    srcSet: srcSet,
-    src: src
-  }, otherProps, {
-    onLoad: onLoad,
-    onError: onError,
-    ref: ref,
-    loading: loading,
-    draggable: draggable,
-    style: (0, _extends2.default)({
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      objectFit: "cover",
-      objectPosition: "center"
-    }, style)
-  }));
-});
-
-Img.propTypes = {
-  style: _propTypes.default.object,
-  onError: _propTypes.default.func,
-  onLoad: _propTypes.default.func
-};
-
-var Image = /*#__PURE__*/function (_React$Component) {
-  (0, _inheritsLoose2.default)(Image, _React$Component);
-
-  function Image(props) {
-    var _this;
-
-    _this = _React$Component.call(this, props) || this; // If this image has already been loaded before then we can assume it's
-    // already in the browser cache so it's cheap to just show directly.
-
-    _this.seenBefore = isBrowser && inImageCache(props);
-    _this.isCritical = props.loading === "eager" || props.critical;
-    _this.addNoScript = !(_this.isCritical && !props.fadeIn);
-    _this.useIOSupport = !hasNativeLazyLoadSupport && hasIOSupport && !_this.isCritical && !_this.seenBefore;
-    var isVisible = _this.isCritical || isBrowser && (hasNativeLazyLoadSupport || !_this.useIOSupport);
-    _this.state = {
-      isVisible: isVisible,
-      imgLoaded: false,
-      imgCached: false,
-      fadeIn: !_this.seenBefore && props.fadeIn,
-      isHydrated: false
-    };
-    _this.imageRef = /*#__PURE__*/_react.default.createRef();
-    _this.placeholderRef = props.placeholderRef || /*#__PURE__*/_react.default.createRef();
-    _this.handleImageLoaded = _this.handleImageLoaded.bind((0, _assertThisInitialized2.default)(_this));
-    _this.handleRef = _this.handleRef.bind((0, _assertThisInitialized2.default)(_this));
-    return _this;
-  }
-
-  var _proto = Image.prototype;
-
-  _proto.componentDidMount = function componentDidMount() {
-    this.setState({
-      isHydrated: isBrowser
-    });
-
-    if (this.state.isVisible && typeof this.props.onStartLoad === "function") {
-      this.props.onStartLoad({
-        wasCached: inImageCache(this.props)
-      });
-    }
-
-    if (this.isCritical) {
-      var img = this.imageRef.current;
-
-      if (img && img.complete) {
-        this.handleImageLoaded();
-      }
-    }
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    if (this.cleanUpListeners) {
-      this.cleanUpListeners();
-    }
-  } // Specific to IntersectionObserver based lazy-load support
-  ;
-
-  _proto.handleRef = function handleRef(ref) {
-    var _this2 = this;
-
-    if (this.useIOSupport && ref) {
-      this.cleanUpListeners = listenToIntersections(ref, function () {
-        var imageInCache = inImageCache(_this2.props);
-
-        if (!_this2.state.isVisible && typeof _this2.props.onStartLoad === "function") {
-          _this2.props.onStartLoad({
-            wasCached: imageInCache
-          });
-        } // imgCached and imgLoaded must update after isVisible,
-        // Once isVisible is true, imageRef becomes accessible, which imgCached needs access to.
-        // imgLoaded and imgCached are in a 2nd setState call to be changed together,
-        // avoiding initiating unnecessary animation frames from style changes.
-
-
-        _this2.setState({
-          isVisible: true
-        }, function () {
-          _this2.setState({
-            imgLoaded: imageInCache,
-            // `currentSrc` should be a string, but can be `undefined` in IE,
-            // !! operator validates the value is not undefined/null/""
-            // for lazyloaded components this might be null
-            // TODO fix imgCached behaviour as it's now false when it's lazyloaded
-            imgCached: !!(_this2.imageRef.current && _this2.imageRef.current.currentSrc)
-          });
-        });
-      });
-    }
-  };
-
-  _proto.handleImageLoaded = function handleImageLoaded() {
-    activateCacheForImage(this.props);
-    this.setState({
-      imgLoaded: true
-    });
-
-    if (this.props.onLoad) {
-      this.props.onLoad();
-    }
-  };
-
-  _proto.render = function render() {
-    var _convertProps = convertProps(this.props),
-        title = _convertProps.title,
-        alt = _convertProps.alt,
-        className = _convertProps.className,
-        _convertProps$style = _convertProps.style,
-        style = _convertProps$style === void 0 ? {} : _convertProps$style,
-        _convertProps$imgStyl = _convertProps.imgStyle,
-        imgStyle = _convertProps$imgStyl === void 0 ? {} : _convertProps$imgStyl,
-        _convertProps$placeho = _convertProps.placeholderStyle,
-        placeholderStyle = _convertProps$placeho === void 0 ? {} : _convertProps$placeho,
-        placeholderClassName = _convertProps.placeholderClassName,
-        fluid = _convertProps.fluid,
-        fixed = _convertProps.fixed,
-        backgroundColor = _convertProps.backgroundColor,
-        durationFadeIn = _convertProps.durationFadeIn,
-        Tag = _convertProps.Tag,
-        itemProp = _convertProps.itemProp,
-        loading = _convertProps.loading,
-        draggable = _convertProps.draggable;
-
-    var imageVariants = fluid || fixed; // Abort early if missing image data (#25371)
-
-    if (!imageVariants) {
-      return null;
-    }
-
-    var shouldReveal = this.state.fadeIn === false || this.state.imgLoaded;
-    var shouldFadeIn = this.state.fadeIn === true && !this.state.imgCached;
-    var imageStyle = (0, _extends2.default)({
-      opacity: shouldReveal ? 1 : 0,
-      transition: shouldFadeIn ? "opacity " + durationFadeIn + "ms" : "none"
-    }, imgStyle);
-    var bgColor = typeof backgroundColor === "boolean" ? "lightgray" : backgroundColor;
-    var delayHideStyle = {
-      transitionDelay: durationFadeIn + "ms"
-    };
-    var imagePlaceholderStyle = (0, _extends2.default)({
-      opacity: this.state.imgLoaded ? 0 : 1
-    }, shouldFadeIn && delayHideStyle, imgStyle, placeholderStyle);
-    var placeholderImageProps = {
-      title: title,
-      alt: !this.state.isVisible ? alt : "",
-      style: imagePlaceholderStyle,
-      className: placeholderClassName,
-      itemProp: itemProp
-    }; // Initial client render state needs to match SSR until hydration finishes.
-    // Once hydration completes, render again to update to the correct image.
-    // `imageVariants` is always an Array type at this point due to `convertProps()`
-
-    var image = !this.state.isHydrated ? imageVariants[0] : getCurrentSrcData(imageVariants);
-
-    if (fluid) {
-      return /*#__PURE__*/_react.default.createElement(Tag, {
-        className: (className ? className : "") + " gatsby-image-wrapper",
-        style: (0, _extends2.default)({
-          position: "relative",
-          overflow: "hidden",
-          maxWidth: image.maxWidth ? image.maxWidth + "px" : null,
-          maxHeight: image.maxHeight ? image.maxHeight + "px" : null
-        }, style),
-        ref: this.handleRef,
-        key: "fluid-" + JSON.stringify(image.srcSet)
-      }, /*#__PURE__*/_react.default.createElement(Tag, {
-        "aria-hidden": true,
-        style: {
-          width: "100%",
-          paddingBottom: 100 / image.aspectRatio + "%"
-        }
-      }), bgColor && /*#__PURE__*/_react.default.createElement(Tag, {
-        "aria-hidden": true,
-        title: title,
-        style: (0, _extends2.default)({
-          backgroundColor: bgColor,
-          position: "absolute",
-          top: 0,
-          bottom: 0,
-          opacity: !this.state.imgLoaded ? 1 : 0,
-          right: 0,
-          left: 0
-        }, shouldFadeIn && delayHideStyle)
-      }), image.base64 && /*#__PURE__*/_react.default.createElement(Placeholder, {
-        ariaHidden: true,
-        ref: this.placeholderRef,
-        src: image.base64,
-        spreadProps: placeholderImageProps,
-        imageVariants: imageVariants,
-        generateSources: generateBase64Sources
-      }), image.tracedSVG && /*#__PURE__*/_react.default.createElement(Placeholder, {
-        ariaHidden: true,
-        ref: this.placeholderRef,
-        src: image.tracedSVG,
-        spreadProps: placeholderImageProps,
-        imageVariants: imageVariants,
-        generateSources: generateTracedSVGSources
-      }), this.state.isVisible && /*#__PURE__*/_react.default.createElement("picture", null, generateImageSources(imageVariants), /*#__PURE__*/_react.default.createElement(Img, {
-        alt: alt,
-        title: title,
-        sizes: image.sizes,
-        src: image.src,
-        crossOrigin: this.props.crossOrigin,
-        srcSet: image.srcSet,
-        style: imageStyle,
-        ref: this.imageRef,
-        onLoad: this.handleImageLoaded,
-        onError: this.props.onError,
-        itemProp: itemProp,
-        loading: loading,
-        draggable: draggable
-      })), this.addNoScript && /*#__PURE__*/_react.default.createElement("noscript", {
-        dangerouslySetInnerHTML: {
-          __html: noscriptImg((0, _extends2.default)({
-            alt: alt,
-            title: title,
-            loading: loading
-          }, image, {
-            imageVariants: imageVariants
-          }))
-        }
-      }));
-    }
-
-    if (fixed) {
-      var divStyle = (0, _extends2.default)({
-        position: "relative",
-        overflow: "hidden",
-        display: "inline-block",
-        width: image.width,
-        height: image.height
-      }, style);
-
-      if (style.display === "inherit") {
-        delete divStyle.display;
-      }
-
-      return /*#__PURE__*/_react.default.createElement(Tag, {
-        className: (className ? className : "") + " gatsby-image-wrapper",
-        style: divStyle,
-        ref: this.handleRef,
-        key: "fixed-" + JSON.stringify(image.srcSet)
-      }, bgColor && /*#__PURE__*/_react.default.createElement(Tag, {
-        "aria-hidden": true,
-        title: title,
-        style: (0, _extends2.default)({
-          backgroundColor: bgColor,
-          width: image.width,
-          opacity: !this.state.imgLoaded ? 1 : 0,
-          height: image.height
-        }, shouldFadeIn && delayHideStyle)
-      }), image.base64 && /*#__PURE__*/_react.default.createElement(Placeholder, {
-        ariaHidden: true,
-        ref: this.placeholderRef,
-        src: image.base64,
-        spreadProps: placeholderImageProps,
-        imageVariants: imageVariants,
-        generateSources: generateBase64Sources
-      }), image.tracedSVG && /*#__PURE__*/_react.default.createElement(Placeholder, {
-        ariaHidden: true,
-        ref: this.placeholderRef,
-        src: image.tracedSVG,
-        spreadProps: placeholderImageProps,
-        imageVariants: imageVariants,
-        generateSources: generateTracedSVGSources
-      }), this.state.isVisible && /*#__PURE__*/_react.default.createElement("picture", null, generateImageSources(imageVariants), /*#__PURE__*/_react.default.createElement(Img, {
-        alt: alt,
-        title: title,
-        width: image.width,
-        height: image.height,
-        sizes: image.sizes,
-        src: image.src,
-        crossOrigin: this.props.crossOrigin,
-        srcSet: image.srcSet,
-        style: imageStyle,
-        ref: this.imageRef,
-        onLoad: this.handleImageLoaded,
-        onError: this.props.onError,
-        itemProp: itemProp,
-        loading: loading,
-        draggable: draggable
-      })), this.addNoScript && /*#__PURE__*/_react.default.createElement("noscript", {
-        dangerouslySetInnerHTML: {
-          __html: noscriptImg((0, _extends2.default)({
-            alt: alt,
-            title: title,
-            loading: loading
-          }, image, {
-            imageVariants: imageVariants
-          }))
-        }
-      }));
-    }
-
-    return null;
-  };
-
-  return Image;
-}(_react.default.Component);
-
-Image.defaultProps = {
-  fadeIn: true,
-  durationFadeIn: 500,
-  alt: "",
-  Tag: "div",
-  // We set it to `lazy` by default because it's best to default to a performant
-  // setting and let the user "opt out" to `eager`
-  loading: "lazy"
-};
-
-var fixedObject = _propTypes.default.shape({
-  width: _propTypes.default.number.isRequired,
-  height: _propTypes.default.number.isRequired,
-  src: _propTypes.default.string.isRequired,
-  srcSet: _propTypes.default.string.isRequired,
-  base64: _propTypes.default.string,
-  tracedSVG: _propTypes.default.string,
-  srcWebp: _propTypes.default.string,
-  srcSetWebp: _propTypes.default.string,
-  media: _propTypes.default.string
-});
-
-var fluidObject = _propTypes.default.shape({
-  aspectRatio: _propTypes.default.number.isRequired,
-  src: _propTypes.default.string.isRequired,
-  srcSet: _propTypes.default.string.isRequired,
-  sizes: _propTypes.default.string.isRequired,
-  base64: _propTypes.default.string,
-  tracedSVG: _propTypes.default.string,
-  srcWebp: _propTypes.default.string,
-  srcSetWebp: _propTypes.default.string,
-  media: _propTypes.default.string,
-  maxWidth: _propTypes.default.number,
-  maxHeight: _propTypes.default.number
-});
-
-function requireFixedOrFluid(originalPropTypes) {
-  return function (props, propName, componentName) {
-    var _PropTypes$checkPropT;
-
-    if (!props.fixed && !props.fluid) {
-      throw new Error("The prop `fluid` or `fixed` is marked as required in `" + componentName + "`, but their values are both `undefined`.");
-    }
-
-    _propTypes.default.checkPropTypes((_PropTypes$checkPropT = {}, _PropTypes$checkPropT[propName] = originalPropTypes, _PropTypes$checkPropT), props, "prop", componentName);
-  };
-} // If you modify these propTypes, please don't forget to update following files as well:
-// https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-image/index.d.ts
-// https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-image/README.md#gatsby-image-props
-// https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/gatsby-image.md#gatsby-image-props
-
-
-Image.propTypes = {
-  resolutions: fixedObject,
-  sizes: fluidObject,
-  fixed: requireFixedOrFluid(_propTypes.default.oneOfType([fixedObject, _propTypes.default.arrayOf(fixedObject)])),
-  fluid: requireFixedOrFluid(_propTypes.default.oneOfType([fluidObject, _propTypes.default.arrayOf(fluidObject)])),
-  fadeIn: _propTypes.default.bool,
-  durationFadeIn: _propTypes.default.number,
-  title: _propTypes.default.string,
-  alt: _propTypes.default.string,
-  className: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.object]),
-  // Support Glamor's css prop.
-  critical: _propTypes.default.bool,
-  crossOrigin: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.bool]),
-  style: _propTypes.default.object,
-  imgStyle: _propTypes.default.object,
-  placeholderStyle: _propTypes.default.object,
-  placeholderClassName: _propTypes.default.string,
-  backgroundColor: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.bool]),
-  onLoad: _propTypes.default.func,
-  onError: _propTypes.default.func,
-  onStartLoad: _propTypes.default.func,
-  Tag: _propTypes.default.string,
-  itemProp: _propTypes.default.string,
-  loading: _propTypes.default.oneOf(["auto", "lazy", "eager"]),
-  draggable: _propTypes.default.bool
-};
-var _default = Image;
-exports.default = _default;
 
 /***/ }),
 
@@ -7872,242 +6635,6 @@ if (true) {
 var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
-
-
-/***/ }),
-
-/***/ "./node_modules/query-string/index.js":
-/*!********************************************!*\
-  !*** ./node_modules/query-string/index.js ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var strictUriEncode = __webpack_require__(/*! strict-uri-encode */ "./node_modules/strict-uri-encode/index.js");
-var objectAssign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
-var decodeComponent = __webpack_require__(/*! decode-uri-component */ "./node_modules/decode-uri-component/index.js");
-
-function encoderForArrayFormat(opts) {
-	switch (opts.arrayFormat) {
-		case 'index':
-			return function (key, value, index) {
-				return value === null ? [
-					encode(key, opts),
-					'[',
-					index,
-					']'
-				].join('') : [
-					encode(key, opts),
-					'[',
-					encode(index, opts),
-					']=',
-					encode(value, opts)
-				].join('');
-			};
-
-		case 'bracket':
-			return function (key, value) {
-				return value === null ? encode(key, opts) : [
-					encode(key, opts),
-					'[]=',
-					encode(value, opts)
-				].join('');
-			};
-
-		default:
-			return function (key, value) {
-				return value === null ? encode(key, opts) : [
-					encode(key, opts),
-					'=',
-					encode(value, opts)
-				].join('');
-			};
-	}
-}
-
-function parserForArrayFormat(opts) {
-	var result;
-
-	switch (opts.arrayFormat) {
-		case 'index':
-			return function (key, value, accumulator) {
-				result = /\[(\d*)\]$/.exec(key);
-
-				key = key.replace(/\[\d*\]$/, '');
-
-				if (!result) {
-					accumulator[key] = value;
-					return;
-				}
-
-				if (accumulator[key] === undefined) {
-					accumulator[key] = {};
-				}
-
-				accumulator[key][result[1]] = value;
-			};
-
-		case 'bracket':
-			return function (key, value, accumulator) {
-				result = /(\[\])$/.exec(key);
-				key = key.replace(/\[\]$/, '');
-
-				if (!result) {
-					accumulator[key] = value;
-					return;
-				} else if (accumulator[key] === undefined) {
-					accumulator[key] = [value];
-					return;
-				}
-
-				accumulator[key] = [].concat(accumulator[key], value);
-			};
-
-		default:
-			return function (key, value, accumulator) {
-				if (accumulator[key] === undefined) {
-					accumulator[key] = value;
-					return;
-				}
-
-				accumulator[key] = [].concat(accumulator[key], value);
-			};
-	}
-}
-
-function encode(value, opts) {
-	if (opts.encode) {
-		return opts.strict ? strictUriEncode(value) : encodeURIComponent(value);
-	}
-
-	return value;
-}
-
-function keysSorter(input) {
-	if (Array.isArray(input)) {
-		return input.sort();
-	} else if (typeof input === 'object') {
-		return keysSorter(Object.keys(input)).sort(function (a, b) {
-			return Number(a) - Number(b);
-		}).map(function (key) {
-			return input[key];
-		});
-	}
-
-	return input;
-}
-
-function extract(str) {
-	var queryStart = str.indexOf('?');
-	if (queryStart === -1) {
-		return '';
-	}
-	return str.slice(queryStart + 1);
-}
-
-function parse(str, opts) {
-	opts = objectAssign({arrayFormat: 'none'}, opts);
-
-	var formatter = parserForArrayFormat(opts);
-
-	// Create an object with no prototype
-	// https://github.com/sindresorhus/query-string/issues/47
-	var ret = Object.create(null);
-
-	if (typeof str !== 'string') {
-		return ret;
-	}
-
-	str = str.trim().replace(/^[?#&]/, '');
-
-	if (!str) {
-		return ret;
-	}
-
-	str.split('&').forEach(function (param) {
-		var parts = param.replace(/\+/g, ' ').split('=');
-		// Firefox (pre 40) decodes `%3D` to `=`
-		// https://github.com/sindresorhus/query-string/pull/37
-		var key = parts.shift();
-		var val = parts.length > 0 ? parts.join('=') : undefined;
-
-		// missing `=` should be `null`:
-		// http://w3.org/TR/2012/WD-url-20120524/#collect-url-parameters
-		val = val === undefined ? null : decodeComponent(val);
-
-		formatter(decodeComponent(key), val, ret);
-	});
-
-	return Object.keys(ret).sort().reduce(function (result, key) {
-		var val = ret[key];
-		if (Boolean(val) && typeof val === 'object' && !Array.isArray(val)) {
-			// Sort object keys, not values
-			result[key] = keysSorter(val);
-		} else {
-			result[key] = val;
-		}
-
-		return result;
-	}, Object.create(null));
-}
-
-exports.extract = extract;
-exports.parse = parse;
-
-exports.stringify = function (obj, opts) {
-	var defaults = {
-		encode: true,
-		strict: true,
-		arrayFormat: 'none'
-	};
-
-	opts = objectAssign(defaults, opts);
-
-	if (opts.sort === false) {
-		opts.sort = function () {};
-	}
-
-	var formatter = encoderForArrayFormat(opts);
-
-	return obj ? Object.keys(obj).sort(opts.sort).map(function (key) {
-		var val = obj[key];
-
-		if (val === undefined) {
-			return '';
-		}
-
-		if (val === null) {
-			return encode(key, opts);
-		}
-
-		if (Array.isArray(val)) {
-			var result = [];
-
-			val.slice().forEach(function (val2) {
-				if (val2 === undefined) {
-					return;
-				}
-
-				result.push(formatter(key, val2, result.length));
-			});
-
-			return result.join('&');
-		}
-
-		return encode(key, opts) + '=' + encode(val, opts);
-	}).filter(function (x) {
-		return x.length > 0;
-	}).join('&') : '';
-};
-
-exports.parseUrl = function (str, opts) {
-	return {
-		url: str.split('?')[0] || '',
-		query: parse(extract(str), opts)
-	};
-};
 
 
 /***/ }),
@@ -33181,64 +31708,6 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./node_modules/react-hot-loader/dist/react-hot-loader.production.min.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/react-hot-loader/dist/react-hot-loader.production.min.js ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-function _interopDefault(e){return e&&"object"==typeof e&&"default"in e?e.default:e}Object.defineProperty(exports,"__esModule",{value:!0});var React=_interopDefault(__webpack_require__(/*! react */ "react"));function AppContainer(e){return AppContainer.warnAboutHMRDisabled&&(AppContainer.warnAboutHMRDisabled=!0,console.error("React-Hot-Loader: misconfiguration detected, using production version in non-production environment."),console.error("React-Hot-Loader: Hot Module Replacement is not enabled.")),React.Children.only(e.children)}AppContainer.warnAboutHMRDisabled=!1;var hot=function e(){return e.shouldWrapWithAppContainer?function(e){return function(n){return React.createElement(AppContainer,null,React.createElement(e,n))}}:function(e){return e}};hot.shouldWrapWithAppContainer=!1;var areComponentsEqual=function(e,n){return e===n},setConfig=function(){},cold=function(e){return e},configureComponent=function(){};exports.AppContainer=AppContainer,exports.hot=hot,exports.areComponentsEqual=areComponentsEqual,exports.setConfig=setConfig,exports.cold=cold,exports.configureComponent=configureComponent;
-
-
-/***/ }),
-
-/***/ "./node_modules/react-hot-loader/index.js":
-/*!************************************************!*\
-  !*** ./node_modules/react-hot-loader/index.js ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-if (false) {} else if (false) {} else if (typeof window === 'undefined') {
-  // this is just server environment
-  module.exports = __webpack_require__(/*! ./dist/react-hot-loader.production.min.js */ "./node_modules/react-hot-loader/dist/react-hot-loader.production.min.js");
-} else if (true) {
-  module.exports = __webpack_require__(/*! ./dist/react-hot-loader.production.min.js */ "./node_modules/react-hot-loader/dist/react-hot-loader.production.min.js");
-  module.exports.AppContainer.warnAboutHMRDisabled = true;
-  module.exports.hot.shouldWrapWithAppContainer = true;
-} else { var jsFeaturesPresent, evalError, evalAllowed; }
-
-
-/***/ }),
-
-/***/ "./node_modules/react-hot-loader/root.js":
-/*!***********************************************!*\
-  !*** ./node_modules/react-hot-loader/root.js ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-if (true) {
-  var hot = __webpack_require__(/*! ./index */ "./node_modules/react-hot-loader/index.js").hot;
-  if (false) { var parent, cache; } else {
-    fallbackHot();
-  }
-} else {}
-
-function fallbackHot() {
-  exports.hot = function (a) {
-    return a;
-  };
-}
-
-
-/***/ }),
-
 /***/ "./node_modules/react-is/cjs/react-is.development.js":
 /*!***********************************************************!*\
   !*** ./node_modules/react-is/cjs/react-is.development.js ***!
@@ -34710,24 +33179,6 @@ if (false) {} else {
 if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ "./node_modules/scheduler/cjs/scheduler-tracing.development.js");
 }
-
-
-/***/ }),
-
-/***/ "./node_modules/strict-uri-encode/index.js":
-/*!*************************************************!*\
-  !*** ./node_modules/strict-uri-encode/index.js ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-module.exports = function (str) {
-	return encodeURIComponent(str).replace(/[!'()*]/g, function (c) {
-		return '%' + c.charCodeAt(0).toString(16).toUpperCase();
-	});
-};
 
 
 /***/ }),
@@ -37258,32 +35709,6 @@ if ( true && typeof window !== 'undefined' && typeof navigator !== 'undefined' &
 
 /***/ }),
 
-/***/ "./node_modules/styled-normalize/dist/index.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/styled-normalize/dist/index.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = exports.Normalize = exports.normalize = void 0;
-
-var _styledComponents = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
-
-var normalize = (0, _styledComponents.css)(["html{line-height:1.15;-webkit-text-size-adjust:100%;}body{margin:0;}main{display:block;}h1{font-size:2em;margin:0.67em 0;}hr{box-sizing:content-box;height:0;overflow:visible;}pre{font-family:monospace,monospace;font-size:1em;}a{background-color:transparent;}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted;}b,strong{font-weight:bolder;}code,kbd,samp{font-family:monospace,monospace;font-size:1em;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sub{bottom:-0.25em;}sup{top:-0.5em;}img{border-style:none;}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0;}button,input{overflow:visible;}button,select{text-transform:none;}button,[type=\"button\"],[type=\"reset\"],[type=\"submit\"]{-webkit-appearance:button;}button::-moz-focus-inner,[type=\"button\"]::-moz-focus-inner,[type=\"reset\"]::-moz-focus-inner,[type=\"submit\"]::-moz-focus-inner{border-style:none;padding:0;}button:-moz-focusring,[type=\"button\"]:-moz-focusring,[type=\"reset\"]:-moz-focusring,[type=\"submit\"]:-moz-focusring{outline:1px dotted ButtonText;}fieldset{padding:0.35em 0.75em 0.625em;}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal;}progress{vertical-align:baseline;}textarea{overflow:auto;}[type=\"checkbox\"],[type=\"radio\"]{box-sizing:border-box;padding:0;}[type=\"number\"]::-webkit-inner-spin-button,[type=\"number\"]::-webkit-outer-spin-button{height:auto;}[type=\"search\"]{-webkit-appearance:textfield;outline-offset:-2px;}[type=\"search\"]::-webkit-search-decoration{-webkit-appearance:none;}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}details{display:block;}summary{display:list-item;}template{display:none;}[hidden]{display:none;}"]);
-exports.normalize = normalize;
-var Normalize = (0, _styledComponents.createGlobalStyle)(normalize);
-exports.Normalize = Normalize;
-var _default = normalize;
-exports.default = _default;
-
-/***/ }),
-
 /***/ "./node_modules/stylis-rule-sheet/index.js":
 /*!*************************************************!*\
   !*** ./node_modules/stylis-rule-sheet/index.js ***!
@@ -37354,267 +35779,10 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ "./public/page-data/sq/d/1176552510.json":
-/*!***********************************************!*\
-  !*** ./public/page-data/sq/d/1176552510.json ***!
-  \***********************************************/
-/*! exports provided: data, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"data\":{\"placeholderImage\":{\"childImageSharp\":{\"fluid\":{\"base64\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADzklEQVQ4y3VVV2wUVxQdQPI3n0GASCI6IQnYdBBCFCWKEJFxEhBg00y1KEZC9PBBSCFgjNdl3bLGjSZAFOGl2PLaoiNYy3QhmigiRphmYs/svTnn7YyJZGeku/PmvXfPu/ec++5aC2L9lmsd5gzM8sbdFg3NXQ8LYfxi/tfZEZi9MM7/BHNBWEryoJzOyYNzjF/UzNiy3EHH+YNyrGVjCi04rVk4JPfN7C8ydUavXcr30pH5umR4nib185m5uQOzdNGQ3KfwS8Jea95X2R6wZQYES+zniwHYMZyqs/pk6M8/7Gup2lvvPLv/Sl6/bJLXDe/l8Z2GyPH8K/bqb0ts7oGvLojzZy4ZkW/N/TKanYXTvMiOIS0FYPOp0rqI4vmnqUWuVt2XisBVOVkclvqzjwTTNN23/ayT1N9nIxiFbzqM2XaMcoY0GRnBwqEHxuFIziVJGVUgM3qmq2cze+/S1AlFEjp4w+ypPnBd4O/QFxhTvZS7kTOm4EWWsfyETPtspzJiCEC+Wg2p6XSsHUg/Ly+fvdXU8UUOOCTgLQDHWFSTxG+M39NCsKP+yzL98526eFgeU1FzeuzHtzfHVFNGFwgPaI0y1p9AwNBMKFdz6KYTiYgsHZEvPBFRt4J41gqKNXdd8BZEZ7trAQsTL6Cwlv5aYwg/VRJWfrsKtomQkc1BRsZQPshOIKzj7rlg4SdCbn7qkSZlv9cassGlJvbNaAsKMJSIrptcpmtd2/B9uaz+pljcPU0sSnv52L+0eEs1uZOSrSFtD5QpMvJtyUfMuoioYxsNpa72obDosaeR9fcE9aSPbjdEwKPEd/lTS3+raQNKQHK7auJuLdxUqQUbzmjhxkpt/mDLxYq7DksKetRQlCA/DmddtHlaRdE1Sei6vX1QREpQBvBj9x26fkq54T1v3Wlzc1AZ2QRM4d1c812p/eFds0kBt0L/D9Qrp9kDMvVe3XNzLTHnUCxoMYmidOZF5wn70845Gn3aBwVPNPJVubfeCOhbWWHzMAR2HrfIstwWlMTTUQr26bI68UCDSD/+k21a8ktUqODua2waci/83Owp/6M2Mgtgbk2OIZbpNmxB7BqUHqk4UNpp/Pu9Aa09fFNQ+F5JGcOa+FacsA1YnCn6VLePdjKA7GfoeQRNZ6RMf8W4gBPYXGWHqx84WauCMu3TNIGyZg4BOIluZAQznSbuYz80oOxn0Rbknwo+blFNArMCWNBeHXLOCADOmKbbrTp4nd/6z1+A6dzkAWAxcEiAegG8L/AGYL4R4oVYGlQTXcbjvxN9kwdHMf4FM9WYJ9JzWs8AAAAASUVORK5CYII=\",\"aspectRatio\":1,\"src\":\"/static/4a9773549091c227cd2eb82ccd9c5e3a/630fb/logo.png\",\"srcSet\":\"/static/4a9773549091c227cd2eb82ccd9c5e3a/5db04/logo.png 75w,\\n/static/4a9773549091c227cd2eb82ccd9c5e3a/6d161/logo.png 150w,\\n/static/4a9773549091c227cd2eb82ccd9c5e3a/630fb/logo.png 300w,\\n/static/4a9773549091c227cd2eb82ccd9c5e3a/62b1f/logo.png 450w,\\n/static/4a9773549091c227cd2eb82ccd9c5e3a/bc59e/logo.png 512w\",\"sizes\":\"(max-width: 300px) 100vw, 300px\"}}}}}");
-
-/***/ }),
-
-/***/ "./public/page-data/sq/d/3794076007.json":
-/*!***********************************************!*\
-  !*** ./public/page-data/sq/d/3794076007.json ***!
-  \***********************************************/
-/*! exports provided: data, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"data\":{\"site\":{\"siteMetadata\":{\"title\":\"Gatsby Typescript Minimal\",\"siteUrl\":\"https://github.com/benbarber/gatsby-typescript-minimal\"}}}}");
-
-/***/ }),
-
-/***/ "./public/page-data/sq/d/63159454.json":
-/*!*********************************************!*\
-  !*** ./public/page-data/sq/d/63159454.json ***!
-  \*********************************************/
-/*! exports provided: data, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"data\":{\"site\":{\"siteMetadata\":{\"title\":\"Gatsby Typescript Minimal\",\"description\":\"A minimal, bare bones Typescript starter for Gatsby\",\"author\":\"@benbarber\"}}}}");
-
-/***/ }),
-
-/***/ "./src/components/footer.tsx":
-/*!***********************************!*\
-  !*** ./src/components/footer.tsx ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _public_page_data_sq_d_3794076007_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/3794076007.json */ "./public/page-data/sq/d/3794076007.json");
-var _public_page_data_sq_d_3794076007_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../public/page-data/sq/d/3794076007.json */ "./public/page-data/sq/d/3794076007.json", 1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
-
-
-
-const FooterContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].footer.withConfig({
-  displayName: "footer__FooterContainer"
-})([""]);
-const Copyright = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
-  displayName: "footer__Copyright"
-})(["text-align:center;font-size:0.8rem;margin:2rem 0;"]);
-
-const Footer = () => {
-  const data = _public_page_data_sq_d_3794076007_json__WEBPACK_IMPORTED_MODULE_0__.data;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FooterContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Copyright, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: data.site.siteMetadata.siteUrl + '/generate'
-  }, "Use this Template"), " | ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: data.site.siteMetadata.siteUrl + '/issues'
-  }, "Report an Issue"), " | ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    href: "https://www.gatsbyjs.org/docs/"
-  }, "Gatsby Docs")));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Footer);
-
-/***/ }),
-
-/***/ "./src/components/global-styles.tsx":
-/*!******************************************!*\
-  !*** ./src/components/global-styles.tsx ***!
-  \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
-
-const GlobalStyles = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["createGlobalStyle"])(["body{color:#222;font-family:-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,\"Helvetica Neue\",Arial,sans-serif;font-weight:400;line-height:1.5em;-moz-osx-font-smoothing:grayscale;}"]);
-/* harmony default export */ __webpack_exports__["default"] = (GlobalStyles);
-
-/***/ }),
-
-/***/ "./src/components/layout.tsx":
-/*!***********************************!*\
-  !*** ./src/components/layout.tsx ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_normalize__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-normalize */ "./node_modules/styled-normalize/dist/index.js");
-/* harmony import */ var styled_normalize__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_normalize__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
-/* harmony import */ var _global_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./global-styles */ "./src/components/global-styles.tsx");
-/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./footer */ "./src/components/footer.tsx");
-
-
-
-
-
-const AppContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "layout__AppContainer"
-})(["display:flex;flex-direction:column;min-height:100vh;"]);
-const Main = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].main.withConfig({
-  displayName: "layout__Main"
-})(["flex-grow:1;display:flex;position:relative;"]);
-
-const Layout = ({
-  children
-}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(AppContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_normalize__WEBPACK_IMPORTED_MODULE_1__["Normalize"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_global_styles__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Main, null, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
-
-/* harmony default export */ __webpack_exports__["default"] = (Layout);
-
-/***/ }),
-
-/***/ "./src/components/logo.tsx":
-/*!*********************************!*\
-  !*** ./src/components/logo.tsx ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _public_page_data_sq_d_1176552510_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/1176552510.json */ "./public/page-data/sq/d/1176552510.json");
-var _public_page_data_sq_d_1176552510_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../public/page-data/sq/d/1176552510.json */ "./public/page-data/sq/d/1176552510.json", 1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby-image */ "./node_modules/gatsby-image/index.js");
-/* harmony import */ var gatsby_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(gatsby_image__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-
-const Logo = () => {
-  const data = _public_page_data_sq_d_1176552510_json__WEBPACK_IMPORTED_MODULE_0__.data;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(gatsby_image__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    fluid: data.placeholderImage.childImageSharp.fluid
-  });
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Logo);
-
-/***/ }),
-
-/***/ "./src/components/seo.tsx":
-/*!********************************!*\
-  !*** ./src/components/seo.tsx ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _public_page_data_sq_d_63159454_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/63159454.json */ "./public/page-data/sq/d/63159454.json");
-var _public_page_data_sq_d_63159454_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../public/page-data/sq/d/63159454.json */ "./public/page-data/sq/d/63159454.json", 1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-helmet */ "react-helmet");
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-
-const SEO = ({
-  description,
-  lang,
-  meta,
-  title
-}) => {
-  const {
-    site
-  } = _public_page_data_sq_d_63159454_json__WEBPACK_IMPORTED_MODULE_0__.data;
-  const metaDescription = description || site.siteMetadata.description;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_helmet__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    htmlAttributes: {
-      land: lang || "en"
-    },
-    title: title,
-    titleTemplate: `%s | ${site.siteMetadata.title}`,
-    meta: [{
-      name: `description`,
-      content: metaDescription
-    }, {
-      property: `og:title`,
-      content: title
-    }, {
-      property: `og:description`,
-      content: metaDescription
-    }, {
-      property: `og:type`,
-      content: `website`
-    }, {
-      name: `twitter:card`,
-      content: `summary`
-    }, {
-      name: `twitter:creator`,
-      content: site.siteMetadata.author
-    }, {
-      name: `twitter:title`,
-      content: title
-    }, {
-      name: `twitter:description`,
-      content: metaDescription
-    }].concat(meta || [])
-  });
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (SEO);
-
-/***/ }),
-
-/***/ "./src/pages/index.tsx":
-/*!*****************************!*\
-  !*** ./src/pages/index.tsx ***!
-  \*****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.tsx");
-/* harmony import */ var _components_logo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/logo */ "./src/components/logo.tsx");
-/* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.tsx");
-
-
-
-
-
-
-const LogoContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
-  displayName: "pages__LogoContainer"
-})(["display:flex;flex:1;align-items:center;justify-content:center;min-height:100%;> div{max-width:400px;text-align:center;padding:20px;}a{display:block;max-width:200px;margin:0 auto;}"]);
-
-const IndexPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_seo__WEBPACK_IMPORTED_MODULE_5__["default"], {
-  title: "Home"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LogoContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_logo__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Welcome to Gatsby Election App", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Let's go to caste your vote", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-  to: "/app/election"
-}, "Election Page"))));
-
-/* harmony default export */ __webpack_exports__["default"] = (IndexPage);
-
-/***/ }),
-
 /***/ "@reach/router":
-/*!*************************************************************************************************!*\
-  !*** external "D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\@reach\\router\\index.js" ***!
-  \*************************************************************************************************/
+/*!****************************************************************************************************************************************************************************!*\
+  !*** external "C:\\myContent\\panacloud\\repos\\defi-dapps-solidity-smart-contracts\\step36_sol_web3_gatsby_votingDApp\\frontend\\node_modules\\@reach\\router\\index.js" ***!
+  \****************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -37633,69 +35801,14 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_fs__;
 
 /***/ }),
 
-/***/ "lodash/concat":
-/*!******************************************************************************************!*\
-  !*** external "D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\concat.js" ***!
-  \******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_concat__;
-
-/***/ }),
-
-/***/ "lodash/flatten":
-/*!*******************************************************************************************!*\
-  !*** external "D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\flatten.js" ***!
-  \*******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_flatten__;
-
-/***/ }),
-
-/***/ "lodash/get":
-/*!***************************************************************************************!*\
-  !*** external "D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\get.js" ***!
-  \***************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_get__;
-
-/***/ }),
-
-/***/ "lodash/isObject":
-/*!********************************************************************************************!*\
-  !*** external "D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\isObject.js" ***!
-  \********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_isObject__;
-
-/***/ }),
-
 /***/ "lodash/merge":
-/*!*****************************************************************************************!*\
-  !*** external "D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\merge.js" ***!
-  \*****************************************************************************************/
+/*!********************************************************************************************************************************************************************!*\
+  !*** external "C:\\myContent\\panacloud\\repos\\defi-dapps-solidity-smart-contracts\\step36_sol_web3_gatsby_votingDApp\\frontend\\node_modules\\lodash\\merge.js" ***!
+  \********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_merge__;
-
-/***/ }),
-
-/***/ "lodash/uniqBy":
-/*!******************************************************************************************!*\
-  !*** external "D:\\todo_DAPP\\Election-DApp\\frontend\\node_modules\\lodash\\uniqBy.js" ***!
-  \******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_uniqBy__;
 
 /***/ }),
 
