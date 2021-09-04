@@ -1,0 +1,52 @@
+{
+  "name": "gatsby-typescript-minimal",
+  "private": true,
+  "description": "A minimal, bare bones Typescript starter for Gatsby",
+  "version": "0.1.0",
+  "author": "waris",
+  "dependencies": {
+    "@types/bn.js": "^5.1.0",
+    "gatsby": "^2.13.64",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "web3": "^1.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@types/react": "^16.8.8",
+    "@types/react-dom": "^16.8.2",
+    "gatsby-plugin-manifest": "^2.2.5",
+    "gatsby-plugin-offline": "^3.0.6",
+    "gatsby-plugin-sharp": "^2.2.11",
+    "gatsby-plugin-sitemap": "^2.2.1",
+    "gatsby-plugin-typescript": "^2.0.11",
+    "prettier": "^1.18.2",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.3.3333"
+  },
+  "keywords": [
+    "gatsby",
+    "typescript",
+    "minimal",
+    "starter"
+    ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benbarber/gatsby-typescript-minimal"
+  },
+  "bugs": {
+    "url": "https://github.com/benbarber/gatsby-typescript-minimal/issues"
+  }
+}
