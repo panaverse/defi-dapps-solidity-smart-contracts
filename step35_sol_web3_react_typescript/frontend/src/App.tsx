@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Web3 from "web3";
 import EthContract from 'web3-eth-contract'
 import Navbar from "./Navbar";
-import Marketplace from "./abi/Marketplace.json";
+import Marketplace from "./abis/Marketplace.json";
 import {Marketplace as MPType, ProductCreated} from "../types/web3-v1-contracts/Marketplace"
 import Main from "./Main";
 import loader from "./assets/loading.gif";
