@@ -1,5 +1,7 @@
 import React, { useEffect, useState, useRef } from "react"
 import Web3 from "web3";
+import { Contract } from "web3-eth-contract";
+import { AbiItem } from 'web3-utils'
 import socialMedia from '../abis/SocialMedia.json'
 
 declare global {
@@ -8,19 +10,34 @@ declare global {
   }
 }
 
+interface posts {
+  post: {
+    id: string
+    postedBy: string
+    text: string
+  }
+  comments: comment[]
+}
+
+type comment = {
+  id: string,
+  postId: string
+  text: string
+  postedBy: string
+}
 
 
 export default function Home() {
 
   const [user, setUser] = useState<null | string>(null)
   const [web3, setWeb3] = useState<undefined | Web3>()
-  const [contract, setContract] = useState<any>()
-  const [allPosts, setAllPosts] = useState<any>([])
+  const [contract, setContract] = useState<Contract>()
+  const [allPosts, setAllPosts] = useState<posts[]>([])
 
   const postText = useRef<any>(null);
   const commentText = useRef<any>([])
 
-  // Event listeners
+  // Event listeners of web3 
   window.ethereum.on('connect', (connectInfo: any) => {
     console.log("connectInfo", connectInfo)
   });
@@ -34,10 +51,11 @@ export default function Home() {
 
   window.ethereum.on('disconnect', (error: any) => {
     console.log("Metamask Disconnected")
-    console.log("error", error)
+    alert(`${error}`)
   });
 
 
+  // function that loads and sets up web3
   const loadWeb3 = async () => {
 
     if (Web3.givenProvider) {
@@ -58,12 +76,17 @@ export default function Home() {
 
   }
 
+
+  // initialize web3 on page load
+
   useEffect(() => {
     const web3Init = async () => await loadWeb3()
     web3Init()
   }, [])
 
 
+
+  // fetch contract once the web3 has been initialized
   useEffect(() => {
 
 
@@ -71,7 +94,7 @@ export default function Home() {
 
       const fetchContract = async () => {
         const networkId = await web3.eth.net.getId()
-        const abi = socialMedia.abi as any
+        const abi = socialMedia.abi as AbiItem | AbiItem[]
         const networkInfo = socialMedia.networks as any
         const networkData = networkInfo[networkId]
 
@@ -96,6 +119,7 @@ export default function Home() {
 
 
 
+  // get posts once the contract has been fetched 
   useEffect(() => {
     if (contract) {
       const getPosts = async () => await fetchPosts()
@@ -108,7 +132,7 @@ export default function Home() {
 
   const createPost = async () => {
 
-    const postTx = await contract.methods.createPost(postText.current.value).send({ from: user })
+    const postTx = await contract!.methods.createPost(postText.current.value).send({ from: user })
     setAllPosts((posts: any) => [...posts, { post: postTx.events.postCreated.returnValues, comments: [] }])
 
     postText.current.value = null
@@ -118,7 +142,7 @@ export default function Home() {
 
     commentText.current[postId].focus()
 
-    const postTx = await contract.methods.createComment(commentText.current[postId].value, postId).send({ from: user })
+    const postTx = await contract!.methods.createComment(commentText.current[postId].value, postId).send({ from: user })
 
     setAllPosts((posts: any) => posts.map((val: any) => {
 
@@ -136,21 +160,21 @@ export default function Home() {
 
   const fetchPosts = async () => {
 
-    const count = await contract.methods.postCount().call()
+    const count = await contract!.methods.postCount().call()
 
 
     let data = [];
 
     for (let i = 1; i <= count; i++) {
 
-      const fetchPosts = await contract.methods.posts(i).call()
-      const commentCount = await contract.methods.commentCount(i).call()
+      const fetchPosts = await contract!.methods.posts(i).call()
+      const commentCount = await contract!.methods.commentCount(i).call()
 
       let commentBuffer = []
 
       if (commentCount > 0) {
         for (let j = 1; j <= commentCount; j++) {
-          const fetchComments = await contract.methods.comments(i, j).call()
+          const fetchComments = await contract!.methods.comments(i, j).call()
 
           commentBuffer.push(fetchComments)
         }
