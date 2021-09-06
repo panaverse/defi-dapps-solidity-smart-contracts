@@ -40,7 +40,7 @@ const App : React.FC<{}> = ({}) => {
         });
         await loadBlockchainData()
         setLoading(false);
-    } catch (error) {
+    } catch (error:any) {
       window.alert(error.message);
       setLoading(false)
     } 
@@ -60,7 +60,7 @@ const App : React.FC<{}> = ({}) => {
         });
         await loadBlockchainData()
         setLoading(false);
-    } catch (error) {
+    } catch (error:any) {
       window.alert(error.message);
     }
   };
