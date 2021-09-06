@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "generate-types": "typechain --target=web3-v1 'abi/*.json'",
+    "generate-types": "typechain --target=web3-v1 \"/abi/*.json\"" ,
     "postinstall": "yarn generate-types",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node-dev --respawn index.ts "
