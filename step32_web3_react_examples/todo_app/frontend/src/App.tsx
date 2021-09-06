@@ -68,7 +68,7 @@ function App() {
         await window.ethereum.enable();
 
         /* connect to metamask's localhost:8545 network */
-        const web3 = new Web3("http://localhost:8545");
+        const web3 = new Web3(Web3.givenProvider || "http://localhost:8545");
 
         /* initialize our contract with contract address(copy this from ganache) and contract's ABI */
         const todoList = ((new web3.eth.Contract(TODO_LIST_ABI as any, TODO_LIST_ADDRESS)) as any) as TodoList;

@@ -17,4 +17,12 @@ You can obtain your smart contract's address from Transaction Tab of Ganache
 ![transaction](img/transactionScreen.png)
 
 ## Step 4
+Open MetaMask extension and switch network to custom RPC. Enter Network Name of your choice, Paste RPC present in Ganche in the New RPC Url field. Enter 1337 in the field ChainId and Click on Save.
+![customNetwork](img/customNetwork.png)
+
+## Step 5
+Now click on the Account Icon in the top-right corner, and click on Import account. Paste the private key of any account present in Ganache. This will allow Metamask to send transactions to the contract deployed in Ganache.
+![importAccount](img/importAccount.png)
+
+## Step 6
 Run npm start
