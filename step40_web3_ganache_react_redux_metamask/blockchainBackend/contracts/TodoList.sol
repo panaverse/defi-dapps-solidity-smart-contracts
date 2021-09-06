@@ -36,9 +36,19 @@ contract TodoList {
   }
 
   function toggleCompleted(uint _id) public {
-    Task memory _task = tasks[_id];
-    _task.completed = !_task.completed;
-    tasks[_id] = _task;
+
+    uint indexToBeUpdated;
+    
+    for (uint i=1; i<=taskCount; i++) {
+      if (tasks[i].id == _id) {
+        indexToBeUpdated = i;
+        break;
+      }
+    }
+
+    Task memory _task = tasks[indexToBeUpdated];
+    _task.completed = true;
+    tasks[indexToBeUpdated] = _task;
     emit TaskCompleted(_id, _task.completed);
   }
 
