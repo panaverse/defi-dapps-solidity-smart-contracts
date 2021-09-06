@@ -24,3 +24,16 @@ You can see a transaction of contract creation in the Transaction tab.
 
 Great! Now follow the instructions in frontend folder to connect your local blockchain with React.
 
+## Note
+if make any changes in TodoList.sol then abi(json representation of solidity contract) needs to regenerate. 
+
+1) To do this goto
+http://remix.ethereum.org/
+inside contracts folder create a new file e.g 4_todoList.sol and copy your TodoList.sol code inside and press Solidity Compiler button. 
+![remix](img/remix-1.png)
+
+2) Then click on Blue compile button. It will compile the code and generate abi
+![remixCompiler](img/remix-2.png)
+
+3) Click on ABI button to copy json code and paste it inside frontend > abi > todoList.json file
+![abi](img/remix-3.png)
