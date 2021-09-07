@@ -26,6 +26,8 @@ type comment = {
   postedBy: string
 }
 
+const isBrowser = () => typeof window !== "undefined"
+
 
 export default function Home() {
 
@@ -38,18 +40,18 @@ export default function Home() {
   const commentText = useRef<any>([])
 
   // Event listeners of web3 
-  window.ethereum.on('connect', (connectInfo: any) => {
+  isBrowser() && window.ethereum.on('connect', (connectInfo: any) => {
     console.log("connectInfo", connectInfo)
   });
 
-  window.ethereum.on('accountsChanged', function (accounts: any) {
+  isBrowser() && window.ethereum.on('accountsChanged', function (accounts: any) {
 
     console.log(accounts)
     setUser(accounts[0])
 
   })
 
-  window.ethereum.on('disconnect', (error: any) => {
+  isBrowser() && window.ethereum.on('disconnect', (error: any) => {
     console.log("Metamask Disconnected")
     alert(`${error}`)
   });

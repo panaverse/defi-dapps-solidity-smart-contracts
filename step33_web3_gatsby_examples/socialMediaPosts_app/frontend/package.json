@@ -6,6 +6,7 @@
   "author": "waris",
   "dependencies": {
     "@types/bn.js": "^5.1.0",
+    "electron": "^14.0.0",
     "gatsby": "^2.13.64",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -32,7 +33,7 @@
     "typescript",
     "minimal",
     "starter"
-    ],
+  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",

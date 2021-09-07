@@ -1,0 +1,1 @@
+export const TODO_LIST_ADDRESS = "enter_your_smart_contract_address_here";
