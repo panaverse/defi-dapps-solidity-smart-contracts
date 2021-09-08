@@ -58,6 +58,7 @@ In `index.ts`, we instantiate a `DaiToken` object, and then, play with it.
 Run the project with the following commands:
 
 ```bash
+npm link typescript
 npm start
 ```
 

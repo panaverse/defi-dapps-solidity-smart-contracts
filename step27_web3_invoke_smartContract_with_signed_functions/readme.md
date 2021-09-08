@@ -116,6 +116,7 @@ const contractAddress = "CONTRACT_ADDRESS";
 Run the project with the following command:
 
 ```bash
+npm link typescript
 npm start
 ```
 

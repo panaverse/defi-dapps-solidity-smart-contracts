@@ -30,6 +30,7 @@ In `index.ts`, we use the ABI and address of DAI to instantiate an ERC20Token ob
 Run the project with the following commands:
 
 ```bash
+npm link typescript
 npm start
 ```
 

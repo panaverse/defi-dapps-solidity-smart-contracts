@@ -28,6 +28,7 @@ In `EthNetwork.ts`, we have implemented different methods to fetch and explore E
 Run the project with the following command:
 
 ```bash
+npm link typescript
 npm start
 ```
 

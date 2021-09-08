@@ -69,8 +69,16 @@ const accountAddress = "0x53d284357ec70ce289d6d64134dfac8e511c8a3d";
 
 ## Step 6
 
-Now, run the project with the following two commands:
+Run the project with the following commands:
 
 ```bash
+npm link typescript
 npm start
+```
+
+or with these commands.
+
+```bash
+tsc
+node index
 ```

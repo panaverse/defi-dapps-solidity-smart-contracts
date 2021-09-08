@@ -75,6 +75,7 @@ const smartContractByteCode = "PASTE_CONTRACT_BYTECODE";
 Run the project with the following command:
 
 ```bash
+npm link typescript
 npm start
 ```
 

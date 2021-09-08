@@ -59,6 +59,7 @@ You will see in the code that here we have explicitly signed our transaction usi
 Run the project with the following command:
 
 ```bash
+npm link typescript
 npm start
 ```
 

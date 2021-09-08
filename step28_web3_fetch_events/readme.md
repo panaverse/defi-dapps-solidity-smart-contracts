@@ -30,6 +30,7 @@ const RPC_ENDPOINT = `https://${network}.infura.io/v3/${INFURA_PROJECT_ID}`;
 Run the project with the following command:
 
 ```bash
+npm link typescript
 npm start
 ```
 
