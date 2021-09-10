@@ -73,7 +73,9 @@ We want to create a Payment Splitter smart contract that will distribute the pay
 
 [HOW to Use ARBITRUM?! Is it All Just Hype?!](https://www.youtube.com/watch?v=LNBSPMQ-xr4)
 
-[](https://www.youtube.com/watch?v=H32dTx7NjzI)
+[How To Add Arbitrum Network To MetaMask & Bridge Ethereum](https://www.youtube.com/watch?v=H32dTx7NjzI)
+
+[The comparison of Gas fees on Layer 2](https://l2fees.info/)
 
 [Arbitrum Developer Quickstart](https://developer.offchainlabs.com/docs/developer_quickstart)
 
