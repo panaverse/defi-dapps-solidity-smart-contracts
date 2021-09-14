@@ -391,7 +391,7 @@ ReactDOM.render(
 
 ## Step 16: Environment Variables
 
-Our `AppContextProvider` component uses `MyToken` and `FarmToken` contract addresses from environment. Let's define them in `react-app/.env` file. I have provided my `MyToken` and `FarmToken` contract addresses in `react-app/.env.example`; feel free to use them or use your own contract addresses.
+Our `AppContextProvider` component uses `MyToken` and `FarmToken` contract addresses from environment. Let's define them in `react-app/.env` file. I have provided my `MyToken` and `FarmToken` contract addresses in `react-app/.env.example`; replace them with your own contract addresses.
 
 ```
 REACT_APP_MY_TOKEN_CONTRACT_ADDRESS = 0x0eF6D64170a6C430A671A8b518b95b535E5deE86
