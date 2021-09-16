@@ -256,6 +256,13 @@ export const AppContextProvider: FC = ({ children }) => {
       if (!connected || !web3 || !myToken || !account) {
         throw ConnectToMetaMaskError;
       }
+      // Remove previous subscriptions.
+      web3.eth.clearSubscriptions((err, result) => {
+        if (err) {
+          throw ErrorUpdatingOnSubscribedValue;
+        }
+        console.log("Cleared previous subscriptions!");
+      })
       // Subscribe to Approval event from `MyToken` contract.
       myToken.events.Approval(async (err, result) => {
         if (err) {
@@ -311,11 +318,13 @@ export const AppContextProvider: FC = ({ children }) => {
    * Note: We are using `myToken` in the dependency list instead of `web3`. This
    * is to make sure that `myToken` state value is set before we try to
    * subscribe to events.
+   * Note: We are also using `account` in the dependency list so that our DApp
+   * clears previous subscriptions and subscribes again with the new account.
    * Note: Try to play with the dependency list. 😉
    */
   useEffect(() => {
     subscribeForBalanceUpdates();
-  }, [myToken]);
+  }, [myToken, account]);
 
   const value: State = {
     // ...initialState,
