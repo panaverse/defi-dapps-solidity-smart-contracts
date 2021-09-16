@@ -1,8 +1,8 @@
-const MyERC20Token = artifacts.require("MyERC20Token");
+const MyToken = artifacts.require("MyToken");
 const FarmToken = artifacts.require("FarmToken");
 
 module.exports = async callback => {
-  const myToken = await MyERC20Token.deployed();
+  const myToken = await MyToken.deployed();
   const farmToken = await FarmToken.deployed();
   const accounts = await web3.eth.getAccounts();
 
