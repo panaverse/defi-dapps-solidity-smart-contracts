@@ -53,7 +53,7 @@
   "sourceMap": "66:352:0:-;;;113:10;90:33;;;;;;;;;;;;;;;;;;;;66:352;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:352:0;;;;;;;",
   "deployedSourceMap": "66:352:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:352:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;127:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;90:33;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;313:103;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;313:103:0;;;;;;;;;;;;;;;;;:::i;:::-;;127:36;;;;:::o;90:33::-;;;;;;;;;;;;;:::o;313:103::-;225:5;;;;;;;;;;;211:19;;:10;:19;;;196:101;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;402:9;375:24;:36;;;;313:103;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Migrations {\n  address public owner = msg.sender;\n  uint public last_completed_migration;\n\n  modifier restricted() {\n    require(\n      msg.sender == owner,\n      \"This function is restricted to the contract's owner\"\n    );\n    _;\n  }\n\n  function setCompleted(uint completed) public restricted {\n    last_completed_migration = completed;\n  }\n}\n",
-  "sourcePath": "C:\\Users\\ASIF KAMRAN\\Downloads\\defi-dapps-solidity-smart-contracts-main\\defi-dapps-solidity-smart-contracts-main\\step33_web3_gatsby_examples\\socialMediaPosts_app\\backend\\contracts\\Migrations.sol",
+  "sourcePath": "C:\\Users\\ASIF KAMRAN\\Downloads\\defi-dapps-solidity-smart-contracts-main\\defi-dapps-solidity-smart-contracts-main\\step33_web3_gatsby_examples\\socialMediaPosts_app_redux\\backend\\contracts\\Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -915,12 +915,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x5678ec95e9Cc71b4a50Bb62e10a7B3144eD68c22",
-      "transactionHash": "0x0c98783e90abee21014abf8d498dd54a46d5c84a0ded3b97ab325ef80ea6b21b"
+      "address": "0x70480DC2595475D8B2aad55FA8046Da100c3B136",
+      "transactionHash": "0x21161da9e9e80f22f74679514206838c8c75176229f4b67aff22e678dd8eec17"
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-09-12T09:25:54.243Z",
+  "updatedAt": "2021-09-18T16:17:44.629Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

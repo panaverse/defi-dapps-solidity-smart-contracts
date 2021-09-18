@@ -16,7 +16,7 @@ const initialState: StateType = {
       }
 }
 
-const SocialMediaSlice = createSlice({
+const votingSlice = createSlice({
     name: "votingslice",
     initialState,
     reducers: {
@@ -26,5 +26,5 @@ const SocialMediaSlice = createSlice({
     },
 });
 
-export default SocialMediaSlice.reducer
-export const { setVote } = SocialMediaSlice.actions
+export default votingSlice.reducer
+export const { setVote } = votingSlice.actions

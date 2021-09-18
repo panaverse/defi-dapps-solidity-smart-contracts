@@ -36,8 +36,7 @@ const SocialMediaSlice = createSlice({
     initialState,
     reducers: {
         setPost: (state, { payload }: PayloadAction<SocialMediaType>) => {              
-            state.posts = payload
-            console.log("state.posts", state.posts)            
+            state.posts = payload                      
         },        
         addPost: (state, { payload }: PayloadAction<Post>) => {
             if (state.posts) {

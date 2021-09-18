@@ -5,8 +5,9 @@ import { AbiItem } from 'web3-utils'
 import socialMedia from '../abis/SocialMedia.json'
 import { useDispatch, useSelector} from 'react-redux';
 import { setPost, addPost, addComment } from '../redux/slice';
+import { clearWeb3, initWeb3 } from '../redux/web3slice';
 import { RootStateType } from "../redux/store";
-import { useStyles } from "../style/Style";
+import { useStyles } from "../style/style";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 
@@ -38,30 +39,30 @@ const isBrowser = () => typeof window !== "undefined"
 export default function Home() {
 
   const classes = useStyles();
-  const [user, setUser] = useState<null | string>(null)
-  const [web3, setWeb3] = useState<undefined | Web3>()
-  const [contract, setContract] = useState<Contract>()
+  const [user, setUser] = useState<string|null>(null)
+  const [web3, setWeb3] = useState<Web3|null>()
+  const [contract, setContract] = useState<Contract|null>()
   const [allPosts, setAllPosts] = useState<posts[]>([])
 
   const postText = useRef<any>(null);
   const commentText = useRef<any>([])
 
   const dispatch = useDispatch();
-  const data = useSelector((state: RootStateType) => { return state.posts?.posts})
-  
+  const data = useSelector((state: RootStateType) => { return state.SocialMediaReducer.posts?.posts})
+  const web3Setup = useSelector((state: RootStateType) => { return state.web3Reducer.data})
+
   // Event listeners of web3 
   isBrowser() && window.ethereum.on('connect', (connectInfo: any) => {
     console.log("connectInfo", connectInfo)
   });
 
-  isBrowser() && window.ethereum.on('accountsChanged', function (accounts: any) {
-    console.log(accounts)
-    setUser(accounts[0])
-
+  isBrowser() && window.ethereum.on('accountsChanged', function (accounts: any) { 
+    dispatch(initWeb3({user:accounts[0], web3:web3Setup.web3, contract:web3Setup.contract})) 
   })
 
   isBrowser() && window.ethereum.on('disconnect', (error: any) => {
     console.log("Metamask Disconnected")
+    dispatch(clearWeb3())
     alert(`${error}`)
   });
 
@@ -72,12 +73,26 @@ export default function Home() {
     if (Web3.givenProvider) {
       const web3 = new Web3(Web3.givenProvider);
       await Web3.givenProvider.enable();
-      const addresses = await web3.eth.getAccounts();
-      setUser(addresses[0])
-      console.log("addresss = ", addresses);
-      setWeb3(web3)
+      const addresses = await web3.eth.getAccounts();      
+      console.log("addresss = ", addresses);           
+
+      const networkId = await web3.eth.net.getId()
+      const abi = socialMedia.abi as AbiItem | AbiItem[]
+      const networkInfo = socialMedia.networks as any
+      const networkData = networkInfo[networkId]
+
+      if (networkData) {
+        const smartContract = new web3.eth.Contract(abi, networkData.address)       
+        dispatch(initWeb3({user:addresses[0], web3:web3, contract:smartContract}))  
+      }
+      else {
+        dispatch(clearWeb3())
+        alert('Social Media contract not deployed to this network')
+      }
+            
     }
     else {
+      dispatch(clearWeb3())
       console.log("Error in loading web3");
     }
   }
@@ -93,26 +108,11 @@ export default function Home() {
     setAllPosts(data || [])
   },[data])
 
-  // fetch contract once the web3 has been initialized
-  useEffect(() => {
-    if (web3) {
-      const fetchContract = async () => {
-        const networkId = await web3.eth.net.getId()
-        const abi = socialMedia.abi as AbiItem | AbiItem[]
-        const networkInfo = socialMedia.networks as any
-        const networkData = networkInfo[networkId]
-
-        if (networkData) {
-          const smartContract = new web3.eth.Contract(abi, networkData.address)
-          setContract(smartContract)
-        }
-        else {
-          alert('Social Media contract not deployed to this network')
-        }
-      }
-      fetchContract()
-    }
-  }, [web3])
+  useEffect(()=>{
+    setWeb3(web3Setup.web3)
+    setUser(web3Setup.user)
+    setContract(web3Setup.contract)
+  },[web3Setup])
 
   // get posts once the contract has been fetched 
   useEffect(() => {

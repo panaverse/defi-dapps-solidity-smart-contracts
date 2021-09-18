@@ -1,15 +1,22 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { combineReducers, configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 import SocialMediaReducer from './slice';
-import { useDispatch, useSelector, TypedUseSelectorHook } from 'react-redux';
+import { web3Reducer } from './web3slice';
 
-const store = configureStore({
-    reducer : SocialMediaReducer,
+const parentReducer = combineReducers({
+    SocialMediaReducer: SocialMediaReducer,
+    web3Reducer: web3Reducer,    
 })
 
-export type AppDispatch = typeof store.dispatch;
-export type RootStateType = ReturnType<typeof SocialMediaReducer>;
+const customizedMiddleware = getDefaultMiddleware({
+  serializableCheck: false
+})
 
-export const useAppDispatch = () => useDispatch<AppDispatch>();
-export const useAppSelector: TypedUseSelectorHook<RootStateType> = useSelector
+const store = configureStore({
+    reducer : parentReducer,
+    middleware: customizedMiddleware,
+})
 
+export type RootStateType = ReturnType<typeof parentReducer>;
 export default store;
+
+
