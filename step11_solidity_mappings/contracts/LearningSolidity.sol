@@ -14,6 +14,7 @@ contract LearningSolidity {
     }
       
     // Creating mapping
+    // keyword mapping is used to declare a mapping
     mapping (address => Student) result;
     address[] student_result;
     Student student;
@@ -37,8 +38,8 @@ contract LearningSolidity {
         return student_result;
     }
   
-    // Function to count number 
-    // of values in a mapping
+    // Function to count number of values in a mapping
+    
     function count_students(
     ) view public returns (uint) {
         return student_result.length;
