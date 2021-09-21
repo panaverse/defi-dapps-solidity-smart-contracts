@@ -7,6 +7,8 @@ contract LearningSolidity{
    //Declare an Event
 event Deposit(address indexed _from, uint _value);
 
+
+ // Defining a function for logging event 
  function deposit() public payable {      
       
 //Emit an event
