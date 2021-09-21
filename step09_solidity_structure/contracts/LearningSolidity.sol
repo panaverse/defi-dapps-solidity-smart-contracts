@@ -6,6 +6,7 @@ contract LearningSolidity{
     
 
    // Declaring a structure
+   // struct keyword is used to declare a structure
    struct Book { 
       string name;
       string writter;
@@ -16,24 +17,21 @@ contract LearningSolidity{
    // Declaring a structure object
    Book book1;
   
-   // Assigning values to the fields 
-   // for the structure object book2
+   // Assigning values to the fields of the structure object book2
    Book book2 
-     = Book("Building Ethereum DApps", 
-            "Roberto Infante ", 
+     = Book("A smarter way to learn python", 
+            "Mark Myers", 
              2, false);
   
-   // Defining a function to set values 
-   // for the fields for structure book1
+   // Defining a function to set values for the fields of structure book1
    function set_book_detail() public {
-      book1 = Book("Introducing Ethereum and Solidity", 
-                   "Chris Dannen", 
+      book1 = Book("A smarter way to learn javascript", 
+                   "Mark Myers", 
                     1, true);
    }
   
   
-   // Defining function to print 
-   // book2 details
+   // Defining function to return book2 details
    function book_info(
    )public view returns (
      string memory, string memory, uint, bool) {  
@@ -42,8 +40,7 @@ contract LearningSolidity{
                book2.id, book2.available);  
     } 
      
-   // Defining function to print 
-   // book1 details
+   // Defining function to return book1 details
    function get_details(
    ) public view returns (string memory, uint) {
       return (book1.name, book1.id);
