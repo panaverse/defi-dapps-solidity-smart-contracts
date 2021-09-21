@@ -1,22 +1,33 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity ^0.8.6;
+pragma solidity >=0.7.0 <0.9.0;
 
 contract LearningSolidity{
     
-   enum FreshJuiceSize{ SMALL, MEDIUM, LARGE }
-   FreshJuiceSize choice;
-   FreshJuiceSize constant defaultChoice = FreshJuiceSize.MEDIUM;
+    
+// note: The enums are converted to integers when you retrieve or access them
+// for example in this case SMALL =0, MEDIUM =1 and LARGE = 2
 
-   function setLarge() public {
-      choice = FreshJuiceSize.LARGE;
+   enum FreshJuiceSize{ SMALL, MEDIUM, LARGE }
+   FreshJuiceSize choice = FreshJuiceSize.MEDIUM;
+
+
+// set your juice size
+   function setChoice(FreshJuiceSize myChoice) public {
+      choice = myChoice;
    }
+   
+// get your juice size
    function getChoice() public view returns (FreshJuiceSize) {
       return choice;
    }
-   function getDefaultChoice() public pure returns (uint) {
-      return uint(defaultChoice);
-   }
+   
+   
+// set your juice size to default i.e MEDIUM
+  function setDefaultChoice() public returns (FreshJuiceSize) {
+      choice = FreshJuiceSize.MEDIUM;
+      return choice;
+  }
     
     
 }
