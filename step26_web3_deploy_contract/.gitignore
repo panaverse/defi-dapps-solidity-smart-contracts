@@ -1,3 +1,8 @@
+# Node packages
 node_modules
+
+# Build files created by TypeScript Compiler
 *.js
-types
+
+# Environment Variables
+.env

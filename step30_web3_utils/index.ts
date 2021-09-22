@@ -1,15 +1,26 @@
-import { Utils } from './utils';
+import Web3 from "web3";
 
-const utils : Utils = new Utils();
+const network = "mainnet";
+const INFURA_PROJECT_ID = "INFURA_PROJECT_ID";
+const RPC_ENDPOINT = `https://${network}.infura.io/v3/${INFURA_PROJECT_ID}`;
 
-// get avg gas price of the network
-utils.getAvgGasPrice().then((res)=>console.log('Avg gas price on network in ether -------',res))
+const web3 = new Web3(RPC_ENDPOINT);
 
-//sha3 hashing
-utils.hashing('hello world').then((res)=>console.log('hash -------',res))
+(async () => {
+  // #1
+  const avgGasPrice = web3.utils.fromWei(await web3.eth.getGasPrice(), "ether");
+  console.log("Average Gas Price ==>", avgGasPrice, "ETH");
 
-//solidity sha3 hashing
-utils.Solidityhashing('hello world').then((res)=>console.log('Solidity hash -------',res))
+  // #2
+  const phrase = "DApp is Fun";
+  const hash = web3.utils.sha3(phrase);
+  console.log(`Hash of "${phrase}" ==>`, hash);
 
-//generate a random hex value. Enter the byte size in the function parameter
-utils.generateRandomHex(4).then((res)=>console.log('random hex -------',res))
+  // #3
+  const hash2 = web3.utils.soliditySha3(phrase);
+  console.log(`Hash of "${phrase}" ==>`, hash2);
+
+  // #4
+  const randomHex = web3.utils.randomHex(16);
+  console.log("Random Hex of size 16 ==>", randomHex);
+})();

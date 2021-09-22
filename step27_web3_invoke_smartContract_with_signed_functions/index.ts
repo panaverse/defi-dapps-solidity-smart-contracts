@@ -1,16 +1,43 @@
-import { RunSmartContract } from './runSmartContract';
+import dotenv from "dotenv";
+import { SmartContract } from "./SmartContract";
+import CONTRACT_ABI from "./abi/contractABI.json";
 
-const contract : RunSmartContract = new RunSmartContract();
+// Create a file named ".env" and write the environment variables as mentioned in ".env.example"
+dotenv.config({ path: "./.env" });
 
-// we will use owner_sol smart contract for this example. It is one of the example contracts in remix IDE.
+const contractAddress = "CONTRACT_ADDRESS";
 
+// Credentials of the previous owner
+const account1PrivateKey = process.env.ACCOUNT1_PRIVATE_KEY;
+// Credentials of the new owner
+const account2Address = process.env.ACCOUNT2_PUBLIC_ADDRESS;
 
-// We have already added the contract ABI for 'owner_sol' smart contract in the variable below
-const contractAbi = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"oldOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnerSet","type":"event"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"changeOwner","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"getOwner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"}]
+if (!account1PrivateKey || !account2Address) {
+  throw new Error(
+    "Account address of previous owner and private key of new owner must be provided as environment variables."
+  );
+}
 
+(async () => {
+  // Instantiate smart contract object.
+  const contract = new SmartContract(
+    contractAddress,
+    JSON.stringify(CONTRACT_ABI)
+  );
 
-//You may want to save your private key in an env file
-contract.changeOwnerFunction('CurrentOwnerPublicAddress','currentOwnerPrivateKey','smartContractAddress',1000000,10,contractAbi,'newOwnerPublicAddress').then(response => console.log(response))
+  console.log("Previous Owner:", await contract.getContractOwner());
 
+  console.log("Changing Owner...");
+  const txData = await contract.changeContractOwner(
+    account2Address,
+    account1PrivateKey,
+    1_000_000,
+    10
+  );
+  console.log(
+    "EtherScan Link:",
+    `https://ropsten.etherscan.io/tx/${txData?.transactionHash}`
+  );
 
-
+  console.log("New Owner:", await contract.getContractOwner());
+})();

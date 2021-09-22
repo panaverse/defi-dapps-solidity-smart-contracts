@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node-dev --respawn index.ts "
+    "start": "ts-node-dev --respawn index.ts"
   },
   "author": "waris hasan",
   "license": "ISC",
@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@types/node": "^12.20.19",
+    "dotenv": "^10.0.0",
     "nodemon": "^2.0.12",
     "ts-node-dev": "^1.1.8",
     "tslint": "^6.1.3"

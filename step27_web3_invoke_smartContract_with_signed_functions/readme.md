@@ -1,21 +1,50 @@
-# Invoke Smart Contract Functions with Signed Transaction
+# Step 27: Invoke Smart Contract Functions with Signed Transaction
 
-[Watch Video Tutorial](https://www.youtube.com/watch?v=6HlHwCaAZKQ&list=PLS5SEs8ZftgXlCGXNfzKdq7nGBcIaVOdN&index=5)
+## References:
 
-Uptill now in all the previous steps we have interacted with our deployed smart contracts using the folliowing code. 
-Note that we are not signing any request or transaction in the code below and therefore it can only be used to invoke functions that can be run by anyone and does not need any authentication. 
+1.  We will follow this [video tutorial](https://www.youtube.com/watch?v=6HlHwCaAZKQ&list=PLS5SEs8ZftgXlCGXNfzKdq7nGBcIaVOdN&index=5) in this step.
 
-Functions that could only be invoked by certain users could not be invoked by the following code. Such functions need to be invoked by a signed transaction.
+## Step 1
+
+Create `packacge.json`, `tsconfig.json` and `tslint.json` files as in [Step21](../step21_web3_node_getbalance). Also, install the same dependencies, and add the same scripts in `package.json`.
+
+Add `ethereumjs-tx` for signing the transactions and `dotenv` for working with environment variables.
+
+```bash
+npm i ethereumjs-tx
+npm i -D dotenv
+```
+
+## Step 2
+
+In [Step 25](../step25_web3_send_transaction_signed) and [Step 26](../step26_web3_deploy_contract), you created a MetaMask wallet. We will use the same accounts in this step. Make sure that your account has some fake ETH for Ropsten Public Test Network.
+
+## Step 3
+
+Create a `.env` file and save some environment variables in it in the format given in `.env.example`. In this step, we need only need account 1 (previous owner) private key and account 2 (new owner) public key.
 
 ```
-    const contract = new this.web3.eth.Contract(contractAbi, contractAddress);
-    await contract.methods.name.call()
+ACCOUNT1_PUBLIC_ADDRESS = REPLACE_WITH_YOUR_ACCOUNT_1_PUBLIC_ADDRESS
+ACCOUNT2_PUBLIC_ADDRESS = REPLACE_WITH_YOUR_ACCOUNT_2_PUBLIC_ADDRESS
+
+ACCOUNT1_PRIVATE_KEY = REPLACE_WITH_YOUR_ACCOUNT_1_PRIVATE_KEY
+ACCOUNT2_PRIVATE_KEY = REPLACE_WITH_YOUR_ACCOUNT_2_PRIVATE_KEY
 ```
 
+## Step 4:
 
-In this step we will use the 'owner.sol' example smart contract which is provided in remix IDE. If you cannot find this example in remix IDE you can copy paste the code below. 
+We will interact with the same smart contract as in [Step 26](../step26_web3_deploy_contract). So, copy its ABI file from there and place it in `abi` directory.
 
+Until now, in all the previous steps, we have interacted with smart contracts using the methods that don't require a signed transaction (as shown below).
+
+```ts
+const contract = new this.web3.eth.Contract(contractAddress, contractAbi);
+await contract.methods.name.call();
 ```
+
+Note: The smart contract given below has two methods: `getOwner` and `changeOwner`. We will call the method `changeOwner` in this step that can only be called by the current owner of the contract. In order to verify that the caller of the method is the owner of the contract, the transaction calling the method must be signed by the caller.
+
+```sol
 // SPDX-License-Identifier: GPL-3.0
 
 pragma solidity >=0.7.0 <0.9.0;
@@ -25,87 +54,77 @@ pragma solidity >=0.7.0 <0.9.0;
  * @dev Set & change owner
  */
 contract Owner {
+  address private owner;
 
-    address private owner;
-    
-    // event for EVM logging
-    event OwnerSet(address indexed oldOwner, address indexed newOwner);
-    
-    // modifier to check if caller is owner
-    modifier isOwner() {
-        // If the first argument of 'require' evaluates to 'false', execution terminates and all
-        // changes to the state and to Ether balances are reverted.
-        // This used to consume all gas in old EVM versions, but not anymore.
-        // It is often a good idea to use 'require' to check if functions are called correctly.
-        // As a second argument, you can also provide an explanation about what went wrong.
-        require(msg.sender == owner, "Caller is not owner");
-        _;
-    }
-    
-    /**
-     * @dev Set contract deployer as owner
-     */
-    constructor() {
-        owner = msg.sender; // 'msg.sender' is sender of current call, contract deployer for a constructor
-        emit OwnerSet(address(0), owner);
-    }
+  // event for EVM logging
+  event OwnerSet(address indexed oldOwner, address indexed newOwner);
 
-    /**
-     * @dev Change owner
-     * @param newOwner address of new owner
-     */
-    function changeOwner(address newOwner) public isOwner {
-        emit OwnerSet(owner, newOwner);
-        owner = newOwner;
-    }
+  // modifier to check if caller is owner
+  modifier isOwner() {
+    require(msg.sender == owner, "Caller is not owner");
+    _;
+  }
 
-    /**
-     * @dev Return owner address 
-     * @return address of owner
-     */
-    function getOwner() external view returns (address) {
-        return owner;
-    }
+  /**
+   * @dev Set contract deployer as owner
+   */
+  constructor() {
+    owner = msg.sender; // 'msg.sender' is sender of current call, contract deployer for a constructor
+    emit OwnerSet(address(0), owner);
+  }
+
+  /**
+   * @dev Change owner
+   * @param newOwner address of new owner
+   */
+  function changeOwner(address newOwner) public isOwner {
+    emit OwnerSet(owner, newOwner);
+    owner = newOwner;
+  }
+
+  /**
+   * @dev Return owner address
+   * @return address of owner
+   */
+  function getOwner() external view returns (address) {
+    return owner;
+  }
 }
 ```
 
+## Step 5
 
-Note: There are two functions in this smart contract 
+Create `SmartContract.ts` and `index.ts` files. In `SmartContract.ts` file, there is a method `changeContractOwner`. It creates and signes the transaction using previous owner's private key, and sends the new owner's pulic address as a parameter.
 
-1) getOwner(): This function can be invoked by anyone and therefore it does not need a signed transaction to be invoked
-2) changeOwner(): This function can only be invoked by the current owner of the smart contract (we have added a condition using modifier) and therefore the invocation of this function needs to be signed.
+In `SmartContract.ts`, replace INFURA_PROJECT_ID with your Infura project ID.
 
+```ts
+// Ropsten Test Network endpoint.
+const network = "ropsten";
+const INFURA_PROJECT_ID = "INFURA_PROJECT_ID";
+const RPC_ENDPOINT = `https://${network}.infura.io/v3/${INFURA_PROJECT_ID}`;
+```
 
-## step 1:
+In `index.ts`, paste the address of the deployed contract from [Step 26](../step26_web3_deploy_contract).
 
-compile the 'owner.sol' smart contract on remix IDE and then deploy it on ropsten network as we did in step 26.
+```ts
+const contractAddress = "CONTRACT_ADDRESS";
+```
 
-## step 2:
+## Step 5
 
-get the ABI of contract from remix IDE as shown below and also get the smart contract address from ropsten ether scan. You will need these two things to run the code in this example.
+Run the project with the following command:
 
->![details](imgs/abi.png)
-
-
-
-This step runs the 'changeOwner()' function of the smart contract through a signed invocation of the smart contract.
-
-
-
-You can create accounts using metamask for this step and load it with test ethers from a ropston faucet like https://faucet.ropsten.be/
-
-You will see in the code that here we have explicitly signed our transaction using the private key. This is how you should go about sending transactions in a public block chain where the nodes cannot be trusted with your private keys.
-
+```bash
 npm link typescript
-
 npm start
+```
 
-or
+or with these commands.
 
+```bash
 tsc
-
 node index
+```
 
-
-
-
+In the console, a link to [ropsten.etherscan.io](https://ropsten.etherscan.io/) will be printed. You can see that this transaction that changed the smart contract owner is now a part of Ropsten Public Test Network. Previous and new owner addresses will also be printed on the console.

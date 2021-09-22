@@ -1,30 +1,46 @@
-# Send Transaction From Unlocked Account
+# Step 24: Send Transaction From Unlocked Account
 
-[Watch Video Tutorial](https://www.youtube.com/watch?v=uFdjZ-B3GCM&list=PLS5SEs8ZftgXlCGXNfzKdq7nGBcIaVOdN&index=3)
+## References:
 
+1.  We will follow the first 10 minutes of this [video tutorial](https://www.youtube.com/watch?v=uFdjZ-B3GCM&list=PLS5SEs8ZftgXlCGXNfzKdq7nGBcIaVOdN&index=3) in this step.
 
-This step covers the initial part of the video.
+## Step 1
 
-We are creating a transaction using web3js to send ethers from account1 to account2.
-In this example we are creating transactions using ganache, therefore all the public addresses are unlocked and the node takes care of signing of the transaction.
+Create `packacge.json`, `tsconfig.json` and `tslint.json` files as in [Step21](../step21_web3_node_getbalance). Also, install the same dependencies, and add the same scripts in `package.json`.
 
-You can download ganache from 
+## Step 2
 
-https://www.trufflesuite.com/ganache
+[Ganache](https://www.trufflesuite.com/ganache) is a tool which creates a local Ethereum blockchain and serves it through a localhost. This local blockchain has nothing to do with the Ethereum Mainnet. It generates 10 accounts, each having a balance of 100 ETH. Public addresses and private keys of all the accounts are also available; so, you can play around with the accounts without spending a penny. All of the accounts on Ganache are unlocked: so, you need not sign any transaction. [Download Ganache](https://www.trufflesuite.com/ganache).
 
+## Step 3
 
-Ganache creates many public addresses for you. You can use them
+Create `EthereumAccount.ts` and `index.ts` files. In `EthereumAccount.ts`, we are using Ganache localhost URL as RPC_ENDPOINT.
 
+```ts
+const RPC_ENDPOINT = "http://127.0.0.1:7545";
+```
+
+From Ganache's UI copy any two public addresses, and in `index.ts`, use them to instantiate two `EthereumAccount` objects.
+
+```ts
+const account1Address = "ACCOUNT_1_ADDRESS";
+const account2Address = "ACCOUNT_2_ADDRESS";
+```
+
+## Step 4
+
+Run the project with the following command:
+
+```bash
 npm link typescript
-
 npm start
+```
 
-or
+or with these commands.
 
+```bash
 tsc
-
 node index
+```
 
-
-
-
+After the transaction, the balances of the two accounts used will be updated in Ganache's UI too.
