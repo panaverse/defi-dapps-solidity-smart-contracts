@@ -1,6 +1,6 @@
-import { ethers } from "hardhat";
+import { ethers, waffle } from "hardhat";
 import { expect } from "chai";
-import { Signer } from "ethers";
+
 
 describe("Greeter", function () {
   it("Should return the new greeting once it's changed", async function () {
@@ -18,7 +18,5 @@ describe("Greeter", function () {
     expect(await greeter.greet()).to.equal("Hola, mundo!");
   });
 });
-
-
 
 

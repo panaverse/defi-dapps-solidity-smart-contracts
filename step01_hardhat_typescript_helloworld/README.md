@@ -18,6 +18,12 @@ We need to apply three changes to your config for it to work with TypeScript:
 
 For updating test and scripts [follow this](https://hardhat.org/guides/typescript.html#writing-tests-and-scripts-in-typescript)
 
+For Type-safe smart contract interactions:
+
+npm install --save-dev typechain @typechain/hardhat @typechain/ethers-v5
+
+Update tsconfig.json
+
 tsc
 
 npx hardhat compile
