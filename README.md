@@ -9,6 +9,8 @@ The world of finance and software development is fusing. DeFi, Serverless, AI an
 
 ### To Get Started
 
+[Zero to Hero: Web3.0 and Solidity Development Roadmap 2021](https://javascript.plainenglish.io/zero-to-hero-web3-0-and-solidity-development-roadmap-2021-926e759a366b)
+
 [Read The Book: The Wisdom of Finance - Discovering Humanity in the World of Risk and Return](https://pdfroom.com/books/the-wisdom-of-finance-discovering-humanity-in-the-world-of-risk-and-return/qjb5qerR5xQ/download)
 
 [Watch “The Big Short” Movie](https://youtu.be/vgqG3ITMv1Q)

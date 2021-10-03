@@ -35,7 +35,7 @@ cd step00_simple_storage
 
 truffle init
 
-Edit truffle-config.js file and uncomment the solc version to the latest version available e.g. 0.8.6
+Edit truffle-config.js file and uncomment the solc version to the latest version available e.g. 0.8.9
 
 Follow this and build SimpleStorage Contract
 
@@ -43,6 +43,8 @@ https://docs.soliditylang.org/en/v0.8.6/#getting-started
 
 
 truffle compile
+
+Note: If it is unable to download compiler please use sudo on Mac or Linux
 
 Write simpleStorage.js in the test directory, and run:
 
