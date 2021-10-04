@@ -6,6 +6,10 @@ Note: After Solidity 0.8 SafeMath Library is [no longer required](https://solidi
 
 Copy the files from step01_hardhat_typescript_helloworld
 
+Create the FirstCoin.sol
+
+Update the test file
+
 tsc
 
 npx hardhat compile

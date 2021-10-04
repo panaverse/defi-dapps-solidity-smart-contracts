@@ -5,6 +5,14 @@ import "hardhat/console.sol";
 
 contract FirstCoin  {
 
+    string public constant name = "FirstCoin";
+    string public constant symbol = "MFC";
+    uint8 public constant decimals = 18;  
+
+
+    event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
+    event Transfer(address indexed from, address indexed to, uint tokens);
+
     mapping(address => uint256) private balances;
     mapping(address => mapping (address => uint256)) private allowed;
     uint256 private totalSupply_;
