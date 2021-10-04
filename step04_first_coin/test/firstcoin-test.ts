@@ -24,7 +24,7 @@ describe("FirtCoin", function () {
     const firstCoin = await FirstCoin.deploy(1000);
     await firstCoin.deployed();
 
-    expect(await firstCoin.transfer(await addr1.getAddress(), 10)).to.true;
+    expect(await firstCoin.transfer(await addr1.getAddress(), 10)).to.equal(true);
 
     expect(await firstCoin.balanceOf(await owner.getAddress())).to.equal(990);
 
