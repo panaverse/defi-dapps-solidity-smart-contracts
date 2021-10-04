@@ -8,11 +8,11 @@ Copy the files from step01_hardhat_typescript_helloworld
 
 Create the FirstCoin.sol
 
+npx hardhat compile
+
 Update the test file
 
 tsc
-
-npx hardhat compile
 
 npx hardhat test
 
