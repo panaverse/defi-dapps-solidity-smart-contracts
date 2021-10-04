@@ -16,7 +16,7 @@ async function main() {
 
   // We get the contract to deploy
   const FirstCoin = await ethers.getContractFactory("FirstCoin");
-  const firstCoin = await Greeter.deploy(1000);
+  const firstCoin = await FirstCoin.deploy(1000);
 
   await firstCoin.deployed();
 
