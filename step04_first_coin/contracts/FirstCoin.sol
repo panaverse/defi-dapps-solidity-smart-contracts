@@ -35,7 +35,7 @@ contract FirstCoin  {
 
     function transfer(address receiver, uint numTokens) public returns (bool) {
         require(numTokens <= balances[msg.sender]);
-        balances[msg.sender] = balances[msg.sender] — numTokens;
+        balances[msg.sender] = balances[msg.sender] - numTokens;
         balances[receiver] = balances[receiver] + numTokens;
         emit Transfer(msg.sender, receiver, numTokens);
         console.log("The owner: '%s' has has transfered '%s' tokens to receiver '%s'", msg.sender, numTokens, receiver);
@@ -58,11 +58,11 @@ contract FirstCoin  {
     function transferFrom(address owner, address buyer, uint numTokens) public returns (bool) {
         require(numTokens <= balances[owner]);
         require(numTokens <= allowed[owner][msg.sender]);
-        balances[owner] = balances[owner] — numTokens;
-        allowed[owner][msg.sender] = allowed[from][msg.sender] — numTokens;
+        balances[owner] = balances[owner] - numTokens;
+        allowed[owner][msg.sender] = allowed[owner][msg.sender] - numTokens;
         balances[buyer] = balances[buyer] + numTokens;
-        Transfer(owner, buyer, numTokens);
-        console.log("With owners: '%s' permission delegate '%s' is transfering '%s' tokens for the buyer '%s'", owner, msg.sender, numTokens, buyer);
+        emit Transfer(owner, buyer, numTokens);
+        //console.log("With owners: '%s' permission delegate '%s' is transfering '%s' tokens for the buyer '%s'", owner, msg.sender, numTokens, buyer);
         return true;
     }
 
