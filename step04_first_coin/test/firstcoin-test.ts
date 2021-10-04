@@ -4,18 +4,18 @@ import { expect } from "chai";
 
 describe("FirtCoin", function () {
   it("Should return the total coins", async function () {
-    const Greeter = await ethers.getContractFactory("FirstCoin");
-    const greeter = await Greeter.deploy("Hello, world!");
-    await greeter.deployed();
+    const FirstCoin = await ethers.getContractFactory("FirstCoin");
+    const firstCoin = await FirstCoin.deploy(1000);
+    await firstCoin.deployed();
 
-    expect(await greeter.greet()).to.equal("Hello, world!");
+    expect(await firstCoin.totalSupply()).to.equal(1000);
 
-    const setGreetingTx = await greeter.setGreeting("Hola, mundo!");
+    //const setGreetingTx = await greeter.setGreeting("Hola, mundo!");
 
     // wait until the transaction is mined
-    await setGreetingTx.wait();
+    //await setGreetingTx.wait();
 
-    expect(await greeter.greet()).to.equal("Hola, mundo!");
+    //expect(await greeter.greet()).to.equal("Hola, mundo!");
   });
 });
 
