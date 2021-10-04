@@ -10,7 +10,7 @@ describe("FirtCoin", function () {
 
     expect(await firstCoin.totalSupply()).to.equal(1000);
 
-    //const setGreetingTx = await greeter.setGreeting("Hola, mundo!");
+    //const setGreetingTx = await firstCoin.;
 
     // wait until the transaction is mined
     //await setGreetingTx.wait();

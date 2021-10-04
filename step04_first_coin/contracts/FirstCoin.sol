@@ -62,7 +62,7 @@ contract FirstCoin  {
         allowed[owner][msg.sender] = allowed[owner][msg.sender] - numTokens;
         balances[buyer] = balances[buyer] + numTokens;
         emit Transfer(owner, buyer, numTokens);
-        //console.log("With owners: '%s' permission delegate '%s' is transfering '%s' tokens for the buyer '%s'", owner, msg.sender, numTokens, buyer);
+        console.log("With owners: '%s' permission delegate '%s' is transfering '%s' tokens to the buyer", owner, msg.sender, numTokens);
         return true;
     }
 
