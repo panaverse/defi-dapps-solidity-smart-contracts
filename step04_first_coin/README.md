@@ -16,6 +16,25 @@ tsc
 
 npx hardhat test
 
+[Before starting deployment read this](https://hardhat.org/tutorial/deploying-to-a-live-network.html)
+
+We will first run against an embedded instance of Hardhat Network, so the deployment actually gets lost when Hardhat finishes running, but it's still useful to test that our deployment code works:
+
+npx hardhat run dist/scripts/deploy.js
+
+Create a test account on Metamask and copy your private key to hardhat.config.ts
+
+Send some Ether to your test account from rospten faucet:
+
+https://faucet.ropsten.be/
+
+
+Create a project a https://infura.io/ and copy your key to hardhat.confit.ts
+
+tcs
+
+npx hardhat run dist/scripts/deploy.js --network ropsten
+
 
 
 
