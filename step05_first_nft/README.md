@@ -22,7 +22,15 @@ npx hardhat test
 
 npx hardhat run dist/scripts/deploy.js
 
+Now Review these tutorials:
 
+[For overview read: How To Create NFTs With Solidity](https://betterprogramming.pub/how-to-create-nfts-with-solidity-4fa1398eb70a)
+
+[HOW TO WRITE & DEPLOY AN NFT](https://ethereum.org/en/developers/tutorials/how-to-write-and-deploy-an-nft/)
+
+[HOW TO MINT AN NFT](https://ethereum.org/en/developers/tutorials/how-to-mint-an-nft/)
+
+[HOW TO VIEW YOUR NFT IN YOUR WALLET](https://ethereum.org/en/developers/tutorials/how-to-view-nft-in-metamask/)
 
 
 
