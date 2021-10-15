@@ -10,7 +10,7 @@ describe("AccessContract", function () {
     const contract: AccessRestriction = await AccessContract.deploy();
     await contract.deployed();
 
-    const sendDonationTx = await contract.sendDonation({value: 10});
+    const sendDonationTx = await contract.sendDonation({value: ethers.utils.parseEther("0.5")});
 
     //console.log(sendDonationTx);
 
