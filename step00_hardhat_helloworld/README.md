@@ -14,6 +14,8 @@ npx hardhat
 
 Select to create a basic project from the menu
 
+npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
+
 npx hardhat compile
 
 npx hardhat test
