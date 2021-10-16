@@ -35,6 +35,10 @@ tcs
 
 npx hardhat run scripts/deploy.ts --network ropsten
 
+goto https://ropsten.etherscan.io/
+click on search 
+search deployed contract i.e. 0x7a6Fc93f8B3a8a97D9dA480B81dcC5b164782458 
+
 
 
 
