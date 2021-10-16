@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@appliedblockchain/chainlink-contracts": "0.0.4",
+    "@appliedblockchain/chainlink-plugins-fund-link": "0.0.1",
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "@typechain/ethers-v5": "^7.1.2",

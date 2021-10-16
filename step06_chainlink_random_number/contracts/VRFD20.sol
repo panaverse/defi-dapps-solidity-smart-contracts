@@ -59,6 +59,10 @@ contract VRFD20 is VRFConsumerBase, ConfirmedOwner(msg.sender) {
         emit DiceRolled(requestId, roller);
     }
 
+    function checkLinkBalance() public view onlyOwner returns (uint256) {
+        return LINK.balanceOf(address(this));
+    }
+
     /**
      * @notice Callback function used by VRF Coordinator to return the random number
      * to this contract.

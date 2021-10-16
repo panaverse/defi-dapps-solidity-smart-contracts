@@ -3,6 +3,7 @@ import "@nomiclabs/hardhat-waffle";
 
 import '@typechain/hardhat';
 import '@nomiclabs/hardhat-ethers';
+import "@appliedblockchain/chainlink-plugins-fund-link";
 
 // Go to https://infura.io, sign up, create
 // a new App in its dashboard, and replace "KEY" with its key
@@ -38,5 +39,14 @@ module.exports = {
       url: `https://kovan.infura.io/v3/${INFURA_API_KEY}`,
       accounts: [`0x${KOVAN_PRIVATE_KEY}`],
     },
+    
+    hardhat: {
+      forking: {
+        url: `https://kovan.infura.io/v3/${INFURA_API_KEY}`,
+      }
+    }
   },
+  mocha: {
+    timeout: 100000
+  }
 };
