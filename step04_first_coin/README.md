@@ -33,7 +33,7 @@ Create a project a https://infura.io/ and copy your key to hardhat.confit.ts
 
 tcs
 
-npx hardhat run dist/scripts/deploy.js --network ropsten
+npx hardhat run scripts/deploy.ts --network ropsten
 
 
 
