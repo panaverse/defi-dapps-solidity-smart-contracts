@@ -20,7 +20,7 @@ npx hardhat test
 
 We will first run against an embedded instance of Hardhat Network, so the deployment actually gets lost when Hardhat finishes running, but it's still useful to test that our deployment code works:
 
-npx hardhat run dist/scripts/deploy.js
+npx hardhat run scripts/deploy.ts
 
 Create a test account on Metamask and copy your private key to hardhat.config.ts
 
