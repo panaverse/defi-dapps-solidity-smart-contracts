@@ -20,7 +20,7 @@ npx hardhat test
 
 We will first run against an embedded instance of Hardhat Network, so the deployment actually gets lost when Hardhat finishes running, but it's still useful to test that our deployment code works:
 
-npx hardhat run dist/scripts/deploy.js
+npx hardhat run scripts/deploy.ts
 
 Create a test account on Metamask and copy your private key to hardhat.config.ts
 
@@ -33,7 +33,11 @@ Create a project a https://infura.io/ and copy your key to hardhat.confit.ts
 
 tcs
 
-npx hardhat run dist/scripts/deploy.js --network ropsten
+npx hardhat run scripts/deploy.ts --network ropsten
+
+goto https://ropsten.etherscan.io/
+click on search 
+search deployed contract i.e. 0x7a6Fc93f8B3a8a97D9dA480B81dcC5b164782458 
 
 
 
