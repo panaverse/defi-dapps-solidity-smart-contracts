@@ -1,5 +1,7 @@
 # Basic Sample Hardhat Project
 
+[Before starting development please go through the Ethereum Developer Documentation in detail](https://ethereum.org/en/developers/docs/)
+
 [We will follow this getting started page](https://hardhat.org/getting-started/)
 
 Create a Project Directory
