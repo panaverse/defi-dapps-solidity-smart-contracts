@@ -13,6 +13,13 @@ tsc
 npx hardhat test
 
 
+## Connect Different address for Contract transacation call
+[Using a Different Account Link 1](https://stackoverflow.com/questions/68126347/how-can-i-use-different-addresses-to-call-functions-in-hardhat-tests-and-scripts)
+
+[Using a Different Account Link 2](https://hardhat.org/tutorial/testing-contracts.html#using-a-different-account)
+
+## How to Test Transaction Failed
+[Testing Error thrown with hardhat](https://ethereum.stackexchange.com/questions/102337/testing-error-thrown-with-hardhat)
 
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
