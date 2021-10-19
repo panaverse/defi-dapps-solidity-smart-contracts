@@ -26,7 +26,7 @@ it("Split Function should return true", async function () {
 
   const amount: BigNumber = ethers.utils.parseEther("5");
 
-  expect(await contract.split(await addr1.getAddress(), await addr2.getAddress(), 
+  expect(await contract.callStatic.split(await addr1.getAddress(), await addr2.getAddress(), 
     {value: amount})).to.be.true;
 
 });
@@ -38,7 +38,7 @@ it("Withdraw Function should return true", async function () {
   const contract: Splitter = await Splitter.deploy();
   await contract.deployed();
 
-  expect(await contract.connect(addr1).withdraw()).to.be.true;
+  expect(await contract.callStatic.connect(addr1).withdraw()).to.be.true;
 
 });
 
