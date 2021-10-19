@@ -13,7 +13,14 @@ describe("FailEarlyContract", function () {
     const contract: FailEarly = await FailEarly.deploy();
     await contract.deployed();
 
-    expect(await contract.throwErrorIfZero(0)).to.be.revertedWith("The number should not be zero");
+
+    /*
+      Why we are using await before expect
+      https://ethereum.stackexchange.com/questions/102337/testing-error-thrown-with-hardhat
+      https://ethereum-waffle.readthedocs.io/en/latest/matchers.html#revert-with-message
+    */
+
+    await expect(contract.throwErrorIfZero(0)).to.be.revertedWith("The number should not be zero");
   
 });
 it("Function should return number that was passed", async function () {
