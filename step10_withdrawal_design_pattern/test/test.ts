@@ -26,6 +26,8 @@ it("Split Function should return true", async function () {
 
   const amount: BigNumber = ethers.utils.parseEther("5");
 
+  // https://medium.com/coinmonks/buidler-waffle-ethers-4f35ce12c0aa
+  // https://ethereum.stackexchange.com/questions/88119/i-see-no-way-to-obtain-the-return-value-of-a-non-view-function-ethers-js
   expect(await contract.callStatic.split(await addr1.getAddress(), await addr2.getAddress(), 
     {value: amount})).to.be.true;
 
