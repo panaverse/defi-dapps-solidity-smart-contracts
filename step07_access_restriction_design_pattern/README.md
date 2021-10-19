@@ -4,6 +4,8 @@ This is a security design pattern.
 
 [We will follow this article](https://hackernoon.com/solidity-tutorial-understanding-design-patterns-part-1)
 
+[You can also restrict access by Addresses](https://www.linkedin.com/pulse/ethereum-solidity-smart-contract-design-patterns-wael-yousfi/)
+
 [Also read this](https://ethereum.stackexchange.com/questions/43362/what-is-msg-value)
 
 npx hardhat compile
