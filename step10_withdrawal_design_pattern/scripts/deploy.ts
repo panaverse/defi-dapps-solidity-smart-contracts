@@ -15,12 +15,12 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const FailEarly = await ethers.getContractFactory("FailEarly");
-  const contract = await FailEarly.deploy();
+  const Splitter = await ethers.getContractFactory("Splitter");
+  const contract = await Splitter.deploy();
 
   await contract.deployed();
 
-  console.log("FailEarly deployed to:", contract.address);
+  console.log("Splitter deployed to:", contract.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
