@@ -43,7 +43,8 @@ it("Withdraw Function should run", async function () {
   const amount: BigNumber = ethers.utils.parseEther("10");
 
   await contract.split(await addr1.getAddress(), await addr2.getAddress(),  {value: amount})
-
+  
+  //https://hardhat.org/tutorial/testing-contracts.html#using-a-different-account
   await contract.connect(addr1).withdraw();
 
 });
