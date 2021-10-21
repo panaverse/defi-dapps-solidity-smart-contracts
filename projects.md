@@ -123,3 +123,16 @@ Reading Material:
 
 [Address Table Tutorial](https://github.com/OffchainLabs/arbitrum-tutorials/tree/master/packages/address-table)
 
+
+## Project 15: Digital asset portfolio Rebalancer
+
+
+[Intermediate Solidity Tutorial | Building On DeFi Lego Bricks With Hardhat ](https://jamesbachini.com/intermediate-solidity-tutorial/)
+
+
+## Project 16: Rent to Own Network
+
+[Creating an Ethereum Token to Enable a Decentralized Rent-to-Own Network](https://towardsdatascience.com/creating-an-ethereum-token-to-enable-a-decentralized-rent-to-own-network-cc3786cf1142)
+
+
+
