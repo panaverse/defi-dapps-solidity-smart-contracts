@@ -4,7 +4,7 @@ import { WETH, WETH__factory } from "../typechain";
 import { BigNumber } from "@ethersproject/bignumber";
 
 
-describe("DepositLockContract", function () {
+describe("WETHContract", function () {
 
   let contract: WETH;
 
@@ -15,7 +15,6 @@ describe("DepositLockContract", function () {
   });
 
 
-  describe("WETHContract", function () {
   it("Deposit should work", async function () {
 
     const amount: BigNumber = ethers.utils.parseEther("10");
@@ -45,9 +44,6 @@ describe("DepositLockContract", function () {
     
   });
 
-
-
-});
 
 
 });
