@@ -2,6 +2,14 @@
 
 [We will follow this Solidity Tutorial in detail](https://www.tutorialspoint.com/solidity/index.htm)
 
+Additional Reading:
+
+[Types](https://www.bitdegree.org/learn/solidity-types)
+
+[Variables](https://www.bitdegree.org/learn/solidity-variables)
+
+[Functions](https://www.bitdegree.org/learn/solidity-functions)
+
 Copy the files from step00_hardhat_helloworld
 
 Read a tutorial topic; to practice add a contract and a test 
