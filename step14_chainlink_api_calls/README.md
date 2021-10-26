@@ -8,6 +8,8 @@
 
 [Watch](https://www.youtube.com/watch?v=AtHp7me2Yks)
 
+[Using Chainlink with Hardhat](https://blog.chain.link/using-chainlink-with-hardhat/)
+
 Additional Reading:
 
 [Solidity Libraries](https://www.tutorialspoint.com/solidity/solidity_libraries.htm)
@@ -29,7 +31,7 @@ tsc
 
 npx hardhat test
 
-
+[Chainlink Market](https://market.link/)
 
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
