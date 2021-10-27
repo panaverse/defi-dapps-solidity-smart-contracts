@@ -1,0 +1,49 @@
+{
+  "name": "chainlink-hardhat-box",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "hardhat test test/unit/PriceConsumerV3_unit_test.js --network hardhat && hardhat test test/unit/APIConsumer_unit_test.js --network hardhat && hardhat test test/unit/RandomNumberConsumer_unit_test.js --network hardhat && hardhat test test/unit/KeepersCounter_unit_test.js --network hardhat",
+    "test-integration": "hardhat test test/integration/APIConsumer_int_test.js --network kovan && hardhat test test/integration/RandomNumberConsumer_int_test.js --network kovan",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.1",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "@typechain/ethers-v5": "^7.2.0",
+    "@typechain/hardhat": "^2.3.1",
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.6",
+    "chai": "^4.2.0",
+    "chai-bignumber": "^3.0.0",
+    "chai-bn": "^0.2.1",
+    "ethereum-waffle": "^3.2.1",
+    "ethers": "^5.0.24",
+    "hardhat": "^2.6.4",
+    "hardhat-deploy": "^0.7.0-beta.39",
+    "ts-node": "^10.4.0",
+    "typechain": "^3.0.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@appliedblockchain/chainlink-contracts": "0.0.4",
+    "@appliedblockchain/chainlink-plugins-fund-link": "0.0.1",
+    "@chainlink/contracts": "^0.2.2",
+    "@chainlink/test-helpers": "0.0.5",
+    "@chainlink/token": "^1.1.0",
+    "@nomiclabs/hardhat-truffle5": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.22.0",
+    "mocha-skip-if": "^0.0.3",
+    "transform": "^1.1.2"
+  },
+  "mocha": {
+    "timeout": 10000000
+  }
+}

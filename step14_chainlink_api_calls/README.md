@@ -8,7 +8,7 @@
 
 [Watch](https://www.youtube.com/watch?v=AtHp7me2Yks)
 
-[Using Chainlink with Hardhat](https://blog.chain.link/using-chainlink-with-hardhat/)
+[Using Chainlink with Hardhat](https://github.com/smartcontractkit/hardhat-starter-kit)
 
 Additional Reading:
 
