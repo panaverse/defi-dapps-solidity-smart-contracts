@@ -2,28 +2,6 @@
 
 Clone the repo from [here](https://github.com/smartcontractkit/hardhat-starter-kit)
 
-[We will follow this typescript support page, to support Typescript](https://hardhat.org/guides/typescript.html)
-
-npm install --save-dev ts-node typescript
-
-npm install --save-dev @types/node @types/mocha @types/chai
-
-rename your config file to hardhat.config.ts
-
-We need to apply three changes to your config for it to work with TypeScript:
-
-1. Plugins must be loaded with import instead of require.
-2. You need to explicitly import the Hardhat config functions, like task.
-3. If you are defining tasks, they need to access the Hardhat Runtime Environment explicitly, as a parameter.
-
-For updating test and scripts [follow this](https://hardhat.org/guides/typescript.html#writing-tests-and-scripts-in-typescript)
-
-For Type-safe smart contract interactions:
-
-npm install --save-dev typechain @typechain/hardhat @typechain/ethers-v5
-
-Update tsconfig.json
-
 [Oracles: The Invisible Backbone Of DeFi And Applied Blockchain Apps](https://www.forbes.com/sites/lawrencewintermeyer/2021/10/14/cryptohacks-oraclesthe-invisible-backbone-of-defi-and-applied-blockchain-apps/?sh=1125ee81182d)
 
 [API Calls Tutorial](https://docs.chain.link/docs/advanced-tutorial/)
@@ -249,3 +227,28 @@ npx hardhat verify --network kovan 0x9279791897f112a41FfDa267ff7DbBC46b96c296 "0
 ```
 yarn lint:fix
 ```
+
+### You can update the project with Typescript
+
+[We will follow this typescript support page, to support Typescript](https://hardhat.org/guides/typescript.html)
+
+npm install --save-dev ts-node typescript
+
+npm install --save-dev @types/node @types/mocha @types/chai
+
+rename your config file to hardhat.config.ts
+
+We need to apply three changes to your config for it to work with TypeScript:
+
+1. Plugins must be loaded with import instead of require.
+2. You need to explicitly import the Hardhat config functions, like task.
+3. If you are defining tasks, they need to access the Hardhat Runtime Environment explicitly, as a parameter.
+
+For updating test and scripts [follow this](https://hardhat.org/guides/typescript.html#writing-tests-and-scripts-in-typescript)
+
+For Type-safe smart contract interactions:
+
+npm install --save-dev typechain @typechain/hardhat @typechain/ethers-v5
+
+Update tsconfig.json
+
