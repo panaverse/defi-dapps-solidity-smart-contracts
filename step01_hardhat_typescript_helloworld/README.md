@@ -1,5 +1,7 @@
 # Basic Sample Hardhat Typescript Project
 
+Note: You can use this prebuilt [template project](https://github.com/paulrberg/solidity-template) instead of building your own.
+
 [We will follow this typescript support page](https://hardhat.org/guides/typescript.html)
 
 Copy the files from step00_hardhat_helloworld
