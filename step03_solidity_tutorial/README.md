@@ -2,6 +2,8 @@
 
 [We will follow this Solidity Tutorial in detail](https://www.tutorialspoint.com/solidity/index.htm)
 
+[Watch this Soldity Tutorial](https://www.youtube.com/watch?v=M576WGiDBdQ)
+
 Additional Reading:
 
 [Types](https://www.bitdegree.org/learn/solidity-types)
