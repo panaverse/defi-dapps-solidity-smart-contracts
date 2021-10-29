@@ -7,6 +7,13 @@ Lets mint a few Billion and and Alleviate Poverty from this World
 
 The world of finance and software development is fusing. DeFi, Serverless, AI and IoT have merged. Our plan is to create the quintessential Unicorn Developer for this new age, who have a unique and rare skillset. They are basically individuals who on one hand can develop software and on the other mint money. They will be experts not only in serverless cloud computing technologies but also ninjas of the new token economy and decentralised finance. They will know not only to develop AI and IoT APIs but create a economic system where everyone can participate. In this repo we will focus on learning DeFi.
 
+### Our Text Books
+
+[Mastering Blockchain Programming with Solidity](https://www.oreilly.com/library/view/mastering-blockchain-programming/9781839218262/)
+
+[Book Code](https://github.com/PacktPublishing/Mastering-Blockchain-Programming-with-Solidity)
+
+
 ### To Get Started
 
 [Zero to Hero: Web3.0 and Solidity Development Roadmap 2021](https://javascript.plainenglish.io/zero-to-hero-web3-0-and-solidity-development-roadmap-2021-926e759a366b)
