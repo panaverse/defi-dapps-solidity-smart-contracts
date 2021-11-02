@@ -1,7 +1,7 @@
 import { ethers, waffle } from "hardhat";
 import { expect } from "chai";
 import { Address } from "cluster";
-import { FirstCoin, FirstCoin__factory } from "../typechain";
+import { FirstCoin, FirstCoin__factory } from "../types";
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
 import { BigNumber } from "@ethersproject/bignumber";
 

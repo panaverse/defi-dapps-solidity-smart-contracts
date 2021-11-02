@@ -1,9 +1,0 @@
-node_modules
-dist
-typechain
-.env
-
-#Hardhat files
-cache
-artifacts
-
