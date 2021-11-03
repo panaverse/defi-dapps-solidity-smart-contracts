@@ -4,6 +4,8 @@
 
 [Watch this Soldity Video Tutorial](https://www.youtube.com/watch?v=M576WGiDBdQ)
 
+[Another Solidity Tutorial option](https://www.youtube.com/playlist?list=PLbbtODcOYIoE0D6fschNU4rqtGFRpk3ea)
+
 Additional Reading:
 
 [Types](https://www.bitdegree.org/learn/solidity-types)
