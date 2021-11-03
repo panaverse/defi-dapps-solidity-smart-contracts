@@ -2,7 +2,7 @@
 
 [We will follow this Solidity Tutorial in detail](https://www.tutorialspoint.com/solidity/index.htm)
 
-[Watch this Soldity Video Tutorial](https://www.youtube.com/watch?v=M576WGiDBdQ)
+[Watch this Solidity Video Tutorial](https://www.youtube.com/watch?v=M576WGiDBdQ)
 
 [Another Solidity Tutorial option](https://www.youtube.com/playlist?list=PLbbtODcOYIoE0D6fschNU4rqtGFRpk3ea)
 

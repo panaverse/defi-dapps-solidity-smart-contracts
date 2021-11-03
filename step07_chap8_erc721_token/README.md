@@ -1,10 +1,10 @@
-# Step 06 ERC20 Tokens
+# Step 07 ERC721 Tokens
 
 [Clone this template in this directory](https://github.com/paulrberg/solidity-template)
 
-[Copy chapter 7 textbook code](https://github.com/PacktPublishing/Mastering-Blockchain-Programming-with-Solidity/tree/master/Chapter02/contracts) and update it
+[Copy chapter 8 textbook code](https://github.com/PacktPublishing/Mastering-Blockchain-Programming-with-Solidity/tree/master/Chapter08/contracts) and update it
 
-Read chapter 7 of our [text book](https://www.oreilly.com/library/view/mastering-blockchain-programming/9781839218262/) and follow the updated code in this repo. 
+Read chapter 8 of our [text book](https://www.oreilly.com/library/view/mastering-blockchain-programming/9781839218262/) and follow the updated code in this repo. 
 
 [Solidity Official Documentation](https://docs.soliditylang.org/)
 

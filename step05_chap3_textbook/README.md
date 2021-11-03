@@ -2,7 +2,7 @@
 
 [Clone this template in this directory](https://github.com/paulrberg/solidity-template)
 
-[Copy chapter 3 textbook code](https://github.com/PacktPublishing/Mastering-Blockchain-Programming-with-Solidity/tree/master/Chapter02/contracts) and update it
+[Copy chapter 3 textbook code](https://github.com/PacktPublishing/Mastering-Blockchain-Programming-with-Solidity/tree/master/Chapter03/contracts) and update it
 
 Read chapter 3 of our [text book](https://www.oreilly.com/library/view/mastering-blockchain-programming/9781839218262/) and follow the updated code in this repo. 
 
