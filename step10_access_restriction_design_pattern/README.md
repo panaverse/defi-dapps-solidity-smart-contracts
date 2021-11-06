@@ -2,6 +2,8 @@
 
 This is a security design pattern.
 
+Read chapter 13 pages 368-370 of our [text book](https://www.oreilly.com/library/view/mastering-blockchain-programming/9781839218262/) and follow the code in this repo. 
+
 [We will follow this article](https://hackernoon.com/solidity-tutorial-understanding-design-patterns-part-1)
 
 [You can also restrict access by Addresses](https://www.linkedin.com/pulse/ethereum-solidity-smart-contract-design-patterns-wael-yousfi/)

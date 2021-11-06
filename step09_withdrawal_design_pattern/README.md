@@ -2,6 +2,8 @@
 
 A contract to split funds between addresses. 
 
+Read chapter 13 pages 366-368 of our [text book](https://www.oreilly.com/library/view/mastering-blockchain-programming/9781839218262/) and follow the code in this repo. 
+
 [We will follow this article](https://www.linkedin.com/pulse/ethereum-solidity-smart-contract-design-patterns-wael-yousfi/)
 
 First, There is a separation of function logic. The split() function handles the accounting and divides the msg.value sent with the transaction. Another function, withdraw(), allows accounts to transfer their balance from the contract to their account.
