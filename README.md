@@ -4,6 +4,8 @@ This repository will provide a latest updated learning resource for Solidity, Da
 
 [Digital assets to replace fiat in ten years – Deloitte Survey](https://www.cryptopolitan.com/digital-assets-to-replace-fiat-in-10-years/)
 
+[DeFi can be 100 times larger than today in 5 years](https://cointelegraph.com/news/defi-can-be-100-times-larger-than-today-in-5-years)
+
 The world of finance and software development is fusing. DeFi, Serverless, AI and IoT have merged. Our plan is to create the quintessential Unicorn Developer for this new age, who have a unique and rare skillset. They are basically individuals who on one hand can develop software and on the other mint money. They will be experts not only in serverless cloud computing technologies but also ninjas of the new token economy and decentralised finance. They will know not only to develop AI and IoT APIs but create a economic system where everyone can participate. In this repo we will focus on learning DeFi.
 
 ### Our Text Books
