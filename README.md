@@ -1,4 +1,4 @@
-# Solidity Smart Contracts: Building DeFi DApps and Protocoals for the Ethereum Blockchain
+# Solidity Smart Contracts: Building DeFi DApps and Protocols for the Ethereum Blockchain
 
 This repository will provide a latest updated learning resource for Solidity, Dapp, and DeFi developers.
 
