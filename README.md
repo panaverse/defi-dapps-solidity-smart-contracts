@@ -1,7 +1,6 @@
-# Solidity Smart Contracts: Build DeFi DApps for Ethereum Blockchain
-Solidity, Smart Contracts, Truffle, Ganache, Ethereum Blockchain Programming, Cryptocurrency, DApp, and IPFS 
+# Solidity Smart Contracts: Building DeFi DApps and Protocoals for the Ethereum Blockchain
 
-Lets mint a few Billion and and Alleviate Poverty from this World
+This repository will provide a latest updated learning resource for Solidity, Dapp, and DeFi developers.
 
 [Digital assets to replace fiat in ten years – Deloitte Survey](https://www.cryptopolitan.com/digital-assets-to-replace-fiat-in-10-years/)
 
@@ -41,7 +40,6 @@ For complete details about this course visit [Operation Unicorn website](https:/
 [How to DeFi for Advanced](https://landing.coingecko.com/how-to-defi/)
 
 [DeFi and the Future of Finance](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3711777)
-
 
 [Ethereum Book](https://github.com/ethereumbook/ethereumbook/)
 
