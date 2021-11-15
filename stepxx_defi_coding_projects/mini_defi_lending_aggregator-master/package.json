@@ -1,0 +1,17 @@
+{
+  "name": "mini_defi_lending_aggregator",
+  "version": "1.0.0",
+  "description": "Choosing better DAI APY between Compound and Aave",
+  "author": "Panacloud",
+  "dependencies": {
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "babel-preset-stage-3": "6.24.1",
+    "babel-register": "6.26.0",
+    "moment": "2.29.1",
+    "truffle": "5.2.6",
+    "web3": "1.3.4"
+  }
+}
