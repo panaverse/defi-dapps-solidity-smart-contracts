@@ -1,0 +1,12 @@
+{
+  "name": "bsc_nft",
+  "version": "1.0.0",
+  "description": "NFT on Binance Smart Chain",
+  "author": "Panacloud",
+  "dependencies": {
+    "@openzeppelin/contracts": "3.4.1",
+    "@truffle/hdwallet-provider": "1.2.2",
+    "dotenv": "8.2.0",
+    "truffle": "5.2.3"
+  }
+}
