@@ -1,0 +1,73 @@
+{
+  "name": "arbitrum-box",
+  "version": "1.0.0",
+  "description": "Boilerplate code to compile, migrate, and test a Truffle project on Arbitrum",
+  "main": "truffle-config.arbitrum.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "installLocalArbitrum": "git clone -b sequencer2 https://github.com/offchainlabs/arbitrum.git",
+    "startLocalEthereum": "cd arbitrum && git submodule update --init --recursive && yarn && yarn build && yarn docker:build:geth && yarn docker:geth",
+    "startLocalArbitrum": "cd arbitrum && yarn demo:initialize && yarn demo:deploy",
+    "compile:ethereum": "truffle compile",
+    "compile:arbitrum": "truffle compile --config truffle-config.arbitrum.js",
+    "migrate:ethereum": "truffle migrate",
+    "migrate:arbitrum": "truffle migrate --config truffle-config.arbitrum.js --network $npm_config_network",
+    "test:ethereum": "truffle test",
+    "test:arbitrum": "truffle test --config truffle-config.arbitrum.js --network $npm_config_network"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/truffle-box/arbitrum-box.git"
+  },
+  "keywords": [
+    "Arbitrum",
+    "Ethereum",
+    "Truffle",
+    "Layer",
+    "2"
+  ],
+  "author": "Panacloud",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/truffle-box/arbitrum-box/issues"
+  },
+  "homepage": "https://github.com/truffle-box/arbitrum-box#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.2.0",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "babel-preset-stage-3": "6.24.1",
+    "babel-register": "6.26.0",
+    "bootstrap": "4.3.1",
+    "chai": "4.2.0",
+    "chai-as-promised": "7.1.1",
+    "chai-bignumber": "3.0.0",
+    "react": "16.8.4",
+    "react-bootstrap": "1.0.0-beta.5",
+    "react-dom": "16.8.4",
+    "react-scripts": "^2.1.8",
+    "truffle": "^5.3.6",
+    "web3": "^1.3.6"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.4.1",
+    "dotenv": "^10.0.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
