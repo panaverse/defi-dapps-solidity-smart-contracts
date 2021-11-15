@@ -1,0 +1,10 @@
+{
+  "name": "mint_dai",
+  "version": "1.0.0",
+  "description": "Minting DAI via backend",
+  "author": "Panacloud",
+  "dependencies": {
+    "@studydefi/money-legos": "2.4.2",
+    "ethers": "4.0.46"
+  }
+}
