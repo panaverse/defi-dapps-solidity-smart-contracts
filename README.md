@@ -6,6 +6,8 @@ This repository will provide a latest updated learning resource for Solidity, Da
 
 [DeFi can be 100 times larger than today in 5 years](https://cointelegraph.com/news/defi-can-be-100-times-larger-than-today-in-5-years)
 
+[How DeFi Hopes to Disrupt Traditional Finance](https://www.wsj.com/video/series/wsj-glossary/how-defi-hopes-to-disrupt-traditional-finance/1BB73865-57AD-4791-9A36-ADAE3193DA2C)
+
 [![Internet's Value Layer](video_image.png)](https://www.youtube.com/watch?v=LNpjKZnsdfI "Internet's Value Layer")
 
 
