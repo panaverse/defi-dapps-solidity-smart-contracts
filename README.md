@@ -8,6 +8,16 @@ This repository will provide a latest updated learning resource for Solidity, Da
 
 [How DeFi Hopes to Disrupt Traditional Finance](https://www.wsj.com/video/series/wsj-glossary/how-defi-hopes-to-disrupt-traditional-finance/1BB73865-57AD-4791-9A36-ADAE3193DA2C)
 
+## Class Videos
+
+[Class for Steps 00 and 01: Blockchain, Ethereum Smart Contract, and Hardhat Intro in English on Facebook](https://www.facebook.com/fb.anees.ahmed/videos/611810023268930)
+
+[Class for Steps 00 and 01: Blockchain, Ethereum Smart Contract, and Hardhat Intro in English on YouTube](https://youtu.be/24Nl4fVGH6g)
+
+[Class for Step 00 and 01: Blockchain, Ethereum Smart Contract, and Hardhat Intro in Urdu on Facebook](https://www.facebook.com/Ai.SirQasim/videos/394282572468467)
+
+[Class for Step 00 and 01: Blockchain, Ethereum Smart Contract, and Hardhat Intro in Urdu on YouTube](https://youtu.be/wXFi1wkn_5o)
+
 [![Internet's Value Layer](video_image.png)](https://www.youtube.com/watch?v=LNpjKZnsdfI "Internet's Value Layer")
 
 
