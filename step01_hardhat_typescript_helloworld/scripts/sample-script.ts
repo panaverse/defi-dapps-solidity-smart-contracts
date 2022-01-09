@@ -5,6 +5,7 @@
 // Runtime Environment's members available in the global scope.
 //const hre = require("hardhat");
 import { run, ethers } from "hardhat";
+import { Greeter, Greeter__factory } from "../typechain";
 
 async function main() {
   // Hardhat always runs the compile task when running scripts with its command
@@ -15,8 +16,8 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const Greeter = await ethers.getContractFactory("Greeter");
-  const greeter = await Greeter.deploy("Hello, Hardhat!");
+  const Greeter:Greeter__factory = await ethers.getContractFactory("Greeter");
+  const greeter:Greeter = await Greeter.deploy("Hello, Hardhat!");
 
   await greeter.deployed();
 
