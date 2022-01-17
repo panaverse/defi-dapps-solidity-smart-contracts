@@ -18,6 +18,7 @@ This repository will provide a latest updated learning resource for Solidity, Da
 
 [Class 1: Step 00 and 01: Blockchain, Ethereum Smart Contract, and Hardhat Intro in Urdu on YouTube](https://youtu.be/wXFi1wkn_5o)
 
+
 [Class 2: Step 03 Part 1 - Solidity Tutorial in English on Facebook](https://web.facebook.com/trouble.maker121/videos/448321510117377)
 
 [Class 2: Step 03 Part 1 - Solidity Tutorial in English on YouTube](https://youtu.be/NcZMDsjJ-OA)
@@ -25,6 +26,14 @@ This repository will provide a latest updated learning resource for Solidity, Da
 [Class 2: Step 03 Part 1 - Solidity Tutorial in Urdu on Facebook](https://web.facebook.com/Ai.SirQasim/videos/322455473108467)
 
 [Class 2: Step 03 Part 1 - Solidity Tutorial in Urdu on YouTube](https://youtu.be/rfnAsGNH14E)
+
+[Class 3: Step 03 Part 2 - Solidity Tutorial in English on Facebook](https://web.facebook.com/fb.anees.ahmed/videos/7151001034909886)
+
+[Class 3: Step 03 Part 2 - Solidity Tutorial in English on YouTube](https://youtu.be/mXuY7Sp5jmw)
+
+[Class 3: Step 03 Part 2 - Solidity Tutorial in Urdu on Facebook](https://web.facebook.com/Ai.SirQasim/videos/2126325780860897)
+
+[Class 3: Step 03 Part 2 - Solidity Tutorial in Urdu on YouTube]()
 
 [![Internet's Value Layer](video_image.png)](https://www.youtube.com/watch?v=LNpjKZnsdfI "Internet's Value Layer")
 
