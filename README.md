@@ -8,6 +8,10 @@ This repository will provide a latest updated learning resource for Solidity, Da
 
 [How DeFi Hopes to Disrupt Traditional Finance](https://www.wsj.com/video/series/wsj-glossary/how-defi-hopes-to-disrupt-traditional-finance/1BB73865-57AD-4791-9A36-ADAE3193DA2C)
 
+[Crypto Job Postings Jumped 395% in 2021: LinkedIn](https://www.coindesk.com/business/2022/01/14/crypto-job-postings-jumped-395-in-2021-linkedin/)
+
+[DeFi and NFT Scaled to New Heights in 2021: CoinGecko Report](https://cryptopotato.com/defi-and-nft-scaled-to-new-heights-in-2021-coingecko-report/)
+
 ## Class Videos
 
 [Class 1: Steps 00 and 01: Blockchain, Ethereum Smart Contract, and Hardhat Intro in English on Facebook](https://www.facebook.com/fb.anees.ahmed/videos/611810023268930)
