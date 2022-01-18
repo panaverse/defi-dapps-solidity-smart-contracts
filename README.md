@@ -12,6 +12,8 @@ This repository will provide a latest updated learning resource for Solidity, Da
 
 [DeFi and NFT Scaled to New Heights in 2021: CoinGecko Report](https://cryptopotato.com/defi-and-nft-scaled-to-new-heights-in-2021-coingecko-report/)
 
+[The 5 Promising Blockchain Projects Leading The Way Forward For Decentralized Technology In 2022](https://www.newsbtc.com/news/company/the-5-promising-blockchain-projects-leading-the-way-forward-for-decentralized-technology-in-2022/)
+
 ## Class Videos
 
 [Class 1: Steps 00 and 01: Blockchain, Ethereum Smart Contract, and Hardhat Intro in English on Facebook](https://www.facebook.com/fb.anees.ahmed/videos/611810023268930)
