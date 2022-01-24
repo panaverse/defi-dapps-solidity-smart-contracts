@@ -117,5 +117,11 @@ For complete details about this course visit [Operation Unicorn website](https:/
 [What Is a ‘Semi-Fungible’ Crypto Token?](https://www.coindesk.com/what-is-a-semi-fungible-crypto-token)
 
 
+### DeFi 2.0
 
+[What is DeFi 2.0, and how can you invest in it?](https://blockworks.co/the-investors-guide-to-defi-2-0/)
+
+[What Is DeFi 2.0 and Why Does it Matter?](https://academy.binance.com/en/articles/what-is-defi-2-0-and-why-does-it-matter)
+
+[DeFi 2.0: A beginner's guide to the second generation of DeFi protocols](https://cointelegraph.com/defi-101/defi2-0-a-beginners-guide-to-the-second-generation-of-defi-protocols)
 
