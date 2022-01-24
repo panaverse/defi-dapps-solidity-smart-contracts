@@ -14,6 +14,8 @@ This repository will provide a latest updated learning resource for Solidity, Da
 
 [The 5 Promising Blockchain Projects Leading The Way Forward For Decentralized Technology In 2022](https://www.newsbtc.com/news/company/the-5-promising-blockchain-projects-leading-the-way-forward-for-decentralized-technology-in-2022/)
 
+[DeFi – Reflections on 2021 and the Road Ahead](https://novonews.io/indiv-news?id=82268)
+
 ## Class Videos
 
 [Class 1: Steps 00 and 01: Blockchain, Ethereum Smart Contract, and Hardhat Intro in English on Facebook](https://www.facebook.com/fb.anees.ahmed/videos/611810023268930)
