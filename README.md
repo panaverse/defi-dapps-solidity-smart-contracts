@@ -119,6 +119,8 @@ For complete details about this course visit [Operation Unicorn website](https:/
 
 ### DeFi 2.0
 
+[What's DeFi 2.0? - Full Explanation](https://www.youtube.com/watch?v=uP3cTB5Afs4)
+
 [What is DeFi 2.0, and how can you invest in it?](https://blockworks.co/the-investors-guide-to-defi-2-0/)
 
 [What Is DeFi 2.0 and Why Does it Matter?](https://academy.binance.com/en/articles/what-is-defi-2-0-and-why-does-it-matter)
