@@ -42,3 +42,6 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 ```
+// fallback and receive functions // 
+
+https://blog.soliditylang.org/2020/03/26/fallback-receive-split/
