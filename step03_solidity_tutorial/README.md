@@ -2,6 +2,8 @@
 
 [We will follow this Solidity Tutorial in detail](https://www.tutorialspoint.com/solidity/index.htm)
 
+[Important: Updated FallBack Functions](https://blog.soliditylang.org/2020/03/26/fallback-receive-split/)
+
 [Watch this Solidity Video Tutorial](https://www.youtube.com/watch?v=M576WGiDBdQ)
 
 [Another Solidity Tutorial option](https://www.youtube.com/playlist?list=PLbbtODcOYIoE0D6fschNU4rqtGFRpk3ea)
@@ -42,6 +44,3 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 ```
-// fallback and receive functions // 
-
-https://blog.soliditylang.org/2020/03/26/fallback-receive-split/
