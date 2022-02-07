@@ -42,12 +42,12 @@ contract SkipContract {
     function getSkipFunction(uint _fnNumber)
         internal
         pure
-        returns (function(uint) pure returns(uint))
+        returns (function(uint) pure returns(uint) func) 
     {
         if (_fnNumber == 1) {
-            return skip1;
+            func = skip1;
         } else if (_fnNumber == 2) {
-            return skip2;
+            func = skip2;
         }
     }
 
