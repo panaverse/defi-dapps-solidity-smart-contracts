@@ -45,9 +45,9 @@ contract SkipContract {
         returns (function(uint) pure returns(uint) func) 
     {
         if (_fnNumber == 1) {
-            func = skip_1;
+            func = skip1;
         } else if (_fnNumber == 2) {
-            func = skip_2;
+            func = skip2;
         }
     }
 
