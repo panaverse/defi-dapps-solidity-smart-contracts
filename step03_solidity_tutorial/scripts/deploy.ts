@@ -1,17 +1,95 @@
 import { BigNumber } from "ethers";
 import { ethers } from "hardhat";
 import { SolidityTest, SolidityTest2, SolidityTest2__factory, SolidityTest3, SolidityTest3__factory, SolidityTest__factory } from "../typechain";
+import { Demo1 } from "../typechain/Demo1";
+import { Demo2 } from "../typechain/Demo2";
+import { DemoTest } from "../typechain/DemoTest";
+import { Demo1__factory } from "../typechain/factories/Demo1__factory";
+import { Demo2__factory } from "../typechain/factories/Demo2__factory";
+import { DemoTest__factory } from "../typechain/factories/DemoTest__factory";
 import { SolidityTest4__factory } from "../typechain/factories/SolidityTest4__factory";
 import { SolidityTest5__factory } from "../typechain/factories/SolidityTest5__factory";
 import { SolidityTest6__factory } from "../typechain/factories/SolidityTest6__factory";
+import { SolidityTest7__factory } from "../typechain/factories/SolidityTest7__factory";
 import { SolidityTest4 } from "../typechain/SolidityTest4";
 import { SolidityTest5 } from "../typechain/SolidityTest5";
 import { SolidityTest6 } from "../typechain/SolidityTest6";
+import { SolidityTest7 } from "../typechain/SolidityTest7";
 
 async function main() {
 
   const [owner, addr1, addr2] = await ethers.getSigners();
 
+  const Demo2:Demo2__factory = await ethers.getContractFactory("Demo2");
+  const demo2:Demo2 = await Demo2.deploy();
+
+  await demo2.deployed();
+  console.log("Demo2 deployed to:", demo2.address);
+
+  const txt1 = await demo2.createExample("First");
+  const demoAddress1 = await demo2.demo1Address();
+  console.log("Demo 1 Address = ",demoAddress1);
+
+  const txt2 = await demo2.createExample("Second");
+  const demoAddress2 = await demo2.demo1Address();
+  console.log("Demo 1 Address = ",demoAddress2);
+
+
+  const txt3 = await demo2.createExample("Third");
+  const demoAddress3 = await demo2.demo1Address();
+  console.log("Demo 1 Address = ",demoAddress3);
+
+
+  const name = await demo2.getNameOfContract(demoAddress2);
+  console.log("Name = ",name);
+  
+  /*
+  const Demo1:Demo1__factory = await ethers.getContractFactory("Demo1");
+  const demo1:Demo1 = await Demo1.attach(demoAddress2);
+
+  console.log("Demo1 deployed to:", demo1.address);
+
+  const name = await demo1.getName();
+  console.log("Name = ",name);
+  */
+
+
+
+
+
+
+  /*
+  const SolidityTest7:SolidityTest7__factory = await ethers.getContractFactory("SolidityTest7");
+  const solidtyTest7:SolidityTest7 = await SolidityTest7.deploy();
+
+  await solidtyTest7.deployed();
+  console.log("SolidityTest6 deployed to:", solidtyTest7.address);
+
+  const DemoTest:DemoTest__factory = await ethers.getContractFactory("DemoTest");
+  const demoTest:DemoTest = await DemoTest.deploy();
+
+  await demoTest.deployed();
+  console.log("demoTest deployed to:", demoTest.address);
+
+  await solidtyTest7.setAddress(demoTest.address);
+
+
+  const txt1 = await solidtyTest7.connect(addr2).becomeRichest({value: ethers.utils.parseEther("1")});
+
+  */
+
+
+
+
+  //console.log("Add 1 = ",  (await solidtyTest7.add1(23,45,6)).toString());
+  //console.log("Add 2 = ", (await solidtyTest7.add2(23,45,1)).toString());
+
+
+  /*
+  console.log("Sub ", (await solidtyTest7["getSum(uint256,uint256)"](34,45)).toString());
+  console.log("Sub ", (await solidtyTest7["getSum(uint256,uint256,uint256)"](34,45, 67)).toString());
+  */
+  /*
   const SolidityTest5:SolidityTest5__factory = await ethers.getContractFactory("SolidityTest5");
   const solidtyTest5:SolidityTest5 = await SolidityTest5.deploy();
 
@@ -52,7 +130,7 @@ async function main() {
   console.log("Receive Balance = ", (await solidtyTest5.receiveBalance(addr1.address)).toString())
   console.log("Fallback Balance = ", (await solidtyTest5.fallbackBalance(addr1.address)).toString());
 
-
+  */
 
 
 
