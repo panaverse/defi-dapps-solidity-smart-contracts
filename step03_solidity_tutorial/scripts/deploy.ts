@@ -1,6 +1,6 @@
 import { BigNumber } from "ethers";
 import { ethers } from "hardhat";
-import { SolidityTest, SolidityTest2, SolidityTest2__factory, SolidityTest3, SolidityTest3__factory, SolidityTest__factory } from "../typechain";
+import { C, ContractMath, ContractMath__factory, C__factory, SolidityTest, SolidityTest2, SolidityTest2__factory, SolidityTest3, SolidityTest3__factory, SolidityTest__factory } from "../typechain";
 import { Demo1 } from "../typechain/Demo1";
 import { Demo2 } from "../typechain/Demo2";
 import { DemoTest } from "../typechain/DemoTest";
@@ -20,6 +20,49 @@ async function main() {
 
   const [owner, addr1, addr2] = await ethers.getSigners();
 
+  const ContractMath:ContractMath__factory = await ethers.getContractFactory("ContractMath");
+  const contractMath:ContractMath = await ContractMath.deploy();
+
+  await contractMath.deployed();
+  console.log("contractMath deployed to:", contractMath.address);
+
+  const txt1 = await contractMath.mint(15);
+  
+  /*
+  const txt1 = await contractMath.doSomeWork();
+  const receipt = await txt1.wait();
+
+  console.log("Receipt = ",receipt);
+  console.log("Events = ",receipt.events);
+  */
+
+
+  /*
+  const MyMathLib:MyMathLib__factory = await ethers.getContractFactory("MyMathLib")
+  const myMathLib:MyMathLib = await MyMathLib.deploy();
+
+  await myMathLib.deployed();
+  */
+ /*
+  const ContractMath:ContractMath__factory = await ethers.getContractFactory("ContractMath");
+  const contractMath:ContractMath = await ContractMath.deploy();
+
+  await contractMath.deployed();
+  console.log("contractMath deployed to:", contractMath.address);
+
+  console.log("Data A = ", (await contractMath.checkResult()).toString());
+  */
+  /*
+  const C:C__factory = await ethers.getContractFactory("C");
+  const c:C = await C.deploy();
+
+  await c.deployed();
+  console.log("Contract c deployed to:", c.address);
+
+  console.log("Data A = ", (await c.checkFunctionA()).toString());
+  console.log("Data B = ", (await c.checkFunctionB()).toString());
+  */
+  /*
   const Demo2:Demo2__factory = await ethers.getContractFactory("Demo2");
   const demo2:Demo2 = await Demo2.deploy();
 
@@ -42,7 +85,7 @@ async function main() {
 
   const name = await demo2.getNameOfContract(demoAddress2);
   console.log("Name = ",name);
-  
+  */
   /*
   const Demo1:Demo1__factory = await ethers.getContractFactory("Demo1");
   const demo1:Demo1 = await Demo1.attach(demoAddress2);
