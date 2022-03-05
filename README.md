@@ -69,6 +69,15 @@ This repository will provide a latest updated learning resource for Solidity, Da
 
 [Class 6: Step 03 Part 5 - Solidity Tutorial in Urdu on YouTube](https://youtu.be/lyQUb7vuvpY)
 
+
+[Class 7: Step 03 Part 6 - Solidity Tutorial in English on Facebook](https://www.facebook.com/zeeshanhanif/videos/474397740982913)
+
+[Class 7: Step 03 Part 6 - Solidity Tutorial in English on YouTube](https://youtu.be/dNel-1J7WAo)
+
+[Class 7: Step 03 Part 6 - Solidity Tutorial in Urdu on Facebook](https://www.facebook.com/Ai.SirQasim/videos/1114838999266069)
+
+[Class 7: Step 03 Part 6 - Solidity Tutorial in Urdu on YouTube](https://youtu.be/ynRJq88pJQo)
+
 [![Internet's Value Layer](video_image.png)](https://www.youtube.com/watch?v=LNpjKZnsdfI "Internet's Value Layer")
 
 
