@@ -29,8 +29,8 @@ contract CallFunctionDemo  {
         //abc.doSomething();
     }
 
-    function callerFunctionTestStatic (uint256 galValue) public view {
-        (bool success, bytes memory data) = contractAddress.staticcall{gas:galValue}(abi.encodeWithSignature("doSomething(uint256)", 12));
+    function callerFunctionTestStatic () public view {
+        (bool success, bytes memory data) = contractAddress.staticcall(abi.encodeWithSignature("doSomething(uint256)", 12));
         console.log("CallFunctionDemo:: callerFunctionTestStatic success = ",success);
         //SecondContract abc = new SecondContract();
         //abc.doSomething();
