@@ -1,17 +1,20 @@
 
 import { ethers } from "hardhat";
-import { Greeter, Greeter__factory } from "../typechain";
+import { DemoConstant, DemoConstant__factory, Greeter, Greeter__factory } from "../typechain";
 
 async function main() {
 
   const [owner, addr1] = await ethers.getSigners();
 
-  const Greeter:Greeter__factory = await ethers.getContractFactory("Greeter");
-  const greeter:Greeter = await Greeter.deploy("Hello");
+  const DemoConstant:DemoConstant__factory = await ethers.getContractFactory("DemoConstant");
+  const demoConstant:DemoConstant = await DemoConstant.deploy(23);
 
-  await greeter.deployed();
+  await demoConstant.deployed();
 
-  console.log("Greeter deployed to:", greeter.address);
+  console.log("DemoConstant deployed to:", demoConstant.address);
+
+
+
 }
 
 // We recommend this pattern to be able to use async/await everywhere
