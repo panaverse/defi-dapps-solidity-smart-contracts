@@ -44,7 +44,9 @@ Review the OpenXeppelin ERC20 Token code in the following file in the node_modul
 
 @openzeppelin/contracts/token/ERC20/ERC20.sol
 
-Read pages 262-271 from chapter 9 of our textbook
+@openzeppelin/contracts/token/ERC20/presets/ERC20PresetMinterPauser.sol
+
+Read pages 262-271 from chapter 9 of our textbook but note that this has been not been updated to version 4
 
 Now lets compile the token code
 
@@ -52,7 +54,11 @@ Now lets compile the token code
 npx hardhat compile
 ```
 
-Now read about ERC20 Token Supply [article](https://docs.openzeppelin.com/contracts/4.x/erc20-supply)
+Now read about ERC20 Supply issues:
+
+[Presets](https://docs.openzeppelin.com/contracts/4.x/erc20#Presets)
+
+[Token Supply article](https://docs.openzeppelin.com/contracts/4.x/erc20-supply)
 
 First delete the greeter tests in the index.ts file in the test directory.
 
