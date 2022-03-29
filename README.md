@@ -97,6 +97,16 @@ This repository will provide a latest updated learning resource for Solidity, Da
 [Class 9: Step 04 and 05 - Chapter 02 and 03 Textbook in Urdu on YouTube](https://youtu.be/1DmqDVVv0Wg)
 
 
+[Class 10: Step 6A - Chapter 07 Textbook in English on Facebook](https://www.facebook.com/zeeshanhanif/videos/1248604509216381)
+
+[Class 10: SStep 6A - Chapter 07 Textbook in English on YouTube](https://youtu.be/rgEbkqhr-2g)
+
+[Class 10: Step 6A - Chapter 07 Textbook in Urdu on Facebook](https://www.facebook.com/Ai.SirQasim/videos/703398320695153)
+
+[Class 10: Step 6A - Chapter 07 Textbook in Urdu on YouTube](https://youtu.be/VFIItvWFfOY)
+
+
+
 
 [![Internet's Value Layer](video_image.png)](https://www.youtube.com/watch?v=LNpjKZnsdfI "Internet's Value Layer")
 
