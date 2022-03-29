@@ -36,6 +36,8 @@ You can do it by using the [Contract Wizard](https://wizard.openzeppelin.com/)
 
 We will look into the OpenZeppelin implementation files for the ERC20 token standard
 
+[Also read the official documentation](https://docs.openzeppelin.com/contracts/4.x/erc20)
+
 Review the OpenXeppelin ERC20 Token code in the following file in the node_modules directory:
 
 @openzeppelin/contracts/token/ERC20/IERC20.sol
