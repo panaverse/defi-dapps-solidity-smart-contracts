@@ -50,6 +50,8 @@ Now lets compile the token code
 npx hardhat compile
 ```
 
+Now read about ERC20 Token Supply [article](https://docs.openzeppelin.com/contracts/4.x/erc20-supply)
+
 First delete the greeter tests in the index.ts file in the test directory.
 
 Let's write some code to test the token in the token-test.ts file in the test directory.
