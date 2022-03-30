@@ -125,7 +125,7 @@ Also check these links for latest listings:
 
 [Binance Launchpad](https://www.coinspeaker.com/ieo/platform/binance-launchpad/)
 
-[IEO List]{https://icomarks.com/ieo)
+[IEO List](https://icomarks.com/ieo)
 
 [Polkastarter](https://polkastarter.com/)
 
