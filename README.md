@@ -129,7 +129,7 @@ Also check these links for latest listings:
 
 [Polkastarter](https://polkastarter.com/)
 
-Porject Part 1: How to Launch a IEO on Binance Lauchpad
+Project Part 1: How to Launch a IEO on Binance Lauchpad
 
 [Read how to Lauch an IEO](https://appinventiv.com/blog/how-to-launch-an-ieo/)
 
@@ -138,14 +138,14 @@ Your first task of the project is to make a google slides presentation on how to
 Note: Also document the alternatives to Binance Launchpad.
 
 
-Porject Part 2: How to Launch a IDO on Polkastarter
+Project Part 2: How to Launch a IDO on Polkastarter
 
 Review the [list of top fundraising platforms](https://cryptorank.io/fundraising-platforms)
 
 Your second task of the project is to make a google slides presentation on how to start a IDO on the [Polkastarter](https://polkastarter.com/).
 
 
-Porject Part 3: Create a Pako Token
+Project Part 3: Create a Pako Token
 
 By creating an token and related contracts, you'll also learn how to handle money sent to to your contracts, which should come in handy if you want to create some kind of paid decentralised service in the future.
 
@@ -153,7 +153,7 @@ Therefore, for the sake of this chapter, let's imagine that our  Pako DApp uses 
 
 Now Create your own Pako ERC20 Token and deploy it on a testnet. The Token should be to use openzeppelin contracts. You will use Harkhat development envirnoment. Also, write at least 20 automated tests. We will be using the Solidity and Typescript for dvelopment.
 
-Porject Part 4: Develop Crowd Sale Contract
+Project Part 4: Develop Crowd Sale Contract
 
 This contract will be responsible to allow users to exchange ETH for our Pako Token. In order to do that we need to
 Set a price for our token (1 ETH = 100 Pako Token)
@@ -172,7 +172,7 @@ Also write exentisive tests, for example we will simply send a transaction of 1 
 
 Note: Before you get started writing the token contract we suggest you review [access control](https://docs.openzeppelin.com/contracts/4.x/access-control).
 
-Porject Part 5: Trying it with MetaMask
+Project Part 5: Trying it with MetaMask
 
 While it's always good to test your code, it's often more satisfying to see the results of your work wrapped in a nice UI. Let's see how we can deploy our contracts and get some Pako tokens into our MetaMask wallet!
 
@@ -190,11 +190,31 @@ Once you're on the token page, click on "Add custom token" and paste in the toke
 
 After confirming that you want to add the token, you should be able to see your Pako balance right next to your ETH balance in the wallet. How cool!
 
-Porject Part 6: Trying it with Multisignature Wallets
+Project Part 6: Trying it with Multisignature Wallets
 
 [Read](https://www.coindesk.com/tech/2020/11/10/multisignature-wallets-can-keep-your-coins-safer-if-you-use-them-right/)
 
 Now use [Gnosis Safe]{https://gnosis-safe.io/) with multi-sigs to do what you did in the last part.
+
+
+Project Part 7: Sending Tokens using Ethers.js 
+
+Write a Typescript program to send Pako Token to some friend's address using Ethers.js.
+
+[You may follow this tutorial](https://ethereum.org/en/developers/tutorials/send-token-etherjs/)
+
+
+Project Part 8 Advance: Create, Deploy, Mint, and Sell a NFT
+
+[Read this NFT tutorial series](https://ethereum.org/en/developers/tutorials/how-to-write-and-deploy-an-nft/)
+
+Create a NFT contract using the [OpenZepplen ERC721 NFT Standard](https://docs.openzeppelin.com/contracts/4.x/erc721).
+
+You may use the [Preset ERC721 contract](https://docs.openzeppelin.com/contracts/4.x/erc721#Presets).
+
+Deploy your NFT contract on a testnet, mint it, and view it on the MetaMask wallet and list it on [OpenSea Marketplace](https://opensea.io/) for sale.
+
+[Implement a ERC721 Market](https://ethereum.org/en/developers/tutorials/how-to-implement-an-erc721-market/)
 
 
 
