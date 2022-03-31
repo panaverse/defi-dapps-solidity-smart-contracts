@@ -70,9 +70,17 @@ Now let's run the tests by giving the following command:
 npx hardhat test
 ```
 
+Now let's deploy the contract to a testnet. 
 
+[First, read this tutorial](https://hardhat.org/tutorial/deploying-to-a-live-network.html)
 
+Write the deploy.ts script in the scripts directory.
 
+In order to test if the script is running on the local hardhat network give the following command:
+
+```shell
+npx hardhat run dist/scripts/deploy.js
+```
 
 
 
