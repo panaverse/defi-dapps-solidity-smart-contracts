@@ -160,6 +160,8 @@ Set a price for our token (1 ETH = 100 Pako Token)
 
 Implement a [payable](https://codedamn.com/news/solidity/payable-function-in-solidity-example-how-to-use-it) buyToken() function. 
 
+Also may also see [payable example](https://solidity-by-example.org/payable/).
+
 Emit a BuyTokens event that will log who’s the buyer, the amount of ETH sent and the amount of Token bought
 
 Transfer 75% the Tokens to the Crowd Sale contract at deployment time. i.e. Right after the contract is deployed, we want the token contract to send 75% of our token supply to it. While 25% remain in our personal "owner" account.
