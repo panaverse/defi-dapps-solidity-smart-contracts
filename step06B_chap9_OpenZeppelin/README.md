@@ -79,8 +79,45 @@ Write the deploy.ts script in the scripts directory.
 In order to test if the script is running on the local hardhat network give the following command:
 
 ```shell
+tsc
 npx hardhat run dist/scripts/deploy.js
 ```
+
+Now lets deploy our token to the live test network.
+
+We’ll use Ropsten here, but you can add any network similarly:
+
+Open an account on https://www.alchemy.com/
+
+Go grab your ALCHEMY URL for the Ropsten testnet and come back 
+
+Create the .env file and Update the ALCHEMY URL in the file ( review the .env.example file )
+
+Go to your Metamask Wallet and change the network to Ropsten and copy the privite key.
+
+Paste the wallet private key in the .env file.
+
+Go back to Metamask Wallet and copy the address of Ropsten account and issue testing-ETH for free from a faucet.
+
+To deploy on Ropsten you need to send ropsten-ETH into the address that's going to be making the deployment. You can get some ETH for testnets from a faucet, a service that distributes testing-ETH for free. Here's the one for Ropsten:
+
+https://faucet.egorfine.com/
+
+
+
+Once you have the ropsten-ETH balance in your account from the faucet in your account, run these commands:
+
+
+```shell
+tsc
+npx hardhat run dist/scripts/deploy.js --network ropsten
+```
+
+Output:
+
+Token address: 0xA65C374EfCDCd27e7Df064cdd78D0549bCB5D1b9
+
+This is the address of the Token Contract on the ropsten testnet. Your contract will have your own address.
 
 
 
