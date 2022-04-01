@@ -120,6 +120,15 @@ Token address: 0xA65C374EfCDCd27e7Df064cdd78D0549bCB5D1b9
 This is the address of the Token Contract on the ropsten testnet. Your contract will have your own address.
 
 
+Now the next decision you have to make is "how do I get these tokens to users?". This is usually done in one of three ways:
+
+Owned Crowdsale — The Crowdsale contract owns tokens and simply transfers tokens from its own ownership to users that purchase them.
+
+Minted Crowdsale — The Crowdsale mints tokens when a purchase is made.
+
+Allowance Crowdsale — The Crowdsale is granted an allowance to another wallet (like a Multisig) that already owns the tokens to be sold in the crowdsale.
+
+
 
 
 # Advanced Sample Hardhat Project
