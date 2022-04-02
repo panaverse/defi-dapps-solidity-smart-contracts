@@ -155,6 +155,18 @@ Now Create your own Pako ERC20 Token and deploy it on a testnet. The Token shoul
 
 Project Part 4: Develop Crowd Sale Contract
 
+Now the next decision you have to make is "how do I get these tokens to users?". This is usually done in one of three ways:
+
+Owned Crowdsale — The Crowdsale contract owns tokens and simply transfers tokens from its own ownership to users that purchase them.
+
+Minted Crowdsale — The Crowdsale mints tokens when a purchase is made.
+
+Allowance Crowdsale — The Crowdsale is granted an allowance to another wallet (like a Multisig) that already owns the tokens to be sold in the crowdsale.
+
+Other option is that we let an exchange handles this process.
+
+In this part of the project we will implement the Owned Crowdsale strategy. 
+
 This contract will be responsible to allow users to exchange ETH for our Pako Token. In order to do that we need to
 Set a price for our token (1 ETH = 100 Pako Token)
 
