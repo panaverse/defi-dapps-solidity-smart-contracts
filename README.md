@@ -105,6 +105,18 @@ This repository will provide a latest updated learning resource for Solidity, Da
 
 [Class 10: Step 6A - Chapter 07 Textbook in Urdu on YouTube](https://youtu.be/VFIItvWFfOY)
 
+
+[Class 11: Step 6B - Vacation Project Assignment in English on Facebook](https://www.facebook.com/inampaki/videos/717989595995770)
+
+[Class 11: SStep 6B - Vacation Project Assignment in English on YouTube]()
+
+[Class 11: Step 6B - Vacation Project Assignment in Urdu on Facebook]()
+
+[Class 11: Step 6B - Vacation Project Assignment in Urdu on YouTube]()
+
+## We will take a 1 month Ramdan/Summer Vacation and do the following project during this vacation. The project is due after Eid. Classes will also continue after Eid.
+
+
 ## Project 1: Create a Token and Launch ICO/IEO/IDO
 
 As you probably know, the ICO ("Initial Coin Offering") industry has been booming, and it's completely reinventing the way new startups kickstart themselves. In fact, go have a look at [Wikipedia's list of highest crowdfunding projects](https://en.wikipedia.org/wiki/List_of_highest-funded_crowdfunding_projects), and you'll notice that blockchain projects absolutely dominate the list.
