@@ -129,6 +129,13 @@ Minted Crowdsale — The Crowdsale mints tokens when a purchase is made.
 Allowance Crowdsale — The Crowdsale is granted an allowance to another wallet (like a Multisig) that already owns the tokens to be sold in the crowdsale.
 
 
+Other option is that we let an exchange handles this process.
+
+To write the Crowd Sale contract you need access to the mint() function of MyToken.
+
+In order to grant minting access to the token you need to understand [OpenZeppein Access Control](https://docs.openzeppelin.com/contracts/4.x/access-control)
+
+
 
 
 # Advanced Sample Hardhat Project
