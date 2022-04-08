@@ -4,6 +4,7 @@
 // When running the script with `npx hardhat run <script>` you'll find the Hardhat
 // Runtime Environment's members available in the global scope.
 import { ethers } from "hardhat";
+import { MyToken, CrowdSale, ERC20PresetMinterPauser } from "../typechain";
 
 async function main() {
   // Hardhat always runs the compile task when running scripts with its command
@@ -25,6 +26,13 @@ async function main() {
   const token = await Token.deploy();
 
   console.log("Token address:", token.address);
+
+  const CrowdSale = await ethers.getContractFactory("CrowdSale");
+  const crowdSale = await CrowdSale.deploy(token.address);
+
+  console.log("Crowdsale Contract address:", crowdSale.address);
+
+  token.grantRole(ERC20PresetMinterPauser.MINTER_ROLE, crowdSale.address);
 
 }
 

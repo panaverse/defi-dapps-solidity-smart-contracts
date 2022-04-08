@@ -108,17 +108,6 @@ https://faucet.egorfine.com/
 Once you have the ropsten-ETH balance in your account from the faucet in your account, run these commands:
 
 
-```shell
-tsc
-npx hardhat run dist/scripts/deploy.js --network ropsten
-```
-
-Output:
-
-Token address: 0xA65C374EfCDCd27e7Df064cdd78D0549bCB5D1b9
-
-This is the address of the Token Contract on the ropsten testnet. Your contract will have your own address.
-
 
 Now the next decision you have to make is "how do I get these tokens to users?". This is usually done in one of three ways:
 
@@ -134,6 +123,22 @@ Other option is that we let an exchange handles this process.
 To write the Crowd Sale contract you need access to the mint() function of MyToken.
 
 In order to grant minting access to the token you need to understand [OpenZeppein Access Control](https://docs.openzeppelin.com/contracts/4.x/access-control)
+
+
+```shell
+tsc
+npx hardhat run dist/scripts/deploy.js --network ropsten
+```
+
+Output:
+
+Token address: 0xA65C374EfCDCd27e7Df064cdd78D0549bCB5D1b9
+
+Crowdsale contract Address:
+
+This is the address of the Token Contract on the ropsten testnet. Your contract will have your own address.
+
+
 
 
 
