@@ -23,16 +23,17 @@ async function main() {
   console.log("Account balance:", (await deployer.getBalance()).toString());
 
   const Token = await ethers.getContractFactory("MyToken");
-  const token = await Token.deploy();
+  const token: MyToken = await Token.deploy();
 
   console.log("Token address:", token.address);
 
   const CrowdSale = await ethers.getContractFactory("CrowdSale");
-  const crowdSale = await CrowdSale.deploy(token.address);
+  const crowdSale : CrowdSale = await CrowdSale.deploy(token.address);
 
   console.log("Crowdsale Contract address:", crowdSale.address);
 
-  token.grantRole(ERC20PresetMinterPauser.MINTER_ROLE, crowdSale.address);
+  await token.grantRole(token.MINTER_ROLE, crowdSale.address);
+  
 
 }
 
