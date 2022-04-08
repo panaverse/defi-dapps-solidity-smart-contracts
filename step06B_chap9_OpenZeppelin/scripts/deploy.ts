@@ -32,7 +32,7 @@ async function main() {
 
   console.log("Crowdsale Contract address:", crowdSale.address);
 
-  await token.grantRole(token.MINTER_ROLE, crowdSale.address);
+  await token.grantRole(await token.MINTER_ROLE(), crowdSale.address);
   
 
 }
