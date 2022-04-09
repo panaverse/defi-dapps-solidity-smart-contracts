@@ -20,7 +20,7 @@ async function main() {
 
   console.log("Deploying contracts with the account:", deployer.address);
 
-  console.log("Account balance:", (await deployer.getBalance()).toString());
+  console.log("Account balance Ether:", (await deployer.getBalance()).toString());
 
   const Token = await ethers.getContractFactory("MyToken");
   const token: MyToken = await Token.deploy();
@@ -32,9 +32,21 @@ async function main() {
 
   console.log("Crowdsale Contract address:", crowdSale.address);
 
-  await token.grantRole(await token.MINTER_ROLE(), crowdSale.address);
+  const grantRoleTx = await token.grantRole(await token.MINTER_ROLE(), crowdSale.address);
+
+  // wait until the transaction is mined
+  await grantRoleTx.wait();
+
+
+  const buyTx = await crowdSale.buyToken({value: ethers.utils.parseEther("0.05")});
+
+  // wait until the transaction is mined
+  await buyTx.wait();
+
+  const bal = await token.balanceOf(deployer.address);
   
 
+  console.log("My MyToken Balance is:", bal);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

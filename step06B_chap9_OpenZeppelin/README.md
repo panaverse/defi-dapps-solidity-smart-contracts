@@ -103,6 +103,10 @@ To deploy on Ropsten you need to send ropsten-ETH into the address that's going 
 
 https://faucet.egorfine.com/
 
+or 
+
+https://faucet.dimensions.network/
+
 
 
 Once you have the ropsten-ETH balance in your account from the faucet in your account, run these commands:
