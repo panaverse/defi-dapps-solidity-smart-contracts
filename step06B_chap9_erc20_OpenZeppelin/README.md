@@ -136,11 +136,17 @@ npx hardhat run dist/scripts/deploy.js --network ropsten
 
 Output:
 
-Token address: 0xA65C374EfCDCd27e7Df064cdd78D0549bCB5D1b9
+Token address: 0xabcd
 
-Crowdsale contract Address:
+Crowdsale contract Address: 0xabcd
 
-This is the address of the Token Contract on the ropsten testnet. Your contract will have your own address.
+Now we will learn how to interact with these contracts from the metamask wallet:
+
+This is the address of the Token Contract and Crowdsale contract on the ropsten testnet. Your contract will have your own addresses.
+
+Using your Metamask wallet send some Eth's to the crowdsale address. The crowdsale contract will receive these Eths and mint the MyTokens for you.
+
+However, the minted tokens will not be showing in your Metamask wallet. Add the Token Address in your wallet to start following your MyToken balance.
 
 
 
