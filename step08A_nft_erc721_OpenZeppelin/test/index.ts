@@ -15,17 +15,21 @@ describe("ApartmentCollection", function () {
     const apartmentCollection: ApartmentCollection = await ApartmentCollection.deploy();
     await apartmentCollection.deployed();
 
+    /*
     await apartmentCollection.on("Transfer", (from, to, tokenId) => {
       console.log("Token ID: " + tokenId);
-    });
+    });*/
 
     const txt1:ContractTransaction = await apartmentCollection.mint(owner.address);
     const receipt1:ContractReceipt = await txt1.wait();
-    console.log("txt1 = ",txt1);
-    console.log("receipt1 = ",receipt1);
-    const eventArgs = receipt1.events? receipt1.events[0].args : "";
-    console.log("Token Id = ",eventArgs?eventArgs["tokenId"].toString():" N/A");
     expect(await (await (apartmentCollection.balanceOf(owner.address))).eq(1));
+
+    //console.log("txt1 = ",txt1);
+    //console.log("receipt1 = ",receipt1);
+    const eventArgs = receipt1.events? receipt1.events[0].args : "";
+    const tokenId = eventArgs?eventArgs["tokenId"].toString():" N/A";
+    console.log("Token Id = ", tokenId);
+    expect(await apartmentCollection.ownerOf(tokenId)).to.equal(owner.address);
 
 
   });
