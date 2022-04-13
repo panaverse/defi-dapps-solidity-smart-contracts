@@ -1,9 +1,9 @@
 node_modules
-dist
-typechain
 .env
+coverage
+coverage.json
+typechain
 
 #Hardhat files
 cache
 artifacts
-
