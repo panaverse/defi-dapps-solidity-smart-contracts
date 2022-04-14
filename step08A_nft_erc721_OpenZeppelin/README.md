@@ -51,10 +51,11 @@ npx hardhat test
 ```
 
 
-
-
+For media management: 
 
 [Read about IPFS](https://ipfs.io/)
+
+[Also review Pinata](https://www.pinata.cloud/)
 
 
 # Advanced Sample Hardhat Project
