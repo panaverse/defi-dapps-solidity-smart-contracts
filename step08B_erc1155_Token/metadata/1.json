@@ -1,0 +1,15 @@
+{
+    "name": "Pentagon",
+    "description": "Pentagon Shape with Light Yellow color",
+    "image": "ipfs://QmfFDBWoVQc1X5Lzdqv9XsbzdrHtvp4uAHNjqJq1gPqcNV/02_pentagon_light_yellow.png",
+    "attributes": [
+        {
+            "trait_type": "Name",
+            "value": "Pentagon"
+        },
+        {
+            "trait_type": "Color",
+            "value": "Light Yellow"
+        }
+    ]
+}

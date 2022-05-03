@@ -1,0 +1,15 @@
+{
+    "name": "Diamond",
+    "description": "Diamond Shape with Light Yellow color",
+    "image": "ipfs://QmfFDBWoVQc1X5Lzdqv9XsbzdrHtvp4uAHNjqJq1gPqcNV/04_diamond_light_yellow.png",
+    "attributes": [
+        {
+            "trait_type": "Name",
+            "value": "Diamond"
+        },
+        {
+            "trait_type": "Color",
+            "value": "Light Yellow"
+        }
+    ]
+}

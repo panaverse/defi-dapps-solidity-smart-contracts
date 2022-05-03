@@ -1,0 +1,15 @@
+{
+    "name": "Star: 4 point",
+    "description": "Star: 4 point Shape with Light Yellow color",
+    "image": "ipfs://QmfFDBWoVQc1X5Lzdqv9XsbzdrHtvp4uAHNjqJq1gPqcNV/06_star_4point_light_yellow.png",
+    "attributes": [
+        {
+            "trait_type": "Name",
+            "value": "Star: 4 point"
+        },
+        {
+            "trait_type": "Color",
+            "value": "Light Yellow"
+        }
+    ]
+}
