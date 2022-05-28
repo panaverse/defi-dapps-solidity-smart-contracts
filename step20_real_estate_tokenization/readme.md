@@ -63,6 +63,8 @@
 
 [Lofty](https://www.lofty.ai/)
 
+[RealT](https://realt.co/)
+
 
 ## United Kingdom Real Estate Tokenization
 
