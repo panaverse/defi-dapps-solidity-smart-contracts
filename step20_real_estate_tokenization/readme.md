@@ -12,8 +12,9 @@
 [Tokenization – From illiquid to liquid real estate ownership](https://www.ey.com/en_ch/real-estate-hospitality-construction/tokenization-from-illiquid-to-liquid-real-estate-ownership)
 
 
-
 [Example FAQ](https://wiki.realt.co/)
+
+[Asset Tokenization platforms compared - 2021](https://www.blockdata.tech/blog/general/asset-tokenization-platforms-compared-2021)
 
 
 
