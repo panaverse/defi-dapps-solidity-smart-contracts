@@ -6,36 +6,40 @@
 
 [Tokenization – From illiquid to liquid real estate ownership](https://www.ey.com/en_ch/real-estate-hospitality-construction/tokenization-from-illiquid-to-liquid-real-estate-ownership)
 
+## The Relevant Token Standards
+
+[ERC-1155: non-fungible tokens on steroids](https://medium.com/envienta-open-source-everything/erc-1155-non-fungible-tokens-on-steroids-71aab96fa674)
+
 
 ## Real Estate NFTs
 
+[Future of NFTs in the Real Estate Industry](https://www.graana.com/blog/future-of-nfts-in-the-real-estate-industry/)
+
+[What Are Real Estate NFTs? Everything You Need to Know](https://investorjunkie.com/nfts/what-are-real-estate-nfts/)
+
+[Collaboration of NFT with Real Estate](https://blockchain.oodles.io/blog/collaboration-of-nft-with-real-estate/)
+
+[Real Estate Tokenization and Blockchain | An In-depth Guide](https://blockchain.oodles.io/blog/real-estate-tokenization-blockchain-guide/)
+
+[NFTs: What are They and Why Should You Care?](https://blog.tsl.io/nfts-what-are-they-and-why-should-you-care)
 
 [Investing in NFT Real Estate](https://www.fool.com/investing/stock-market/market-sectors/financials/non-fungible-tokens/nft-real-estate/)
 
 [How NFTs Can Transform The Real Estate Sector](https://academy.aax.com/en/how-nfts-can-transform-the-real-estate-sector/)
 
+[NFT Real Estate – Explained](https://101blockchains.com/nft-real-estate/)
 
-## The Real-Estate Tokenization Technical Options
+[NFT Use Cases in Real Estate](https://www.jdsupra.com/legalnews/nft-use-cases-in-real-estate-9505741/)
 
-1. Tokenize (ERC-20) the LLC that owns and manages the Real-Estate Property
-Create an LLC in USA or Dubai for the project and issue ERC 20 Tokens for the LLC in the Global Crypto Market. This will be like raising funds for any project. 
-ERC 20 Tokens are easy to understand but we will have do our own crowd sale and its marketing. We will also have to create our own secondary marketplace for ERC 20 Real-Estate Tokens. This is going to be very expensive marketing and development wise. The liquidity of these tokens will be very limited i.e. only in our own marketplace or we will have to register with an exchange.
+[Propy](https://propy.com/browse/), a real estate blockchain startup, has successfully sold two NFT properties, including an apartment in Kyiv and a house in Florida (the Florida house was purchased for 210 Ether, or $654,309.60). They’re getting ready to auction off a condo in Tampa Bay next.
 
-2. Create Many Separate LLCs for a Independent Unit of Real-Estate
+[TechCrunch Founder on Selling His Apartment as an NFT in Groundbreaking Deal](https://finance.yahoo.com/news/techcrunch-founder-selling-apartment-nft-130000525.html)
 
-3. Create NFT Collection for the Real-Estate Property
-Each NFT will represent a single independent unit of the property i.e. flat or piece of land. The collection will represent the complete property.
-The NFTs can be sold on the NFT marketplace like the https://opensea.io/
-It will also provide liquidity to the owner because he can sell it easily on the NFT marketplace.
-The downside is that NFT price may be high, however this issue can be solved by issuing Fractional NFT's covered in Option 4.
-There can also be legal issues as mentioned here ( https://smartcrowd.cc/ ):
-Real estate can’t directly be tokenized, but legal entities can. Each property is owned by a Limited Liability Corporation (LLC). Each LLC is tokenized to specific RealTokens and made available for purchase.
+[Florida home to be sold in novel non-fungible token deal](https://apnews.com/article/technology-business-lifestyle-florida-property-rights-664d7954af93ed9fbb04c07a9228ac8c)
 
+[Florida – the home of the 2nd US real estate NFT](https://propy.com/browse/tampa-condo-nft/)
 
-4. Create Fractional NFT Collection for the Real-Estate Property
-Each NFT will represent a single independent unit of the property i.e. flat or piece of land. The collection will represent the complete property.
-The NFTs can be sold on the NFT marketplace like the https://opensea.io/
-It will also provide liquidity to the owner because he can sell it easily on the NFT marketplace.
+[Propy NFT Marketplace](https://propy.com/browse/propy-nft/)
 
 
 
@@ -72,5 +76,19 @@ It will also provide liquidity to the owner because he can sell it easily on the
 
 [SECP warns people against investing in fraudulent schemes](https://www.dawn.com/news/1664452)
 
+
+## The Real Estate Tokenization Technical Options
+
+Real estate can’t directly be tokenized, but legal entities can. Each property is owned by a Limited Liability Corporation (LLC). Each LLC is tokenized to specific RealTokens and made available for purchase. We have two options to implement this either by tokenizing (ERC-20) the complete project, or tokenizing (NFT ERC-1155) each idependent units seprately (However, these NFTs will be Fractional i.e. implementing ERC-1155)
+
+1. Tokenize (ERC-20) the Company that owns and manages the Real-Estate Property
+Create an LLC in USA or [Special Purpose Vehicle in Dubai](https://smartcrowd.ae/how-it-works/) for the project and issue ERC 20 Tokens for the LLC or SPV in the Global Crypto Market. This will be like raising funds for any project. 
+ERC 20 Tokens are easy to understand but we will have do our own crowd sale and its marketing. We will also have to create our own secondary marketplace for ERC 20 Real-Estate Tokens. This is going to be very expensive marketing and development wise. The liquidity of these tokens will be very limited i.e. only in our own marketplace or we will have to register with an exchange.
+
+2. Create a Company for every Independent Unit of Real-Estate, and issue a NFT (ERC-1155) for it
+Each NFT will represent a single independent unit of the property i.e. flat or piece of land. The collection will represent the complete property.
+The NFTs can be sold on the NFT marketplace like the https://opensea.io/
+It will also provide liquidity to the owner because he can sell it easily on the NFT marketplace.
+The downside is that NFT price may be high, however this issue can be solved by issuing Fractional NFT's i.e. ERC-1155 instead of ERC-721.
 
 
