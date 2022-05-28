@@ -10,7 +10,7 @@
 
 [ERC-1155: non-fungible tokens on steroids](https://medium.com/envienta-open-source-everything/erc-1155-non-fungible-tokens-on-steroids-71aab96fa674)
 
-[Semi-Fungible Tokens (SFTs): The Better NFTs or an Attractive Niche?](https://www.trendingtopics.eu/semi-fungible-tokens-sfts-the-better-nfts-or-an-attractive-niche/)
+[Compare ERC-1155 vs ERC-721:Token Standards | Tokenfy](https://www.tokenfy.com/blog/erc-1155-vs-erc-721/)
 
 
 ## Real Estate NFTs
