@@ -2,6 +2,8 @@
 
 ## Introduction
 
+[Video: The Tokenization of Real Estate- A Fireside Chat with Yael Tamar a Leading Tokenization Trailblazer](https://www.youtube.com/watch?v=prRDzylrooc)
+
 [How Real Estate Tokenization is Disrupting Traditional Investment](https://www.parvisinvest.com/insights/how-real-estate-tokenization-is-disrupting-traditional-investment)
 
 [Tokenization – From illiquid to liquid real estate ownership](https://www.ey.com/en_ch/real-estate-hospitality-construction/tokenization-from-illiquid-to-liquid-real-estate-ownership)
@@ -9,7 +11,6 @@
 
 [Example FAQ](https://wiki.realt.co/)
 
-[Video: The Tokenization of Real Estate- A Fireside Chat with Yael Tamar a Leading Tokenization Trailblazer](https://www.youtube.com/watch?v=prRDzylrooc)
 
 
 ## The Relevant Token Standards
