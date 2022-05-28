@@ -44,6 +44,13 @@
 [Propy NFT Marketplace](https://propy.com/browse/propy-nft/)
 
 
+## NFT Marketplaces
+
+[Top 10 NFT Marketplaces with Comparison in 2022](https://www.prolitus.com/blog/top-10-nft-marketplaces/)
+
+[How to Build an NFT Marketplace like OpenSea?](https://4irelabs.com/articles/how-to-build-an-nft-marketplace-like-opensea/)
+
+
 
 ## Dubai Real Estate Tokenization
 
