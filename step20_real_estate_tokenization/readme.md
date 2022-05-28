@@ -120,9 +120,12 @@ The downside is that NFT price may be high, however this issue can be solved by 
 
 
 
-## Financing Public-Private Partnership Infrastructure Projects by Tokenization
+## Infrastructure Tokenization
 
 [Financing Public-Private Partnership Infrastructure Projects through Tokenization-enabled Project Finance on Blockchain](https://iopscience.iop.org/article/10.1088/1757-899X/1218/1/012027/pdf)
+
+
+[Tokenization of Infrastructure](https://www.iisd.org/system/files/publications/tokenization-infrastructure-blockchain-solution.pdf)
 
 
 
