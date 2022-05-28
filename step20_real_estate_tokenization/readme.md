@@ -6,6 +6,10 @@
 
 [Tokenization – From illiquid to liquid real estate ownership](https://www.ey.com/en_ch/real-estate-hospitality-construction/tokenization-from-illiquid-to-liquid-real-estate-ownership)
 
+
+[Example FAQ](https://wiki.realt.co/)
+
+
 ## The Relevant Token Standards
 
 [ERC-1155: non-fungible tokens on steroids](https://medium.com/envienta-open-source-everything/erc-1155-non-fungible-tokens-on-steroids-71aab96fa674)
