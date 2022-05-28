@@ -4,9 +4,13 @@
 
 [Video: The Tokenization of Real Estate- A Fireside Chat with Yael Tamar a Leading Tokenization Trailblazer](https://www.youtube.com/watch?v=prRDzylrooc)
 
+[COMMERCIAL REAL ESTATE ASSET TOKENIZATION: HOW IT WORKS AND HOW TO BUILD](https://merehead.com/blog/commercial-real-estate-asset-tokenization-works-build/)
+
+
 [How Real Estate Tokenization is Disrupting Traditional Investment](https://www.parvisinvest.com/insights/how-real-estate-tokenization-is-disrupting-traditional-investment)
 
 [Tokenization – From illiquid to liquid real estate ownership](https://www.ey.com/en_ch/real-estate-hospitality-construction/tokenization-from-illiquid-to-liquid-real-estate-ownership)
+
 
 
 [Example FAQ](https://wiki.realt.co/)
@@ -108,5 +112,13 @@ Each NFT will represent a single independent unit of the property i.e. flat or p
 The NFTs can be sold on the NFT marketplace like the https://opensea.io/
 It will also provide liquidity to the owner because he can sell it easily on the NFT marketplace.
 The downside is that NFT price may be high, however this issue can be solved by issuing Fractional NFT's i.e. ERC-1155 instead of ERC-721.
+
+
+## The Construction Project Tokenization
+
+[A fully Tokenized Malaysia Resort Project is the Innovation of the Crypto World](https://www.globenewswire.com/news-release/2022/04/22/2427569/0/en/A-fully-Tokenized-Malaysia-Resort-Project-is-the-Innovation-of-the-Crypto-World.html)
+
+
+
 
 
