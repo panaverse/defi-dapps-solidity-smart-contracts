@@ -129,6 +129,21 @@ The downside is that NFT price may be high, however this issue can be solved by 
 [Tokenization of Infrastructure](https://www.iisd.org/system/files/publications/tokenization-infrastructure-blockchain-solution.pdf)
 
 
+## Marketplaces to Trade Private Digital Securities
+
+[tZERO](https://www.tzero.com/)
+
+
+[tZero gets listed on the NYSE](https://www.youtube.com/watch?v=8vDyy168Ksk)
+
+
+First time the SEC has granted approval for a national blockchain-enabled securities exchange
+
+[SEC Approves First National Blockchain-powered Boston Security Token Exchange](https://blockworks.co/sec-approves-first-national-blockchain-powered-boston-security-token-exchange/)
+
+
+
+
 
 
 
