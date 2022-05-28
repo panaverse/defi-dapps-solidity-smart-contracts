@@ -9,6 +9,8 @@
 
 [Example FAQ](https://wiki.realt.co/)
 
+[Video: The Tokenization of Real Estate- A Fireside Chat with Yael Tamar a Leading Tokenization Trailblazer](https://www.youtube.com/watch?v=prRDzylrooc)
+
 
 ## The Relevant Token Standards
 
