@@ -114,9 +114,15 @@ It will also provide liquidity to the owner because he can sell it easily on the
 The downside is that NFT price may be high, however this issue can be solved by issuing Fractional NFT's i.e. ERC-1155 instead of ERC-721.
 
 
-## The Construction Project Tokenization
+## The Construction Project Financing by Tokenization
 
 [A fully Tokenized Malaysia Resort Project is the Innovation of the Crypto World](https://www.globenewswire.com/news-release/2022/04/22/2427569/0/en/A-fully-Tokenized-Malaysia-Resort-Project-is-the-Innovation-of-the-Crypto-World.html)
+
+
+
+## Financing Public-Private Partnership Infrastructure Projects by Tokenization
+
+[Financing Public-Private Partnership Infrastructure Projects through Tokenization-enabled Project Finance on Blockchain](https://iopscience.iop.org/article/10.1088/1757-899X/1218/1/012027/pdf)
 
 
 
