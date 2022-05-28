@@ -5,6 +5,24 @@
 [Tokenization – From illiquid to liquid real estate ownership](https://www.ey.com/en_ch/real-estate-hospitality-construction/tokenization-from-illiquid-to-liquid-real-estate-ownership)
 
 
+
+## Dubai Real Estate Tokenization
+
+[Smartcrowd](https://smartcrowd.ae/)
+
+[DFSA - Financial Regulator in Dubai](https://www.dfsa.ae/)
+
+
+## United States Real Estate Tokenization
+
+[Lofty](https://www.lofty.ai/)
+
+
+## United Kingdom Real Estate Tokenization
+
+[Propertypartner](https://www.propertypartner.co/)
+
+
 ## Pakistani Real Estate Tokenization
 
 [Is Pakistan ready for real estate tokenization?](https://profit.pakistantoday.com.pk/2021/11/14/is-pakistan-ready-for-real-estate-tokenization/)
@@ -23,7 +41,7 @@
 
 
 
-## The Real-Estate Tokenization Options
+## The Real-Estate Tokenization Technical Options
 
 1. Tokenize (ERC-20) the LLC that owns and manages the Real-Estate Property
 Create an LLC in USA or Dubai for the project and issue ERC 20 Tokens for the LLC in the Global Crypto Market. This will be like raising funds for any project. 
