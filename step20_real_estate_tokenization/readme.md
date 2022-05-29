@@ -120,6 +120,9 @@ The downside is that NFT price may be high, however this issue can be solved by 
 [A fully Tokenized Malaysia Resort Project is the Innovation of the Crypto World](https://www.globenewswire.com/news-release/2022/04/22/2427569/0/en/A-fully-Tokenized-Malaysia-Resort-Project-is-the-Innovation-of-the-Crypto-World.html)
 
 
+[MECOTO —WORLD LEADER IN CONSTRUCTION TOKENIZATION](https://medium.com/@mecotogroup/mecoto-world-leader-in-construction-tokenization-c1bac449b771)
+
+
 
 ## Infrastructure Tokenization
 
