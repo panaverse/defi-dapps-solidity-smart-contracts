@@ -1,5 +1,14 @@
 # Project 05 Create 1155 NFT Project and Deploy on OpenSea
 
+[Start by reviewing this tutorial](https://101blockchains.com/erc1155-tutorial/)
+
+Then read this [ERC-1155 OpenZeppelin docs](https://docs.openzeppelin.com/contracts/4.x/erc1155)
+
+[Also review the OpenSea ERC1155 Tutorial](https://docs.opensea.io/docs/opensea-erc1155-tutorial)
+
+[How to mint NFT and publish it on OpenSea using ERC1155 smart contract](https://www.youtube.com/watch?v=J4p1sdo3Rz4)
+
+
 
 We will follow below steps:
 
