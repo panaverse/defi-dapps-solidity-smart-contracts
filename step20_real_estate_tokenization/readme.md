@@ -105,6 +105,8 @@ https://dlp.dubai.gov.ae/Legislation%20Reference/2022/Law%20No.%20(4)%20of%20202
 
 [Altamash Janjua co-founder of xstate](https://www.linkedin.com/in/altamash/?originalSubdomain=pk)
 
+[DAO Prop Tech](https://daoproptech.com/)
+
 [SECP warns people against investing in fraudulent schemes](https://www.dawn.com/news/1664452)
 
 
