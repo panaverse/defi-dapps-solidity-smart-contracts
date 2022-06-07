@@ -17,6 +17,9 @@
 [Asset Tokenization platforms compared - 2021](https://www.blockdata.tech/blog/general/asset-tokenization-platforms-compared-2021)
 
 
+[Asset Fractionalization Concept Paper From Pakistan Government](https://www.secp.gov.pk/document/concept-note-asset-fractionalization-for-public-comments/?wpdmdl=44489)
+
+
 
 ## The Relevant Token Standards
 
@@ -70,6 +73,9 @@
 
 [DFSA - Financial Regulator in Dubai](https://www.dfsa.ae/)
 
+[Virtual Asset Law in Dubai](Virtual Assets in the Emirate of Dubai
+https://dlp.dubai.gov.ae/Legislation%20Reference/2022/Law%20No.%20(4)%20of%202022%20Regulating%20Virtual%20Assets.html)
+
 
 ## United States Real Estate Tokenization
 
@@ -84,6 +90,8 @@
 
 
 ## Pakistani Real Estate Tokenization
+
+[Asset Fractionalization Concept Paper From Pakistan Government](https://www.secp.gov.pk/document/concept-note-asset-fractionalization-for-public-comments/?wpdmdl=44489)
 
 [Is Pakistan ready for real estate tokenization?](https://profit.pakistantoday.com.pk/2021/11/14/is-pakistan-ready-for-real-estate-tokenization/)
 
