@@ -145,7 +145,7 @@ Also check these links for latest listings:
 
 [Polkastarter](https://polkastarter.com/)
 
-Project Part 1: How to Launch a IEO on Binance Lauchpad
+Project Part 1: How to Launch a IEO on Binance Launchpad
 
 [Read how to Lauch an IEO](https://appinventiv.com/blog/how-to-launch-an-ieo/)
 
@@ -163,11 +163,11 @@ Your second task of the project is to make a google slides presentation on how t
 
 Project Part 3: Create a Pako Token
 
-By creating an token and related contracts, you'll also learn how to handle money sent to to your contracts, which should come in handy if you want to create some kind of paid decentralised service in the future.
+By creating a token and related contracts, you'll also learn how to handle money sent to your contracts, which should come in handy if you want to create some kind of paid decentralised service in the future.
 
 Therefore, for the sake of this chapter, let's imagine that our  Pako DApp uses its own coin – the Pako Token. We will create two contracts – one for the token itself and one for the token crowd sale (the ICO).
 
-Now Create your own Pako ERC20 Token and deploy it on a testnet. The Token should be to use openzeppelin contracts. You will use Harkhat development envirnoment. Also, write at least 20 automated tests. We will be using the Solidity and Typescript for dvelopment.
+Now Create your own Pako ERC20 Token and deploy it on a testnet. The Token should be to use openzeppelin contracts. You will use Hardhat development environment. Also, write at least 20 automated tests. We will be using the Solidity and Typescript for development.
 
 Project Part 4: Develop Crowd Sale Contract
 
@@ -198,7 +198,7 @@ Transfer the ownership of the Crowd Sale contract (at deploy time) to our fronte
 
 You can use the [openzeppelin crowd sale contracts](https://docs.openzeppelin.com/contracts/4.x/crowdsales), however you will have to update the code to the latest solidity version.
 
-Also write exentisive tests, for example we will simply send a transaction of 1 ETH from a random account to the contract. After the transaction, we should expect the account to have received Pako, while the contract's balance should have been reduced.
+Also write extensive tests, for example we will simply send a transaction of 1 ETH from a random account to the contract. After the transaction, we should expect the account to have received Pako, while the contract's balance should have been reduced.
 
 Note: Before you get started writing the token contract we suggest you review [access control](https://docs.openzeppelin.com/contracts/4.x/access-control).
 
@@ -253,7 +253,7 @@ Deploy your NFT contract on a testnet, mint it, and view it on the MetaMask wall
 [![Internet's Value Layer](video_image.png)](https://www.youtube.com/watch?v=LNpjKZnsdfI "Internet's Value Layer")
 
 
-The world of finance and software development is fusing. DeFi, Serverless, AI and IoT have merged. Our plan is to create the quintessential Unicorn Developer for this new age, who have a unique and rare skillset. They are basically individuals who on one hand can develop software and on the other mint money. They will be experts not only in serverless cloud computing technologies but also ninjas of the new token economy and decentralised finance. They will know not only to develop AI and IoT APIs but create a economic system where everyone can participate. In this repo we will focus on learning DeFi.
+The world of finance and software development is fusing. DeFi, Serverless, AI and IoT have merged. Our plan is to create the quintessential Unicorn Developer for this new age, who have a unique and rare skillset. They are basically individuals who on one hand can develop software and on the other mint money. They will be experts not only in serverless cloud computing technologies but also ninjas of the new token economy and decentralised finance. They will know not only to develop AI and IoT APIs but create an economic system where everyone can participate. In this repo we will focus on learning DeFi.
 
 ### Our Text Books
 
