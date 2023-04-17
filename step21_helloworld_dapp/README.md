@@ -6,7 +6,7 @@ npx create-react-app step21_hellowworld_dapp --template typescript
 
 cd step21_helloworld_dapp
 
-npm install ethers
+npm install --save ethers
 
 npm start
 

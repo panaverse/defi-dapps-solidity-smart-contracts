@@ -48,11 +48,12 @@ const SimpleStorage = () => {
     }
 
     const updateEthers = ()=>{
-        let tempProvider = new ethers.providers.Web3Provider(window.ethereum);
-		setProvider(tempProvider);
+        let tempProvider = new ethers.providers.Web3Provider(window.ethereum as any);
+        
+		setProvider(tempProvider as any);
 
 		let tempSigner = tempProvider.getSigner();
-		setSigner(tempSigner);
+		setSigner(tempSigner as any);
 
 		let tempContract = new ethers.Contract(contractAddress, SimpleStorage_abi, tempSigner);
 		setContract(tempContract);	
