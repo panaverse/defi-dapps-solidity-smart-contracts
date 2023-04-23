@@ -1,0 +1,39 @@
+{
+  "name": "dapp_hooks_template",
+  "version": "1.0.0",
+  "description": "React dApp template with Hooks&Redux&Web3",
+  "homepage": ".",
+  "keywords": [
+    "react",
+    "starter",
+    "template",
+    "dapp",
+    "web3",
+    "ethereum"
+  ],
+  "dependencies": {
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-redux": "7.2.3",
+    "react-scripts": "3.0.1",
+    "redux": "4.0.5",
+    "redux-logger": "3.0.6",
+    "styled-components": "5.0.1",
+    "web3": "1.2.6"
+  },
+  "devDependencies": {
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

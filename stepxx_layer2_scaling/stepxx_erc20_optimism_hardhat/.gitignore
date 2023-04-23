@@ -1,0 +1,16 @@
+node_modules
+
+# Hardhat files
+cache
+artifacts
+
+# Optimism directory
+cache-ovm
+artifacts-ovm
+
+# Secrets
+.env
+.env.local
+
+
+

@@ -1,0 +1,66 @@
+{
+  "name": "optimism-box",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "installLocalOptimism": "git clone git@github.com:ethereum-optimism/optimism.git && cd optimism && yarn install && yarn build",
+    "startLocalOptimism": "cd optimism/ops && export COMPOSE_DOCKER_CLI_BUILD=1 && export DOCKER_BUILDKIT=1 && docker-compose build && docker-compose up",
+    "stopLocalOptimism": "cd optimism/ops && docker-compose down -v",
+    "compile:evm": "truffle compile",
+    "compile:ovm": "truffle compile --config truffle-config.ovm.js",
+    "migrate:evm": "truffle migrate --network $npm_config_network",
+    "migrate:ovm": "truffle migrate --reset --config truffle-config.ovm.js --network $npm_config_network",
+    "test:evm": "truffle test",
+    "test:ovm": "truffle test --config truffle-config.ovm.js --network $npm_config_network"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/truffle-box/optimisim-box.git"
+  },
+  "keywords": [],
+  "author": "Panacloud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/truffle-box/optimism-box/issues"
+  },
+  "homepage": "https://github.com/truffle-box/optimism-box#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.2.0",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "babel-preset-stage-3": "6.24.1",
+    "babel-register": "6.26.0",
+    "bootstrap": "4.3.1",
+    "chai": "4.2.0",
+    "chai-as-promised": "7.1.1",
+    "chai-bignumber": "3.0.0",
+    "react": "16.8.4",
+    "react-bootstrap": "1.0.0-beta.5",
+    "react-dom": "16.8.4",
+    "react-scripts": "^2.1.8",
+    "truffle": "^5.3.6",
+    "web3": "^1.3.6"
+  },
+  "devDependencies": {
+    "@eth-optimism/core-utils": "^0.4.4",
+    "@eth-optimism/plugins": "^0.0.20",
+    "@eth-optimism/solc": "^0.7.6-alpha.1",
+    "@truffle/hdwallet-provider": "^1.4.1",
+    "dotenv": "^8.2.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

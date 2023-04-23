@@ -1,0 +1,1625 @@
+{
+  "contractName": "Borrower",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "_flashMintMockWETHToken",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "fMockWETH",
+      "outputs": [
+        {
+          "internalType": "contract FlashMintMockWETH",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isOwner",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "beginFlashMint",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "executeOnFlashMint",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"_flashMintMockWETHToken\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"fallback\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"beginFlashMint\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"executeOnFlashMint\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"fMockWETH\",\"outputs\":[{\"internalType\":\"contract FlashMintMockWETH\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"isOwner()\":{\"details\":\"Returns true if the caller is the current owner.\"},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/zed/Desktop/DAPP_UNIVERSITY/FLASHLOAN_MASTERCLASS/flash_mint/contracts/Borrower.sol\":\"Borrower\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/zed/Desktop/DAPP_UNIVERSITY/FLASHLOAN_MASTERCLASS/flash_mint/contracts/Borrower.sol\":{\"keccak256\":\"0x3e02efa326148a63299bc9cd00420f6480005bb24968212f565f96a8fc69fda1\",\"urls\":[\"bzz-raw://25548baca50c06a10e4382fc88c6ad6d9110dbb05338f630ac20f0def4981756\",\"dweb:/ipfs/QmTr7zikTqT8GT6AAqNdwzNFp1BC3sENjot7oNjcGsSAEQ\"]},\"/Users/zed/Desktop/DAPP_UNIVERSITY/FLASHLOAN_MASTERCLASS/flash_mint/contracts/FlashMintMockWETH.sol\":{\"keccak256\":\"0x6496d8db827be91dbf1a44262f73a1d5c4324282fdb83bac658abb853c5fe3f8\",\"urls\":[\"bzz-raw://7acbb695fb47cacf3e19c62507889a110da089fc68961eee62f92d6715dc6a2e\",\"dweb:/ipfs/QmYVCVoBbyHdstUxbGGadCUkXD7qxcMdjaskB6JHcXdbtY\"]},\"/Users/zed/Desktop/DAPP_UNIVERSITY/FLASHLOAN_MASTERCLASS/flash_mint/contracts/IBorrower.sol\":{\"keccak256\":\"0x787028bee869adf5fbf8a2dac5b786c6ac1c8ef81f5ef0ef8d2303ac58218cbb\",\"urls\":[\"bzz-raw://863ca3fdc9d3e5532a2212314c2242a94cc897cb1a4f590b058eb96b2a0b8177\",\"dweb:/ipfs/QmYxXf1sdxLFrN7vXDxiXqDoAWN9MTciReFnjwZ6CR6mf3\"]},\"@openzeppelin/contracts/GSN/Context.sol\":{\"keccak256\":\"0x90a3995645af7562d84b9d69363ffa5ae7217714ab61e951bf7bc450f40e4061\",\"urls\":[\"bzz-raw://216ef9d6b614db4eb46970b4e84903f2534a45572dd30a79f0041f1a5830f436\",\"dweb:/ipfs/QmNPrJ4MWKUAWzKXpUqeyKRUfosaoANZAqXgvepdrCwZAG\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x640b6dee7a4b830bdfd52b5031a07fc2b12209f5b2e29e5d364a7d37f69d8076\",\"urls\":[\"bzz-raw://31113152e1ddb78fe7a4197f247591ca894e93f916867beb708d8e747b6cc74f\",\"dweb:/ipfs/QmbZaJyXdpsYGykVhHH9qpVGQg9DGCxE2QufbCUy3daTgq\"]},\"@openzeppelin/contracts/ownership/Ownable.sol\":{\"keccak256\":\"0x6fb9d7889769d7cc161225f9ef7a90e468ba9788b253816f8d8b6894d3472c24\",\"urls\":[\"bzz-raw://cf4c00fc3c37cc5acf0c82ec6fd97bab67d72c2567fdc0ebf023d9c09b30a08e\",\"dweb:/ipfs/Qmb7TChG6DsEDX7LooJ4vmxot19f7VXX8S1zUGPeJTWbwZ\"]},\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xb15af804e2bc97db51e4e103f13de9fe13f87e6b835d7a88c897966c0e58506e\",\"urls\":[\"bzz-raw://1e8cff8437557fc915a3bed968fcd8f2df9809599e665ef69c2c9ce628548055\",\"dweb:/ipfs/QmP5spYP8vs2jvLF8zNrXUbqB79hMsoEvMHiLcBxerWKcm\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xe5bb0f57cff3e299f360052ba50f1ea0fff046df2be070b6943e0e3c3fdad8a9\",\"urls\":[\"bzz-raw://59fd025151435da35faa8093a5c7a17de02de9d08ad27275c5cdf05050820d91\",\"dweb:/ipfs/QmQMvwEcPhoRXzbXyrdoeRtvLoifUW9Qh7Luho7bmUPRkc\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516109653803806109658339818101604052602081101561003357600080fd5b8101908080519060200190929190505050600061005461013960201b60201c565b9050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508073ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a35080600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050610141565b600033905090565b610815806101506000396000f3fe6080604052600436106100705760003560e01c8063715018a61161004e578063715018a61461013f5780638da5cb5b146101565780638f32d59b146101ad578063f2fde38b146101dc57610070565b806327b01e311461007257806352e91642146100c9578063710359de14610104575b005b34801561007e57600080fd5b5061008761022d565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100d557600080fd5b50610102600480360360208110156100ec57600080fd5b8101908080359060200190929190505050610253565b005b34801561011057600080fd5b5061013d6004803603602081101561012757600080fd5b81019080803590602001909291905050506102fc565b005b34801561014b57600080fd5b50610154610406565b005b34801561016257600080fd5b5061016b61053f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156101b957600080fd5b506101c2610568565b604051808215151515815260200191505060405180910390f35b3480156101e857600080fd5b5061022b600480360360208110156101ff57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506105c6565b005b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146102f9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260228152602001806107bf6022913960400191505060405180910390fd5b50565b610304610568565b610376576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166319ffd7ce826040518263ffffffff1660e01b815260040180828152602001915050600060405180830381600087803b1580156103eb57600080fd5b505af11580156103ff573d6000803e3d6000fd5b5050505050565b61040e610568565b610480576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166105aa61064c565b73ffffffffffffffffffffffffffffffffffffffff1614905090565b6105ce610568565b610640576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b61064981610654565b50565b600033905090565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614156106da576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260268152602001806107996026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f20616464726573736f6e6c7920466c6173684d696e744d6f636b574554482063616e2065786563757465a265627a7a723158209e68260f040bda8c6a607e705b9e8dbb04637cb0fa42f768a9bb888bd6e6a3a264736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600436106100705760003560e01c8063715018a61161004e578063715018a61461013f5780638da5cb5b146101565780638f32d59b146101ad578063f2fde38b146101dc57610070565b806327b01e311461007257806352e91642146100c9578063710359de14610104575b005b34801561007e57600080fd5b5061008761022d565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100d557600080fd5b50610102600480360360208110156100ec57600080fd5b8101908080359060200190929190505050610253565b005b34801561011057600080fd5b5061013d6004803603602081101561012757600080fd5b81019080803590602001909291905050506102fc565b005b34801561014b57600080fd5b50610154610406565b005b34801561016257600080fd5b5061016b61053f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156101b957600080fd5b506101c2610568565b604051808215151515815260200191505060405180910390f35b3480156101e857600080fd5b5061022b600480360360208110156101ff57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506105c6565b005b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146102f9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260228152602001806107bf6022913960400191505060405180910390fd5b50565b610304610568565b610376576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166319ffd7ce826040518263ffffffff1660e01b815260040180828152602001915050600060405180830381600087803b1580156103eb57600080fd5b505af11580156103ff573d6000803e3d6000fd5b5050505050565b61040e610568565b610480576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166105aa61064c565b73ffffffffffffffffffffffffffffffffffffffff1614905090565b6105ce610568565b610640576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b61064981610654565b50565b600033905090565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614156106da576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260268152602001806107996026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f20616464726573736f6e6c7920466c6173684d696e744d6f636b574554482063616e2065786563757465a265627a7a723158209e68260f040bda8c6a607e705b9e8dbb04637cb0fa42f768a9bb888bd6e6a3a264736f6c63430005100032",
+  "sourceMap": "148:1152:0:-;;;278:131;8:9:-1;5:2;;;30:1;27;20:12;5:2;278:131:0;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;278:131:0;;;;;;;;;;;;;;;;698:17:5;718:12;:10;;;:12;;:::i;:::-;698:32;;749:9;740:6;;:18;;;;;;;;;;;;;;;;;;806:9;773:43;;802:1;773:43;;;;;;;;;;;;664:159;378:23:0;348:9;;:54;;;;;;;;;;;;;;;;;;278:131;148:1152;;788:96:3;833:15;867:10;860:17;;788:96;:::o;148:1152:0:-;;;;;;;",
+  "deployedSourceMap": "148:1152:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;184:34;;8:9:-1;5:2;;;30:1;27;20:12;5:2;184:34:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;677:621;;8:9:-1;5:2;;;30:1;27;20:12;5:2;677:621:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;677:621:0;;;;;;;;;;;;;;;;;:::i;:::-;;570:101;;8:9:-1;5:2;;;30:1;27;20:12;5:2;570:101:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;570:101:0;;;;;;;;;;;;;;;;;:::i;:::-;;1684:137:5;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1684:137:5;;;:::i;:::-;;899:77;;8:9:-1;5:2;;;30:1;27;20:12;5:2;899:77:5;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1250:92;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1250:92:5;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1970:107;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1970:107:5;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1970:107:5;;;;;;;;;;;;;;;;;;;:::i;:::-;;184:34:0;;;;;;;;;;;;;:::o;677:621::-;770:9;;;;;;;;;;;748:32;;:10;:32;;;740:79;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;677:621;:::o;570:101::-;1103:9:5;:7;:9::i;:::-;1095:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;637:9:0;;;;;;;;;;;:19;;;657:6;637:27;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;637:27:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;637:27:0;;;;570:101;:::o;1684:137:5:-;1103:9;:7;:9::i;:::-;1095:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1782:1;1745:40;;1766:6;;;;;;;;;;;1745:40;;;;;;;;;;;;1812:1;1795:6;;:19;;;;;;;;;;;;;;;;;;1684:137::o;899:77::-;937:7;963:6;;;;;;;;;;;956:13;;899:77;:::o;1250:92::-;1290:4;1329:6;;;;;;;;;;;1313:22;;:12;:10;:12::i;:::-;:22;;;1306:29;;1250:92;:::o;1970:107::-;1103:9;:7;:9::i;:::-;1095:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2042:28;2061:8;2042:18;:28::i;:::-;1970:107;:::o;788:96:3:-;833:15;867:10;860:17;;788:96;:::o;2178:225:5:-;2271:1;2251:22;;:8;:22;;;;2243:73;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2360:8;2331:38;;2352:6;;;;;;;;;;;2331:38;;;;;;;;;;;;2388:8;2379:6;;:17;;;;;;;;;;;;;;;;;;2178:225;:::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity 0.5.16;\n\nimport \"@openzeppelin/contracts/ownership/Ownable.sol\";\nimport \"./FlashMintMockWETH.sol\";\n\ncontract Borrower is Ownable {\n\n    FlashMintMockWETH public fMockWETH; // address of FlashMintMockWETH (fMockWETH) contract\n\n    constructor(address payable _flashMintMockWETHToken) public {\n        fMockWETH = FlashMintMockWETH(_flashMintMockWETHToken);\n    }\n\n    // required to receive ETH in case you want to `withdraw` some fMockWETH for real ETH during `executeOnFlashMint`\n    function () external payable {}\n\n    function beginFlashMint(uint256 amount) public onlyOwner {\n        fMockWETH.flashMint(amount);\n    }\n\n    function executeOnFlashMint(uint256 amount) external {\n        require(msg.sender == address(fMockWETH), \"only FlashMintMockWETH can execute\");\n\n        // When this executes, this contract will have `amount` more fMockWETH tokens.\n\n        // Do whatever you want with those tokens here.\n        // You can even redeem them for the underlying by calling `fMockWETH.withdraw(someAmount)`\n        // But you must make sure this contract holds at least `amount` fMockWETH tokens before this function\n        // finishes executing or else the transaction will be reverted by the `FlashMintMockWETH.flashMint` function.\n    }\n}\n",
+  "sourcePath": "/Users/zed/Desktop/DAPP_UNIVERSITY/FLASHLOAN_MASTERCLASS/flash_mint/contracts/Borrower.sol",
+  "ast": {
+    "absolutePath": "/Users/zed/Desktop/DAPP_UNIVERSITY/FLASHLOAN_MASTERCLASS/flash_mint/contracts/Borrower.sol",
+    "exportedSymbols": {
+      "Borrower": [
+        54
+      ]
+    },
+    "id": 55,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:0"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/ownership/Ownable.sol",
+        "file": "@openzeppelin/contracts/ownership/Ownable.sol",
+        "id": 2,
+        "nodeType": "ImportDirective",
+        "scope": 55,
+        "sourceUnit": 539,
+        "src": "57:55:0",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/zed/Desktop/DAPP_UNIVERSITY/FLASHLOAN_MASTERCLASS/flash_mint/contracts/FlashMintMockWETH.sol",
+        "file": "./FlashMintMockWETH.sol",
+        "id": 3,
+        "nodeType": "ImportDirective",
+        "scope": 55,
+        "sourceUnit": 198,
+        "src": "113:33:0",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 4,
+              "name": "Ownable",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 538,
+              "src": "169:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Ownable_$538",
+                "typeString": "contract Ownable"
+              }
+            },
+            "id": 5,
+            "nodeType": "InheritanceSpecifier",
+            "src": "169:7:0"
+          }
+        ],
+        "contractDependencies": [
+          233,
+          538
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 54,
+        "linearizedBaseContracts": [
+          54,
+          538,
+          233
+        ],
+        "name": "Borrower",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 7,
+            "name": "fMockWETH",
+            "nodeType": "VariableDeclaration",
+            "scope": 54,
+            "src": "184:34:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_FlashMintMockWETH_$197",
+              "typeString": "contract FlashMintMockWETH"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 6,
+              "name": "FlashMintMockWETH",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 197,
+              "src": "184:17:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_FlashMintMockWETH_$197",
+                "typeString": "contract FlashMintMockWETH"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 18,
+              "nodeType": "Block",
+              "src": "338:71:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 16,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 12,
+                      "name": "fMockWETH",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7,
+                      "src": "348:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_FlashMintMockWETH_$197",
+                        "typeString": "contract FlashMintMockWETH"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 14,
+                          "name": "_flashMintMockWETHToken",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 9,
+                          "src": "378:23:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        ],
+                        "id": 13,
+                        "name": "FlashMintMockWETH",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 197,
+                        "src": "360:17:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_FlashMintMockWETH_$197_$",
+                          "typeString": "type(contract FlashMintMockWETH)"
+                        }
+                      },
+                      "id": 15,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "360:42:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_FlashMintMockWETH_$197",
+                        "typeString": "contract FlashMintMockWETH"
+                      }
+                    },
+                    "src": "348:54:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_FlashMintMockWETH_$197",
+                      "typeString": "contract FlashMintMockWETH"
+                    }
+                  },
+                  "id": 17,
+                  "nodeType": "ExpressionStatement",
+                  "src": "348:54:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 19,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9,
+                  "name": "_flashMintMockWETHToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19,
+                  "src": "290:39:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  "typeName": {
+                    "id": 8,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "290:15:0",
+                    "stateMutability": "payable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "289:41:0"
+            },
+            "returnParameters": {
+              "id": 11,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "338:0:0"
+            },
+            "scope": 54,
+            "src": "278:131:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 22,
+              "nodeType": "Block",
+              "src": "562:2:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 23,
+            "implemented": true,
+            "kind": "fallback",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "542:2:0"
+            },
+            "returnParameters": {
+              "id": 21,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "562:0:0"
+            },
+            "scope": 54,
+            "src": "533:31:0",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 36,
+              "nodeType": "Block",
+              "src": "627:44:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 33,
+                        "name": "amount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 25,
+                        "src": "657:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 30,
+                        "name": "fMockWETH",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 7,
+                        "src": "637:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_FlashMintMockWETH_$197",
+                          "typeString": "contract FlashMintMockWETH"
+                        }
+                      },
+                      "id": 32,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "flashMint",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 196,
+                      "src": "637:19:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256) external"
+                      }
+                    },
+                    "id": 34,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "637:27:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 35,
+                  "nodeType": "ExpressionStatement",
+                  "src": "637:27:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 37,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 28,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 27,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 471,
+                  "src": "617:9:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "617:9:0"
+              }
+            ],
+            "name": "beginFlashMint",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 26,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 25,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 37,
+                  "src": "594:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 24,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "594:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "593:16:0"
+            },
+            "returnParameters": {
+              "id": 29,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "627:0:0"
+            },
+            "scope": 54,
+            "src": "570:101:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 52,
+              "nodeType": "Block",
+              "src": "730:568:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        },
+                        "id": 48,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 43,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1027,
+                            "src": "748:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 44,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "748:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "id": 46,
+                              "name": "fMockWETH",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 7,
+                              "src": "770:9:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_FlashMintMockWETH_$197",
+                                "typeString": "contract FlashMintMockWETH"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_contract$_FlashMintMockWETH_$197",
+                                "typeString": "contract FlashMintMockWETH"
+                              }
+                            ],
+                            "id": 45,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "762:7:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_$",
+                              "typeString": "type(address)"
+                            },
+                            "typeName": "address"
+                          },
+                          "id": 47,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "762:18:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "src": "748:32:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "6f6e6c7920466c6173684d696e744d6f636b574554482063616e2065786563757465",
+                        "id": 49,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "782:36:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_929405c18e54fc5808f629c3d165baf121af2828cb1cab1e43bfa42011e37b3a",
+                          "typeString": "literal_string \"only FlashMintMockWETH can execute\""
+                        },
+                        "value": "only FlashMintMockWETH can execute"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_929405c18e54fc5808f629c3d165baf121af2828cb1cab1e43bfa42011e37b3a",
+                          "typeString": "literal_string \"only FlashMintMockWETH can execute\""
+                        }
+                      ],
+                      "id": 42,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        1030,
+                        1031
+                      ],
+                      "referencedDeclaration": 1031,
+                      "src": "740:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 50,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "740:79:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 51,
+                  "nodeType": "ExpressionStatement",
+                  "src": "740:79:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 53,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "executeOnFlashMint",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 40,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 39,
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53,
+                  "src": "705:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 38,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "705:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "704:16:0"
+            },
+            "returnParameters": {
+              "id": 41,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "730:0:0"
+            },
+            "scope": 54,
+            "src": "677:621:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 55,
+        "src": "148:1152:0"
+      }
+    ],
+    "src": "32:1269:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Users/zed/Desktop/DAPP_UNIVERSITY/FLASHLOAN_MASTERCLASS/flash_mint/contracts/Borrower.sol",
+      "exportedSymbols": {
+        "Borrower": [
+          54
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.5",
+            ".16"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "32:23:0"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 539,
+          "absolutePath": "@openzeppelin/contracts/ownership/Ownable.sol",
+          "file": "@openzeppelin/contracts/ownership/Ownable.sol",
+          "scope": 55,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 2,
+        "name": "ImportDirective",
+        "src": "57:55:0"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 198,
+          "absolutePath": "/Users/zed/Desktop/DAPP_UNIVERSITY/FLASHLOAN_MASTERCLASS/flash_mint/contracts/FlashMintMockWETH.sol",
+          "file": "./FlashMintMockWETH.sol",
+          "scope": 55,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 3,
+        "name": "ImportDirective",
+        "src": "113:33:0"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            233,
+            538
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            54,
+            538,
+            233
+          ],
+          "name": "Borrower",
+          "scope": 55
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "Ownable",
+                  "referencedDeclaration": 538,
+                  "type": "contract Ownable"
+                },
+                "id": 4,
+                "name": "UserDefinedTypeName",
+                "src": "169:7:0"
+              }
+            ],
+            "id": 5,
+            "name": "InheritanceSpecifier",
+            "src": "169:7:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "fMockWETH",
+              "scope": 54,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "contract FlashMintMockWETH",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "FlashMintMockWETH",
+                  "referencedDeclaration": 197,
+                  "type": "contract FlashMintMockWETH"
+                },
+                "id": 6,
+                "name": "UserDefinedTypeName",
+                "src": "184:17:0"
+              }
+            ],
+            "id": 7,
+            "name": "VariableDeclaration",
+            "src": "184:34:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 54,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_flashMintMockWETHToken",
+                      "scope": 19,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address payable",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "payable",
+                          "type": "address payable"
+                        },
+                        "id": 8,
+                        "name": "ElementaryTypeName",
+                        "src": "290:15:0"
+                      }
+                    ],
+                    "id": 9,
+                    "name": "VariableDeclaration",
+                    "src": "290:39:0"
+                  }
+                ],
+                "id": 10,
+                "name": "ParameterList",
+                "src": "289:41:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 11,
+                "name": "ParameterList",
+                "src": "338:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "contract FlashMintMockWETH"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 7,
+                              "type": "contract FlashMintMockWETH",
+                              "value": "fMockWETH"
+                            },
+                            "id": 12,
+                            "name": "Identifier",
+                            "src": "348:9:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "contract FlashMintMockWETH",
+                              "type_conversion": true
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_address_payable",
+                                      "typeString": "address payable"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 197,
+                                  "type": "type(contract FlashMintMockWETH)",
+                                  "value": "FlashMintMockWETH"
+                                },
+                                "id": 13,
+                                "name": "Identifier",
+                                "src": "360:17:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 9,
+                                  "type": "address payable",
+                                  "value": "_flashMintMockWETHToken"
+                                },
+                                "id": 14,
+                                "name": "Identifier",
+                                "src": "378:23:0"
+                              }
+                            ],
+                            "id": 15,
+                            "name": "FunctionCall",
+                            "src": "360:42:0"
+                          }
+                        ],
+                        "id": 16,
+                        "name": "Assignment",
+                        "src": "348:54:0"
+                      }
+                    ],
+                    "id": 17,
+                    "name": "ExpressionStatement",
+                    "src": "348:54:0"
+                  }
+                ],
+                "id": 18,
+                "name": "Block",
+                "src": "338:71:0"
+              }
+            ],
+            "id": 19,
+            "name": "FunctionDefinition",
+            "src": "278:131:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "fallback",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 54,
+              "stateMutability": "payable",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 20,
+                "name": "ParameterList",
+                "src": "542:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 21,
+                "name": "ParameterList",
+                "src": "562:0:0"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 22,
+                "name": "Block",
+                "src": "562:2:0"
+              }
+            ],
+            "id": 23,
+            "name": "FunctionDefinition",
+            "src": "533:31:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "name": "beginFlashMint",
+              "scope": 54,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "amount",
+                      "scope": 37,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 24,
+                        "name": "ElementaryTypeName",
+                        "src": "594:7:0"
+                      }
+                    ],
+                    "id": 25,
+                    "name": "VariableDeclaration",
+                    "src": "594:14:0"
+                  }
+                ],
+                "id": 26,
+                "name": "ParameterList",
+                "src": "593:16:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 29,
+                "name": "ParameterList",
+                "src": "627:0:0"
+              },
+              {
+                "attributes": {
+                  "arguments": null
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 471,
+                      "type": "modifier ()",
+                      "value": "onlyOwner"
+                    },
+                    "id": 27,
+                    "name": "Identifier",
+                    "src": "617:9:0"
+                  }
+                ],
+                "id": 28,
+                "name": "ModifierInvocation",
+                "src": "617:9:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "flashMint",
+                              "referencedDeclaration": 196,
+                              "type": "function (uint256) external"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 7,
+                                  "type": "contract FlashMintMockWETH",
+                                  "value": "fMockWETH"
+                                },
+                                "id": 30,
+                                "name": "Identifier",
+                                "src": "637:9:0"
+                              }
+                            ],
+                            "id": 32,
+                            "name": "MemberAccess",
+                            "src": "637:19:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 25,
+                              "type": "uint256",
+                              "value": "amount"
+                            },
+                            "id": 33,
+                            "name": "Identifier",
+                            "src": "657:6:0"
+                          }
+                        ],
+                        "id": 34,
+                        "name": "FunctionCall",
+                        "src": "637:27:0"
+                      }
+                    ],
+                    "id": 35,
+                    "name": "ExpressionStatement",
+                    "src": "637:27:0"
+                  }
+                ],
+                "id": 36,
+                "name": "Block",
+                "src": "627:44:0"
+              }
+            ],
+            "id": 37,
+            "name": "FunctionDefinition",
+            "src": "570:101:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "executeOnFlashMint",
+              "scope": 54,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "amount",
+                      "scope": 53,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 38,
+                        "name": "ElementaryTypeName",
+                        "src": "705:7:0"
+                      }
+                    ],
+                    "id": 39,
+                    "name": "VariableDeclaration",
+                    "src": "705:14:0"
+                  }
+                ],
+                "id": 40,
+                "name": "ParameterList",
+                "src": "704:16:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 41,
+                "name": "ParameterList",
+                "src": "730:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                {
+                                  "typeIdentifier": "t_stringliteral_929405c18e54fc5808f629c3d165baf121af2828cb1cab1e43bfa42011e37b3a",
+                                  "typeString": "literal_string \"only FlashMintMockWETH can execute\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                1030,
+                                1031
+                              ],
+                              "referencedDeclaration": 1031,
+                              "type": "function (bool,string memory) pure",
+                              "value": "require"
+                            },
+                            "id": 42,
+                            "name": "Identifier",
+                            "src": "740:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_address_payable",
+                                "typeString": "address payable"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "==",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "sender",
+                                  "referencedDeclaration": null,
+                                  "type": "address payable"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 1027,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 43,
+                                    "name": "Identifier",
+                                    "src": "748:3:0"
+                                  }
+                                ],
+                                "id": 44,
+                                "name": "MemberAccess",
+                                "src": "748:10:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "type": "address payable",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_contract$_FlashMintMockWETH_$197",
+                                          "typeString": "contract FlashMintMockWETH"
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(address)",
+                                      "value": "address"
+                                    },
+                                    "id": 45,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "762:7:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 7,
+                                      "type": "contract FlashMintMockWETH",
+                                      "value": "fMockWETH"
+                                    },
+                                    "id": 46,
+                                    "name": "Identifier",
+                                    "src": "770:9:0"
+                                  }
+                                ],
+                                "id": 47,
+                                "name": "FunctionCall",
+                                "src": "762:18:0"
+                              }
+                            ],
+                            "id": 48,
+                            "name": "BinaryOperation",
+                            "src": "748:32:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "6f6e6c7920466c6173684d696e744d6f636b574554482063616e2065786563757465",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"only FlashMintMockWETH can execute\"",
+                              "value": "only FlashMintMockWETH can execute"
+                            },
+                            "id": 49,
+                            "name": "Literal",
+                            "src": "782:36:0"
+                          }
+                        ],
+                        "id": 50,
+                        "name": "FunctionCall",
+                        "src": "740:79:0"
+                      }
+                    ],
+                    "id": 51,
+                    "name": "ExpressionStatement",
+                    "src": "740:79:0"
+                  }
+                ],
+                "id": 52,
+                "name": "Block",
+                "src": "730:568:0"
+              }
+            ],
+            "id": 53,
+            "name": "FunctionDefinition",
+            "src": "677:621:0"
+          }
+        ],
+        "id": 54,
+        "name": "ContractDefinition",
+        "src": "148:1152:0"
+      }
+    ],
+    "id": 55,
+    "name": "SourceUnit",
+    "src": "32:1269:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "1630686316957": {
+      "events": {
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x0eD062bc3FdDF9E64E4edCeA8bC3EF20101483a0",
+      "transactionHash": "0x46aa4fba1e2d79e6fafb9c01906d18bbb7f851737e056b666d58212b16efc712"
+    }
+  },
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-09-03T19:54:17.193Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {
+      "isOwner()": {
+        "details": "Returns true if the caller is the current owner."
+      },
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

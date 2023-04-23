@@ -1,0 +1,9 @@
+{
+  "name": "leveraged_yield_farming",
+  "description": "Yield Farming on Compound boosted with dYdX flash loan",
+  "version": "0.1.0",
+  "author": "PANACLOUD",
+  "dependencies": {
+    "@openzeppelin/contracts": "^2.5.0"
+  }
+}
