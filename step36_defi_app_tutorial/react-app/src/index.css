@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+.item {
+  margin: 10px 20px;
+  min-width: 250px;
+}
+
+button {
+  background-color: rgb(102, 51, 153);
+  color: whitesmoke;
+  padding: 10px 30px;
+  display: inline;
+  margin: 10px 20px;
+  min-width: 250px;
+  cursor: pointer;
+}
+button:disabled {
+  background-color: rgba(102, 51, 153, 0.4);
+  cursor: not-allowed;
+}
+
+#error {
+  color: red;
+  max-width: 90vw;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+input {
+  min-width: 237px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  position: relative;
+}
