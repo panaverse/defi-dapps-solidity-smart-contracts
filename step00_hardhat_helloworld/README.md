@@ -11,23 +11,25 @@ Follow this Text Book:
 Create a Project Directory
 
 Make it an npm library:
-
+```
 npm init
-
+```
+```
 npm install --save-dev hardhat
-
+```
+```
 npx hardhat
-
+```
 Select to create a basic project from the menu
-
+```
 npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
-
+```
+```
 npx hardhat compile
-
+```
+```
 npx hardhat test
-
-
-
+```
 
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
