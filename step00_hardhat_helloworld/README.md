@@ -45,7 +45,8 @@ Now make three files:
 2. Make a file in "script" directory. Name it "deploy.js".
 3. Make a file in "test" directory. Name it "test.js".
 
-
+*GOOD TO HAVE: If working on VSCode, the extension Solidity by Nomic Foundation is very helpfull for predefined code structures for solidity. 
+(https://marketplace.visualstudio.com/items?itemName=NomicFoundation.hardhat-solidity)
 
 npx hardhat compile
 
