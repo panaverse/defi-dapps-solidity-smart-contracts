@@ -6,19 +6,46 @@ Create a Project Directory: Name it "Hardhat-Initiation" (or whatever is good wi
 
 initialize project by running:
 
-      npm init
+    npm init
 
-Make it an npm library:
+### Step 02: Install Hardhat
 
-npm init
+    npm install --save-dev hardhat
+    
+### Step 03: Initialize Hardhat
 
-npm install --save-dev hardhat
+    npx hardhat
 
-npx hardhat
+Select one of the three options to create a basic project. You can go for Javascript or typescript, but lets go for an empty file this time. 
 
-Select to create a basic project from the menu
+This is initialize an empty hardhat file in your directory.
 
-npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
+### Step 04: Installing Dependencies
+
+Run the following in your terminal for basic dependencies. 
+
+    npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
+    
+#### OR 
+
+Run the following for the full toolbox.
+
+    npm install @nomicfoundation/hardhat-toolbox
+
+### Step 05: Make Folders and File Structure
+
+Make 3 folders in your main directory:
+1. contract
+2. script
+3. test
+
+Now make three files: 
+
+1. Make a file in "contract" directory. Name it "MyTest.sol".
+2. Make a file in "script" directory. Name it "deploy.js".
+3. Make a file in "test" directory. Name it "test.js".
+
+
 
 npx hardhat compile
 
