@@ -1,12 +1,6 @@
-# Basic Sample Hardhat Project
+# Hardhat Hello World Project
 
-[Before starting development please go through the Ethereum Developer Documentation in detail](https://ethereum.org/en/developers/docs/)
-
-Follow this Text Book:
-
-[Solidity Programming Essentials: A guide to building smart contracts and tokens using the widely used Solidity language, 2nd Edition](https://www.amazon.com/Solidity-Programming-Essentials-building-contracts/dp/1803231181/ref=sr_1_2_sspa)
-
-[We will follow this getting started page](https://hardhat.org/getting-started/)
+### Step 01: Initialize 
 
 Create a Project Directory
 
@@ -43,3 +37,11 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 ```
+
+[Before starting development please go through the Ethereum Developer Documentation in detail](https://ethereum.org/en/developers/docs/)
+
+Follow this Text Book:
+
+[Solidity Programming Essentials: A guide to building smart contracts and tokens using the widely used Solidity language, 2nd Edition](https://www.amazon.com/Solidity-Programming-Essentials-building-contracts/dp/1803231181/ref=sr_1_2_sspa)
+
+[We will follow this getting started page](https://hardhat.org/getting-started/)
