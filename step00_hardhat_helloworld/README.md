@@ -2,7 +2,11 @@
 
 ### Step 01: Initialize 
 
-Create a Project Directory
+Create a Project Directory: Name it "Hardhat-Initiation" (or whatever is good with you) 
+
+initialize project by running:
+
+      npm init
 
 Make it an npm library:
 
