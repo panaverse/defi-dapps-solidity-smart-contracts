@@ -12,6 +12,10 @@ initialize project by running:
 
     npm install --save-dev hardhat
     
+also run for types:
+
+    npm install --save-dev typechain @typechain/hardhat @typechain/ethers-v5
+    
 ### Step 03: Initialize Hardhat
 
     npx hardhat
