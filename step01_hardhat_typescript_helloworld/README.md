@@ -18,17 +18,36 @@ initialize project by running:
 
 Select one of the three options to create a basic project. Select typescript this time. This will automatically create all the file structures required. 
 
-Make sure the following code is in the newly made "hardhat.config.ts" file. If not, paste it:
+Make sure to past the following code in the newly made "hardhat.config.ts" file:
 
 ```script
-import { HardhatUserConfig } from "hardhat/config";
-import "@nomicfoundation/hardhat-toolbox";
+import { task } from "hardhat/config";
+import "@nomiclabs/hardhat-waffle";
 
-const config: HardhatUserConfig = {
-  solidity: "0.8.18",
+import '@typechain/hardhat';
+import '@nomiclabs/hardhat-ethers';
+
+
+// This is a sample Hardhat task. To learn how to create your own go to
+// https://hardhat.org/guides/create-task.html
+task("accounts", "Prints the list of accounts", async (args, hre) => {
+  const accounts = await hre.ethers.getSigners();
+
+  for (const account of accounts) {
+    console.log(await account.address);
+  }
+});
+
+// You need to export an object to set up your config
+// Go to https://hardhat.org/config/ to learn more
+
+/**
+ * @type import('hardhat/config').HardhatUserConfig
+ */
+module.exports = {
+  solidity: "0.8.4",
 };
 
-export default config;
 ```
 
 
