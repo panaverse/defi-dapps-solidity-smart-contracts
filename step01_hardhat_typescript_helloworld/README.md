@@ -1,4 +1,4 @@
-# Hardhat Hello World Project
+# Hardhat Typescript Hello World Project
 
 ### Step 01: Initialize 
 
