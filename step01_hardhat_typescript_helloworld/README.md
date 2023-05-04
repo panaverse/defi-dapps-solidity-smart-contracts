@@ -16,9 +16,9 @@ initialize project by running:
 
     npx hardhat
 
-Select one of the three options to create a basic project. Select typescript this time. 
+Select one of the three options to create a basic project. Select typescript this time. This will automatically create all the file structures required. 
 
-Add the following code in the newly made "hardhat.config.js" file:
+Make sure the following code is in the newly made "hardhat.config.ts" file. If not, paste it:
 
 ```script
 import { HardhatUserConfig } from "hardhat/config";
@@ -40,175 +40,122 @@ Run the following in your terminal for basic dependencies.
     
 #### OR 
 
-Run the following for the full toolbox.
+Run better yet the following for the full toolbox.
 
     npm install @nomicfoundation/hardhat-toolbox
 
-### Step 05: Make Folders and File Structure
 
-Make 3 folders in your main directory:
-1. contracts
-2. script
-3. test
+### Step 05: Let us start with writing our first typescript contract. This time, we will make a simple Greeting function.
 
-Now make three files: 
-
-1. Make a file in "contracts" directory. Name it "MyTest.sol".
-2. Make a file in "script" directory. Name it "deploy.js".
-3. Make a file in "test" directory. Name it "test.js".
-
-*GOOD TO HAVE: If working on VSCode, the extension Solidity by Nomic Foundation is very helpfull for predefined code structures for solidity. 
-(https://marketplace.visualstudio.com/items?itemName=NomicFoundation.hardhat-solidity)
-
-### Step 06: Let us start with writing our first contract
-
-Add the following simple code to the file "MyTest.sol" file we just made in the "contracts" folder.
+Make a file in the "contracts" folder named "Greeting.sol" and add the following simple code in it.
 
 ```shell
-//SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.9;
+//SPDX-License-Identifier: Unlicense
+pragma solidity ^0.8.0;
 
-//IMPORT THE HARDHAT CONSOLE
-import "../node_modules/hardhat/console.sol";
+import "hardhat/console.sol";
 
-//WRITING A SIMPLE CONTRACT
-contract MyTest {
-    uint256 public unlockedTime;
-    address payable public owner;
+contract Greeter  {
+    string private greeting;
 
-    event Widthrawal(uint256 amount, uint256 when);
-
-    constructor(uint256 _unlockedTime) payable {
-        require(
-            block.timestamp < _unlockedTime,
-            "Unlocked time should be in future."
-        );
-
-        unlockedTime = _unlockedTime;
-        owner = payable(msg.sender);
+    constructor(string memory _greeting) {
+        console.log("Deploying a Greeter with greeting:", _greeting);
+        greeting = _greeting;
     }
-//A SIMPLE WITHDRAWING FUNCTION
-    function withdraw() public {
-        require(
-            block.timestamp >= unlockedTime,
-            "Wait till the time period ends"
-        );
-        require(msg.sender == owner, "You are not an owner");
 
-        emit Widthrawal(address(this).balance, block.timestamp);
+    function greet() public view returns (string memory) {
+        return greeting;
+    }
 
-        owner.transfer(address(this).balance);
+    function setGreeting(string memory _greeting) public {
+        console.log("Changing greeting from '%s' to '%s'", greeting, _greeting);
+        greeting = _greeting;
     }
 }
 ```
 
 Now for the script:
 
-Add the following self-explanatory code to the "deploy.js" file we made in the "script" folder.
+Make a file in the "script" folder named "sample-script.ts" and paste the following self explanatory code in the file.
 
 ```script
-const hre = require('hardhat')
-
-// RUN THE CONSOLE AS BELOW TO UNDERSTAND WHAT INFORMATION "hre" CARRIES
-// console.log(hre)
+/ We require the Hardhat Runtime Environment explicitly here. This is optional
+// but useful for running the script in a standalone fashion through `node <script>`.
+//
+// When running the script with `npx hardhat run <script>` you'll find the Hardhat
+// Runtime Environment's members available in the global scope.
+//const hre = require("hardhat");
+import { run, ethers } from "hardhat";
+import { Greeter, Greeter__factory } from "../typechain";
 
 async function main() {
-    const currentTimstampInSeconds = Math.round(Date.now() / 1000);
-    const ONE_YEAR_IN_SECONDS = 365 * 24 * 60 * 60;
-    const unlockedTime = currentTimstampInSeconds + ONE_YEAR_IN_SECONDS;
-    // Whenever the contract is deployed, the owner can withdraw after one year.
+  // Hardhat always runs the compile task when running scripts with its command
+  // line interface.
+  //
+  // If this script is run directly using `node` you may want to call compile
+  // manually to make sure everything is compiled
+  // await hre.run('compile');
 
-    const lockedAmount = hre.ethers.utils.parseEther("1");
+  // We get the contract to deploy
+  const Greeter:Greeter__factory = await ethers.getContractFactory("Greeter");
+  const greeter:Greeter = await Greeter.deploy("Hello, Hardhat!");
 
-    // RUN THE CONSOLE AS BELOW TO UNDERSTAND WHAT INFORMATION EACH CONSTANT CARRIES
-    // console.log(currentTimstampInSeconds);
-    // console.log(ONE_YEAR_IN_SECONDS);
-    // console.log(unlockedTime);
-    // console.log(lockedAmount)
+  await greeter.deployed();
 
-    const MyTest = await hre.ethers.getContractFactory("MyTest");
-    const myTest = await MyTest.deploy(unlockedTime, { value: lockedAmount});
-
-    await myTest.deployed();
-
-    console.log(`Contract contains '1' ETH & address: ${myTest.address}`)
+  console.log("Greeter deployed to:", greeter.address);
 }
 
-main().catch((error) => {
-    console.log(error);
-    process.exitCode = 1;
-})
+// We recommend this pattern to be able to use async/await everywhere
+// and properly handle errors.
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
+
 ```
 
 Then run the following command.
 
-    npx hardhat run script/deploy.js
+    npx hardhat run script/sample-script.ts
     
 And let the magic happen. You will see two new folder being made:
 1. Artifact
 2. cache
 These carry the information about the contract. 
-The contract data can also be fetched by "console.log(myTest)" in the deploy.js file.
+The contract data can also be fetched by "console.log(Greeting)" in the sample-script.ts file.
 This data can be fetched and used in the front end when we get there.
 
-Congradulations. You have deployed your first smart contract with hardhat. But it is not over yet.
+Congradulations. You have deployed your first typescript smart contract with hardhat. But it is not over yet.
 
 ### STEP 07: Test our contract:
 
 We have made and deployed our contract, but testing our contract is crucial as well. Lets make a function that we will be using for testing our contract. Note that there should be several tests that we have to perform during any such transaction, but this time, we will suffice for just one. 
 
-Add the following self-explanatory code to the "test.js" file we made in the "test" folder.
+Make a new file in "test" folder named "sample-test.ts" and add the following simple code in it.
 
 ```shell
-const {time, loadFixture} = require("@nomicfoundation/hardhat-network-helpers")
+import { ethers, waffle } from "hardhat";
+import { expect } from "chai";
 
-// RUN THE CONSOLE AS BELOW TO UNDERSTAND WHAT INFORMATION EACH CONSTANT CARRIES
-// console.log(time, loadFixture)
 
-const {anyValue} = require("@nomicfoundation/hardhat-chai-matchers")
-// console.log(anyValue)
+describe("Greeter", function () {
+  it("Should return the new greeting once it's changed", async function () {
+    const Greeter = await ethers.getContractFactory("Greeter");
+    const greeter = await Greeter.deploy("Hello, world!");
+    await greeter.deployed();
 
-const {expect} = require("chai")
-const {ethers} = require("hardhat")
-// console.log(expect, ethers)
+    expect(await greeter.greet()).to.equal("Hello, world!");
 
-describe("MyTest", function () {
-    async function runEveryTime() {
-        const ONE_YEAR_IN_SECONDS = 365 * 24 * 60 * 60;
-        const ONE_GEWI = 1000000000;
-        const lockedAmount = ONE_GEWI;
-        const unlockedTime = (await time.latest()) + ONE_YEAR_IN_SECONDS;
-        // GET ACCOUNTS
-        const [owner, otherAccount] = await Promise.all([ethers.getSigner(), ethers.getSigner(1)]);
-        // ethers.getSigner can provide you upto 20 accounts.
+    const setGreetingTx = await greeter.setGreeting("Hola, mundo!");
 
-        const MyTest = await ethers.getContractFactory("MyTest");
-        const myTest = await MyTest.deploy(unlockedTime, {value: lockedAmount})
+    // wait until the transaction is mined
+    await setGreetingTx.wait();
 
-        // CONSOLE.LOG EVERYTHING TO UNDERSTAND THE DATA EACH CARRY
-
-        return {
-            myTest,
-            unlockedTime,
-            lockedAmount,
-            owner,
-            otherAccount
-        }
-    }
-
-    // TESTING OUR FIRSST TEST: DEPLOYMENT
-    // describe allows you to check a specefic condition in a smart contract.
-    describe("Deployment", function () { // CHECKING TIME
-        it("Should check unlocked time", async function () {
-            const {myTest, unlockedTime} = await loadFixture(runEveryTime)
-            // console.log(unlockedTime, myTest)
-            expect(await myTest.unlockedTime()).to.equal(unlockedTime)
-            // comparing actual time and our contract time.
-            // you can sage the expect in a variable and console.log it to understand its value
-        });
-    })
-    runEveryTime()
-})
+    expect(await greeter.greet()).to.equal("Hola, mundo!");
+  });
+});
 ```
 To run this test, run the following in your terminal.
 
@@ -219,10 +166,73 @@ Congradulations. You have successfully written, deployed and tested your first s
 
 ### Go through the following links if you want to learn more.
 
-[Before starting development please go through the Ethereum Developer Documentation in detail](https://ethereum.org/en/developers/docs/)
+Note: You can use this prebuilt [template project](https://github.com/paulrberg/solidity-template) instead of building your own.
 
-Follow this Text Book:
+[We will follow this typescript support page](https://hardhat.org/guides/typescript.html)
 
-[Solidity Programming Essentials: A guide to building smart contracts and tokens using the widely used Solidity language, 2nd Edition](https://www.amazon.com/Solidity-Programming-Essentials-building-contracts/dp/1803231181/ref=sr_1_2_sspa)
+Copy the files from step00_hardhat_helloworld
 
-[We will follow this getting started page](https://hardhat.org/getting-started/)
+npm install --save-dev ts-node typescript
+
+npm install --save-dev chai @types/node @types/mocha @types/chai
+
+rename your config file to hardhat.config.ts
+
+We need to apply three changes to your config for it to work with TypeScript:
+
+1. Plugins must be loaded with import instead of require.
+2. You need to explicitly import the Hardhat config functions, like task.
+3. If you are defining tasks, they need to access the Hardhat Runtime Environment explicitly, as a parameter.
+
+For updating test and scripts [follow this](https://hardhat.org/guides/typescript.html#writing-tests-and-scripts-in-typescript)
+
+For Type-safe smart contract interactions:
+
+npm install --save-dev typechain @typechain/hardhat @typechain/ethers-v5
+
+Update tsconfig.json
+
+tsc
+
+npx hardhat compile
+
+npx hardhat test
+
+
+
+
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+
+Try running some of the following tasks:
+
+```shell
+npx hardhat accounts
+npx hardhat compile
+npx hardhat clean
+npx hardhat test
+npx hardhat node
+node scripts/sample-script.js
+npx hardhat help
+```
+--------------------------------------
+For Fresh project follow these steps:
+--------------------------------------
+
+npm init 
+
+npm install --save-dev hardhat 
+
+npx hardaht 
+
+Select an Advance sample project .... 
+
+npm install --save-dev "hardhat@^2.8.2" "@nomiclabs/hardhat-waffle@^2.0.0" "ethereum-waffle@^3.0.0" "chai@^4.2.0"  "ethers@^5.0.0" "solhint@^3.3.6" "solidity-
+coverage@^0.7.16" "@typechain/ethers-v5@^7.0.1" "@typechain/hardhat@^2.3.0" "@typescript-eslint/eslint-plugin@^4.29.1" "@typescript-eslint/parser@^4
+
+npm install dotenv
+
+npm install --save-dev ts-node
+
+npm install @nomiclabs/hardhat-etherscan
+
+npm install hardhat-gas-reporter
