@@ -259,3 +259,5 @@ npm install --save-dev ts-node
 npm install @nomiclabs/hardhat-etherscan
 
 npm install hardhat-gas-reporter
+
+CAUTION: Do make notes of versions used in this repository. Since it is one of the fastest evolving framework, you need to keep yourself upto date.
